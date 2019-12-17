@@ -1,0 +1,72 @@
+/*Debug*/
+.debug {
+    border: 1px red solid;
+}
+
+/*Structure Style*/
+.footer {
+    height: 600px;
+    border-top: 2px solid black;
+    padding: 10px;
+    font-size: 14px;
+    font-family: Cambria;
+    color: rgba(30,30,30,.8);
+}
+
+.footer1 {
+    height: 38%;
+    padding: 25px 5px;
+}
+
+.footer2 {
+    height: 48%;
+    padding: 25px 5px;
+}
+
+.footer3 {
+    padding: 10px;
+}
+
+.line {
+    border-top: 1px solid rgba(50, 50, 50, .4);
+    margin: 5px;
+}
+.copyright-footer {
+    text-align: center;
+    font-size: 13px;
+    color: rgba(50, 50,50, .7);
+font-weight: bold;
+    }
+
+.schedule {
+    display: inline-block;
+}
+
+.schedule > li {
+    list-style: none;
+    margin-left: -40px;
+}
+
+.tab {
+    border-bottom: 1px dotted rgba(50, 50, 50, .4);
+    width: 30px;
+}
+
+/*Text style*/
+.header5 {
+    font-family: "Century Gothic";
+    font-size: 15px;
+    font-weight: bold;
+    color: rgba(40, 40, 40, .9);
+    margin-bottom: 10px;
+}
+
+.social-icon {
+    color: black;
+    font-size: 25px;
+    padding: 20px;
+}
+
+.social-icon > .fa {
+    margin-right: 30px;
+}
