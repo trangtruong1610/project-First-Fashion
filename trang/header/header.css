@@ -1,26 +1,31 @@
-#logo{
+#header {
+  font-family: Arial, sans-serif; }
+  #header #search-bar #login-form a:hover {
+    text-decoration: none; }
+  #header .logo {
     height: 200px;
-    background-color: antiquewhite;
-}
-.form-login{
-    display: none;
-}
-a:hover{
-    text-decoration: none;
-}
-#menu{
-    margin-left: 500px;
-    position: fixed;
-}
-.item {
-    position: relative;
-    text-align: center;
-    display: inline-block;
-    width: 100px;
-    margin: 0;
-    padding: 0;
-    color: grey;
-}
-a{
-    color: black;
-}
+    background-color: antiquewhite; }
+  #header nav .nav-item {
+    padding: 0 10px; }
+  #header nav .logo-res {
+    display: none; }
+  #header nav .dropdown-menu {
+    background-color: #f8f9fa;
+    border: none;
+    width: 200%; }
+
+@media only screen and (max-width: 575px) {
+  #search-bar {
+    display: none; }
+
+  .logo {
+    display: none; }
+
+  .dropdown-menu {
+    background-color: #f8f9fa;
+    border: none; }
+
+  .logo-res {
+    display: block !important; } }
+
+/*# sourceMappingURL=header.css.map */
