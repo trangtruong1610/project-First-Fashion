@@ -1,15 +1,87 @@
-/*Debug*/
+/*#region Fonts*/
+    /*#region Century Gothic Font*/
+        @font-face {
+            font-family: "Century Gothic";
+            src: url("/assets/fonts/Century Gothic/GOTHIC.TTF");
+        }
+        @font-face {
+            font-family: "Century Gothic Bold";
+            src: url("/assets/fonts/Century Gothic/GOTHICB.TTF");
+        }
+        @font-face {
+            font-family: "Century Gothic Bold Italic";
+            src: url("/assets/fonts/Century Gothic/GOTHICBI.TTF");
+        }
+        @font-face {
+            font-family: "Century Gothic Italic";
+            src: url("/assets/fonts/Century Gothic/GOTHICI.TTF");
+        }
+    /*#endregion Century Gothic Font*/
+    /*#region Cambria Font*/
+        @font-face {
+            font-family: "Cambria";
+            src: url("/assets/fonts/Cambria/cambria.ttc");
+        }
+        @font-face {
+            font-family: "Cambria Bold";
+            src: url("/assets/fonts/Cambria/cambriab.ttf");
+        }
+        @font-face {
+            font-family: "Cambria Italic";
+            src: url("/assets/fonts/Cambria/cambriai.ttf");
+        }
+        @font-face {
+            font-family: "Cambria Z";
+            src: url("/assets/fonts/Cambria/cambriaz.ttf");
+        }
+    /*#endregion Cambria Font*/
+    /*#region Apercu Font*/
+        @font-face {
+            font-family: "Apercu";
+            src: url("/assets/fonts/Apercu/Apercu Bold.otf");
+        }
+        @font-face {
+            font-family: "Apercu Bold Italic";
+            src: url("/assets/fonts/Apercu/Apercu Bold Italic.otf");
+        }
+        @font-face {
+            font-family: "Apercu Italic";
+            src: url("/assets/fonts/Apercu/Apercu Italic.otf");
+        }
+        @font-face {
+            font-family: "Apercu Light Italic";
+            src: url("/assets/fonts/Apercu/Apercu Light Italic.otf");
+        }
+         @font-face {
+             font-family: "Apercu Medium";
+             src: url("/assets/fonts/Apercu/Apercu Medium.otf");
+         }
+         @font-face {
+             font-family: "Apercu Medium Italic";
+             src: url("/assets/fonts/Apercu/Apercu Medium Italic.otf");
+         }
+         @font-face {
+             font-family: "Apercu Regular";
+             src: url("/assets/fonts/Apercu/Apercu Regular.otf");
+         }
+         @font-face {
+             font-family: "Apercu Light";
+             src: url("/assets/fonts/Apercu/Apercu Light.otf");
+         }
+    /*#endregion Apercu Font*/
+/*#endregion Fonts*/
+/*#region Debug*/
 .debug {
     border: 1px red solid;
 }
-
-/*Structure Style*/
+/*#endregion Debug*/
+/*#region Structure Style*/
 .footer {
     height: 600px;
     border-top: 2px solid black;
     padding: 10px;
     font-size: 14px;
-    font-family: Cambria;
+    font-family: Cambria,"Century Gothic",Apercu;
     color: rgba(30,30,30,.8);
 }
 
@@ -35,24 +107,39 @@
     text-align: center;
     font-size: 13px;
     color: rgba(50, 50,50, .7);
-font-weight: bold;
-    }
-
-.schedule {
-    display: inline-block;
+    font-weight: bold;
 }
 
-.schedule > li {
+.list-lev1 {
     list-style: none;
     margin-left: -40px;
 }
 
-.tab {
-    border-bottom: 1px dotted rgba(50, 50, 50, .4);
-    width: 30px;
+.list-lev2 {
+    margin-bottom: 8px;
+    font-family: "Cambria Z";
+    font-size: 15px;
 }
 
-/*Text style*/
+.list-lev1 > .list-lev2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tab {
+    width: 10px;
+    height: 1px;
+    flex-grow: 1;
+    align-self: center;
+    margin: 0px 5px;
+}
+
+li > .tab {
+    border-bottom: 1px dotted rgba(50, 50, 50, .4);
+}
+
+/*#endregion Structures Style*/
+/*#region Text Styles*/
 .header5 {
     font-family: "Century Gothic";
     font-size: 15px;
@@ -69,4 +156,38 @@ font-weight: bold;
 
 .social-icon > .fa {
     margin-right: 30px;
+    color: rgba(40,40,40,.9);
 }
+
+.fa-border {
+    border: 3px solid rgba(40,40,40,.9) !important;
+    border-radius: 50% !important;
+}
+
+.footer-item {
+    color: rgba(50,50,50,1);
+    font-size: 15px;
+    padding: 20px 0px;
+    height: 20px;
+}
+
+.footer-item > span {
+    margin: 0px 10px;
+}
+
+.list-lev2 > a {
+    text-decoration: none;
+    color: rgba(30,30,30,.7);
+}
+
+a:hover {
+    cursor: pointer;
+    text-decoration: none !important;
+    color: rgba(30,30,30,.9) !important;
+    font-weight: bold;
+}
+
+.list-lev2-item {
+    font-size: 13px;
+}
+/*#endregion Text Styles*/
