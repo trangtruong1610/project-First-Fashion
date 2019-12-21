@@ -75,34 +75,40 @@
     border: 1px red solid;
 }
 /*#endregion Debug*/
-/*#region Structure Style*/
+/*#region Styles*/
 .footer {
-    height: 600px;
+    display: table-row;
+    position: relative;
+    height: max-content;
+    padding: 10px 30px !important;
     border-top: 2px solid black;
-    padding: 10px;
     font-size: 14px;
     font-family: Cambria,"Century Gothic",Apercu;
     color: rgba(30,30,30,.8);
 }
 
 .footer1 {
-    height: 38%;
+    height: max-content;
     padding: 25px 5px;
 }
 
 .footer2 {
-    height: 48%;
+    height: max-content;
     padding: 25px 5px;
 }
 
-.footer3 {
-    padding: 10px;
+.line {
+    border-top: 1px solid rgba(50, 50, 50, .4) !important;
+    margin: 10px 0 !important;
 }
 
-.line {
-    border-top: 1px solid rgba(50, 50, 50, .4);
-    margin: 5px;
+.footer3 {
+    bottom: 0;
+    width: 100%;
+    justify-content: center;
+    height: max-content;
 }
+
 .copyright-footer {
     text-align: center;
     font-size: 13px;
@@ -138,8 +144,6 @@ li > .tab {
     border-bottom: 1px dotted rgba(50, 50, 50, .4);
 }
 
-/*#endregion Structures Style*/
-/*#region Text Styles*/
 .header5 {
     font-family: "Century Gothic";
     font-size: 15px;
@@ -168,7 +172,7 @@ li > .tab {
     color: rgba(50,50,50,1);
     font-size: 15px;
     padding: 20px 0px;
-    height: 20px;
+    height: max-content;
 }
 
 .footer-item > span {
@@ -190,4 +194,16 @@ a:hover {
 .list-lev2-item {
     font-size: 13px;
 }
-/*#endregion Text Styles*/
+/*#endregion Styles*/
+/*#region Responsive*/
+@media only screen and (max-width: 1090px) {
+    .footer1, .footer2, .footer3, .list-lev2 {
+        display: table-row;
+        position: center;
+        text-align: center !important;
+    }
+    .list-lev1 {
+        margin: 25px 0 50px;
+    }
+}
+/*#endregion Responsive*/
