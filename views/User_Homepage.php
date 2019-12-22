@@ -23,7 +23,7 @@
             crossorigin="anonymous"></script>
 </head>
 <body>
-<div class="container-fluid">
+<div class="container-fluid" style="display: table-row; min-height: max-content">
 <!--Banner-->
     <div id="carouselId" class="debug carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
@@ -79,7 +79,26 @@
         </div>
     </div>
 <!--Top Brands-->
-    <div class="debug"></div>
+    <div class="debug">
+        <h5 class="header">TOP BRANDS</h5>
+        <div class="debug top-brand">
+            <span>
+                <img src="1280px-Chanel_logo.svg.png" style="width: 200px">
+            </span>
+            <span>
+                <img src="1280px-Chanel_logo.svg.png" style="width: 200px">
+            </span>
+            <span>
+                <img src="1280px-Chanel_logo.svg.png" style="width: 200px">
+            </span>
+            <span>
+                <img src="1280px-Chanel_logo.svg.png" style="width: 200px">
+            </span>
+            <span>
+                <img src="1280px-Chanel_logo.svg.png" style="width: 200px">
+            </span>
+        </div>
+    </div>
 <!--Trending-->
     <div class="debug"></div>
 </div>

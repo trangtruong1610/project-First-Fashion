@@ -14,7 +14,7 @@
         }
         @font-face {
             font-family: "Century Gothic Italic";
-            src: url("/assets/fonts/Century Gothic/GOTHICI.TTF");
+            src: url('/assets/fonts/Century Gothic/GOTHICBI.TTF');
         }
     /*#endregion Century Gothic Font*/
     /*#region Cambria Font*/
@@ -83,7 +83,7 @@
     padding: 10px 30px !important;
     border-top: 2px solid black;
     font-size: 14px;
-    font-family: Cambria,"Century Gothic",Apercu;
+    font-family: Cambria, "Century Gothic", Apercu, sans-serif;
     color: rgba(30,30,30,.8);
 }
 
@@ -123,7 +123,7 @@
 
 .list-lev2 {
     margin-bottom: 8px;
-    font-family: "Cambria Z";
+    font-family: "Cambria Z", serif;
     font-size: 15px;
 }
 
@@ -137,7 +137,7 @@
     height: 1px;
     flex-grow: 1;
     align-self: center;
-    margin: 0px 5px;
+    margin: 0 5px;
 }
 
 li > .tab {
@@ -145,13 +145,22 @@ li > .tab {
 }
 
 .header5 {
-    font-family: "Century Gothic Bold";
+    font-family: "Century Gothic", sans-serif;
     font-size: 15px;
     font-weight: bold;
     color: rgba(40, 40, 40, .9);
     margin-bottom: 10px;
 }
-
+.header {
+    font-family: "Charlemagne Std";
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    color: rgba(40, 40, 40, .9);
+}
+.top-brand {
+    margin: 5px;
+}
 .social-icon {
     color: black;
     font-size: 25px;
@@ -171,12 +180,12 @@ li > .tab {
 .footer-item {
     color: rgba(50,50,50,1);
     font-size: 15px;
-    padding: 20px 0px;
+    padding: 20px 0;
     height: max-content;
 }
 
 .footer-item > span {
-    margin: 0px 10px;
+    margin: 0 10px;
 }
 
 .list-lev2 > a {
@@ -190,13 +199,12 @@ a:hover {
     color: rgba(30,30,30,.9) !important;
     font-weight: bold;
 }
-
 .list-lev2-item {
     font-size: 13px;
 }
 .cus-target {
     font-size: 25px;
-    font-family: "Century Gothic";
+    font-family: "Century Gothic", sans-serif;
     font-weight: bold;
     color: whitesmoke;
     text-align: center;
@@ -211,7 +219,7 @@ a:hover {
     background-repeat: no-repeat;
 }
 .cus-target-bg:hover {
-    background-size: 110%;
+    background-size: 380px;
 }
 .filter:hover {
     backdrop-filter: grayscale(0);
