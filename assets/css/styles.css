@@ -145,7 +145,7 @@ li > .tab {
 }
 
 .header5 {
-    font-family: "Century Gothic";
+    font-family: "Century Gothic Bold";
     font-size: 15px;
     font-weight: bold;
     color: rgba(40, 40, 40, .9);
@@ -193,6 +193,33 @@ a:hover {
 
 .list-lev2-item {
     font-size: 13px;
+}
+.cus-target {
+    font-size: 25px;
+    font-family: "Century Gothic";
+    font-weight: bold;
+    color: whitesmoke;
+    text-align: center;
+    margin: 20px;
+    line-height: 380px;
+}
+.cus-target-bg {
+    height: 350px;
+    width: auto;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.cus-target-bg:hover {
+    background-size: 110%;
+}
+.filter:hover {
+    backdrop-filter: grayscale(0);
+}
+.filter {
+    height: 350px;
+    width: 100%;
+    backdrop-filter: grayscale(.8);
 }
 /*#endregion Styles*/
 /*#region Responsive*/

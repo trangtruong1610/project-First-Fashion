@@ -25,23 +25,26 @@
 <body>
 <div class="container-fluid">
 <!--Banner-->
-    <div id="carouselId" class="debug carousel slide" data-ride="carousel"  style="height: 400px; background-color: yellow">
+    <div id="carouselId" class="debug carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
             <li data-target="#carouselId" data-slide-to="0" class="active"></li>
             <li data-target="#carouselId" data-slide-to="1"></li>
             <li data-target="#carouselId" data-slide-to="2"></li>
         </ol>
         <div class="carousel-inner" role="listbox">
-            <div class="carousel-item active">
-                <img data-src="holder.js/900x500/auto/#777:#555/text:First slide" alt="First slide">
-            </div>
-            <div class="carousel-item">
-                <img data-src="holder.js/900x500/auto/#666:#444/text:Second slide" alt="Second slide">
-            </div>
-            <div class="carousel-item">
-                <img data-src="holder.js/900x500/auto/#666:#444/text:Third slide" alt="Third slide">
-            </div>
+<!--            --><?php
+//            require ("Connection.php");
+//            $conn = conn_db();
+//
+//            require ("Admin_Banner.php");
+//            $bannerslider[] = AddBanner();
+//            foreach ($bannerslider as $slidename=>$slidelink) ?><!-- {-->
+<!--                <div class="item --><?php //echo ($slidename == 0) ? 'active' : '' ?><!--">-->
+<!--                    <img style="height: 400px;width:100%;" src="--><?php // echo $bannerslider['file_name']; ?><!--" height="100" alt="Image of every carousel"/>-->
+<!--                </div>-->
+<!--            }-->
         </div>
+
         <a class="carousel-control-prev" href="#carouselId" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
@@ -52,7 +55,29 @@
         </a>
     </div>
 <!--Customer Categories-->
-    <div class="debug"></div>
+    <div class="debug container-fluid row cus-target" style="height: 380px">
+        <div class="col-md-4 debug cus-target-bg" style="background-image: url('Cus-category-men.jpg')">
+            <div class="filter">
+                <a href="">
+                    <span class="cus-target">FOR MEN</span>
+                </a>
+            </div>
+        </div>
+        <div class="col-md-4 debug cus-target-bg" style="background-image: url('Cus-category-women.jpg')">
+            <div class="filter">
+                <a href="">
+                    <span class="cus-target">FOR WOMEN</span>
+                </a>
+            </div>
+        </div>
+        <div class="col-md-4 debug cus-target-bg" style="background-image: url('Cus-category-children.jpg')">
+            <div class="filter">
+                <a href="">
+                    <span class="cus-target">FOR CHILDREN</span>
+                </a>
+            </div>
+        </div>
+    </div>
 <!--Top Brands-->
     <div class="debug"></div>
 <!--Trending-->
