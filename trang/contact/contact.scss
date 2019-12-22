@@ -9,3 +9,53 @@
 .map{
   margin-top: 50px;
 }
+.contact-form{
+  p{
+    font-size: 20px;
+    padding-top: 50px;
+    text-align: center;
+  }
+  hr{
+    width: 50px;
+    border-top: 1px solid crimson;
+  }
+  form{
+    .tag{
+      span{
+        margin-left: 250px;
+      }
+    }
+    .input{
+      input{
+        width: 260px;
+        margin-left: 100px;
+      }
+    }
+  }
+  .container{
+    .col-3{
+      border: none;
+      height: 80px;
+      text-align: center;
+      input{
+        width: 100%;
+      }
+      button{
+        margin-top: 30px;
+      }
+    }
+    .col-9{
+      text-align: center;
+      .input-mess{
+        .userInput{
+          width: 100%;
+          height: 200px;
+          border-color: #EEE;
+        }
+        button{
+          margin-top: 30px;
+        }
+      }
+    }
+  }
+}
