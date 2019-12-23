@@ -35,31 +35,33 @@
             <div class="contact-form">
                 <p>GET IN TOUCH</p>
                 <hr>
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-3">
+                <form action="">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-3">
                             YOUR NAME
                             <div><input type="text"></div>
-                        </div>
-                        <div class="col-3">
+                            </div>
+                            <div class="col-3">
                             EMAIL
-                            <div><input type="text"></div>
-                        </div>
-                        <div class="col-3">
+                            <div><input type="email"></div>
+                            </div>
+                            <div class="col-3">
                             SUBJECT
                             <div><input type="text"></div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-9">
+                                MESSAGE
+                                <div class="input-mess"><textarea class="userInput"></textarea>
+                                <div><button type="button" class="btn btn-secondary">Secondary</button></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="row justify-content-center">
-                        <div class="col-9">
-                            MESSAGE
-                            <div class="input-mess"><textarea class="userInput"></textarea>
-                            <div><button type="button" class="btn btn-secondary">Secondary</button></div>
-                        </div>
-                    </div>
-                </div>
+                </form>
             </div>
-        </div>
         </div>
     </div>
 </body>
