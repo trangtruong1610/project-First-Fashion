@@ -71,9 +71,9 @@
     /*#endregion Apercu Font*/
 /*#endregion Fonts*/
 /*#region Debug*/
-.debug {
-    border: 1px red solid;
-}
+/*.debug {*/
+/*    border: 1px red solid;*/
+/*}*/
 /*#endregion Debug*/
 /*#region Styles*/
 .footer {
@@ -157,6 +157,8 @@ li > .tab {
     text-align: center;
     color: rgba(40, 40, 40, .9);
     line-height: 20px;
+    margin-top: 50px;
+    margin-bottom: 30px;
 }
 
 .social-icon{
@@ -246,16 +248,16 @@ a:hover {
     position: absolute;
     z-index: 1;
     display: -ms-flexbox;
-    display: flex;
     -ms-flex-align: center;
     align-items: center;
     -ms-flex-pack: center;
     justify-content: center;
     text-align: center;
     border-radius: 50%;
+    display: flex;
 }
 .con-box {
-    padding: 20px;
+    padding: 0 20px;
     width: 100%;
     display: inline-flex;
     justify-content: center;
@@ -289,16 +291,48 @@ a:hover {
     height: auto;
     margin: 0 15px;
 }
-#carousel-trending {
-    height: 400px;
+body {
+    padding-top: 20px;
 }
-.carousel-item {
-    display: inline-block;
+
+.carousel {
+    width: 100%;
 }
-.carousel-item > div > img {
-    max-width: 100%;
-    max-height: 100%;
-    display: inline-block;
+
+.slide-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .slide-box img {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .slide-box img {
+        -ms-flex: 0 0 33.3333%;
+        flex: 0 0 33.3333%;
+        max-width: 33.3333%;
+    }
+}
+
+@media (min-width: 992px)
+{
+    .slide-box img {
+        -ms-flex: 0 0 25%;
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: .5rem;
 }
 /*#endregion Styles*/
 /*#region Responsive*/
