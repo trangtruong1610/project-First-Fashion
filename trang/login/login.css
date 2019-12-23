@@ -1,8 +1,7 @@
-.container .row {
-  margin-top: 20px; }
-  .container .row button {
-    text-align: center; }
-  .container .row .col-md-6 input {
-    width: 100%; }
+.container {
+  text-align: center; }
+  .container .form-group input {
+    margin: auto;
+    width: 50%; }
 
 /*# sourceMappingURL=login.css.map */
