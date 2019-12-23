@@ -114,13 +114,13 @@ CREATE TABLE `middle` (
 
 /*Table structure for table `picture` */
 
-DROP TABLE IF EXISTS `picture`;
+DROP TABLE IF EXISTS `file`;
 
-CREATE TABLE `picture` (
-  `PictureID` int(11) NOT NULL AUTO_INCREMENT,
-  `PictureType` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+CREATE TABLE `file` (
+  `File_id` int(11) NOT NULL AUTO_INCREMENT,
+  `File_Type` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `Link` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
-  PRIMARY KEY (`PictureID`)
+  PRIMARY KEY (`File_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 /*Data for the table `picture` */
@@ -133,7 +133,7 @@ CREATE TABLE `product` (
   `Idcategory` int(11) DEFAULT NULL,
   `ProductID` int(11) NOT NULL AUTO_INCREMENT,
   `ProductName` varchar(100) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `PictureID` int(11) DEFAULT NULL,
+  `File_id` int(11) DEFAULT NULL,
   `Size` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `Color` varchar(100) COLLATE utf8_unicode_ci DEFAULT NULL,
   `Material` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
@@ -142,14 +142,14 @@ CREATE TABLE `product` (
   `Origin` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   `Status` bit(1) DEFAULT NULL,
   PRIMARY KEY (`ProductID`),
-  KEY `PictureID` (`PictureID`),
+  KEY `File_id` (`File_id`),
   KEY `Idcategory` (`Idcategory`),
-  CONSTRAINT `product_ibfk_6` FOREIGN KEY (`PictureID`) REFERENCES `picture` (`PictureID`)
+  CONSTRAINT `product_ibfk_6` FOREIGN KEY (`File_id`) REFERENCES `file` (`File_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 /*Data for the table `product` */
 
-insert  into `product`(`Idcategory`,`ProductID`,`ProductName`,`PictureID`,`Size`,`Color`,`Material`,`Description`,`ListPrice`,`Origin`,`Status`) values 
+insert  into `product`(`Idcategory`,`ProductID`,`ProductName`,`File_id`,`Size`,`Color`,`Material`,`Description`,`ListPrice`,`Origin`,`Status`) values 
 (NULL,1,'Heraldic',NULL,'52','Black','silk','Feeling regal today? Showcasing the iconic Heraldic print and DG King embroidered logo','1938$','USA',NULL),
 (NULL,2,'Distressed',NULL,'44','Black','cotton','This season, Dolce & Gabbana explore the concept of luxe sportswear bringing a contemporary update to their much-loved ','703$','Italia',NULL),
 (NULL,3,'Carnation Dressed',NULL,'38','Black','polyamade','Multicolour silk-cotton blend carnation print midi dress from Dolce & Gabbana featuring a round neck, three-quarter length','1871$','Germany',NULL),
