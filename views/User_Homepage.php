@@ -23,39 +23,43 @@
             crossorigin="anonymous"></script>
 </head>
 <body>
-<div class="container-fluid" style="display: table-row; min-height: max-content">
+<div class="container-fluid" style="min-height: max-content">
 <!--Banner-->
-    <div id="carouselId" class="debug carousel slide" data-ride="carousel">
+    <!--Carousel skeleton-->
+    <div id="carouselId" class="carousel slide" data-ride="carousel" style="height: 350px; background-color: yellow">
         <ol class="carousel-indicators">
             <li data-target="#carouselId" data-slide-to="0" class="active"></li>
             <li data-target="#carouselId" data-slide-to="1"></li>
             <li data-target="#carouselId" data-slide-to="2"></li>
         </ol>
+    <!--Carousel content-->
         <div class="carousel-inner" role="listbox">
-<!--            --><?php
-//            require ("Connection.php");
-//            $conn = conn_db();
-//
-//            require ("Admin_Banner.php");
-//            $bannerslider[] = AddBanner();
-//            foreach ($bannerslider as $slidename=>$slidelink) ?><!-- {-->
-<!--                <div class="item --><?php //echo ($slidename == 0) ? 'active' : '' ?><!--">-->
-<!--                    <img style="height: 400px;width:100%;" src="--><?php // echo $bannerslider['file_name']; ?><!--" height="100" alt="Image of every carousel"/>-->
-<!--                </div>-->
-<!--            }-->
+            <div class="carousel-item active">
+                <img data-src="holder.js/900x500/auto/#777:#555/text:First slide" alt="First slide">
+            </div>
+            <div class="carousel-item">
+                <img data-src="holder.js/900x500/auto/#666:#444/text:Second slide" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+                <img data-src="holder.js/900x500/auto/#666:#444/text:Third slide" alt="Third slide">
+            </div>
         </div>
-
+    <!--Carousel control-->
         <a class="carousel-control-prev" href="#carouselId" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <div class="icon-bg">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </div>
             <span class="sr-only">Previous</span>
         </a>
         <a class="carousel-control-next" href="#carouselId" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <div class="icon-bg">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </div>
             <span class="sr-only">Next</span>
         </a>
     </div>
-<!--Customer Categories-->
-    <div class="debug container-fluid row cus-target" style="height: 380px">
+    <!--Customer Categories-->
+    <div class="debug row cus-target">
         <div class="col-md-4 debug cus-target-bg" style="background-image: url('Cus-category-men.jpg')">
             <div class="filter">
                 <a href="">
@@ -79,28 +83,94 @@
         </div>
     </div>
 <!--Top Brands-->
-    <div class="debug">
-        <h5 class="header">TOP BRANDS</h5>
-        <div class="debug top-brand">
-            <span>
-                <img src="1280px-Chanel_logo.svg.png" style="width: 200px">
-            </span>
-            <span>
-                <img src="1280px-Chanel_logo.svg.png" style="width: 200px">
-            </span>
-            <span>
-                <img src="1280px-Chanel_logo.svg.png" style="width: 200px">
-            </span>
-            <span>
-                <img src="1280px-Chanel_logo.svg.png" style="width: 200px">
-            </span>
-            <span>
-                <img src="1280px-Chanel_logo.svg.png" style="width: 200px">
-            </span>
+    <div class="debug" style="margin-top: 20px">
+        <div class="header debug">
+            <div class="homepage-header"><img src="left-lines.png"></div>
+            <span>TOP BRANDS</span>
+            <div class="homepage-header"><img src="right-lines.png"></div>
+        </div>
+        <div class="con-box debug row">
+            <button class="col-md-2 box debug"><img src="1280px-Burberry_Logo.svg.png"></button>
+            <button class="col-md-2 box debug"><img src="1280px-Calvin_klein_logo.svg.png"></button>
+            <button class="col-md-2 box debug"><img src="Cartier_logo.svg"></button>
+            <button class="col-md-2 box debug"><img src="1280px-Chanel_logo.svg.png"></button>
+            <button class="col-md-2 box debug"><img src="1280px-Louis_Vuitton_logo.svg.png"></button>
+            <button class="col-md-2 box debug"><img src="1280px-Chanel_logo.svg.png"></button>
+            <button class="col-md-2 box debug"><img src="Cartier_logo.svg"></button>
+            <button class="col-md-2 box debug"><img src="1280px-Louis_Vuitton_logo.svg.png"></button>
+            <button class="col-md-2 box debug"><img src="1280px-Calvin_klein_logo.svg.png"></button>
+            <button class="col-md-2 box debug"><img src="1280px-Prada-Logo.svg.png"></button>
         </div>
     </div>
 <!--Trending-->
-    <div class="debug"></div>
+    <div class="debug" style="margin-top: 20px">
+        <div class="header debug">
+            <div class="homepage-header"><img src="left-lines.png"></div>
+            <span>TRENDING</span>
+            <div class="homepage-header"><img src="right-lines.png"></div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div id="carousel-trending" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-trending" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-trending" data-slide-to="1"></li>
+                <li data-target="#carousel-trending" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active row debug">
+                    <div class="col-md-3 debug">
+                        <img src="images/Cus-category-children.jpg" alt="First slide">
+                    </div>
+                    <div class="col-md-3 debug">
+                        <img src="images/Cus-category-women.jpg"  alt="First slide">
+                    </div>
+                    <div class="col-md-3 debug">
+                        <img src="images/Cus-category-men.jpg"  alt="First slide">
+                    </div>
+                    <div class="col-md-3 debug">
+                        <img src="images/Cus-category-children.jpg"  alt="First slide">
+                    </div>
+                </div>
+                <div class="carousel-item row">
+                    <div class="col-md-3">
+                        <img data-src="holder.js/900x500/auto/#666:#444/text:Second slide" alt="Second slide">
+                    </div>
+                    <div class="col-md-3">
+                        <img data-src="holder.js/900x500/auto/#666:#444/text:Second slide" alt="Second slide">
+                    </div>
+                    <div class="col-md-3">
+                        <img data-src="holder.js/900x500/auto/#666:#444/text:Second slide" alt="Second slide">
+                    </div>
+                    <div class="col-md-3">
+                        <img data-src="holder.js/900x500/auto/#666:#444/text:Second slide" alt="Second slide">
+                    </div>
+                </div>
+                <div class="carousel-item row">
+                    <div class="col-md-3">
+                        <img data-src="holder.js/900x500/auto/#666:#444/text:Third slide" alt="Third slide">
+                    </div>
+                    <div class="col-md-3">
+                        <img data-src="holder.js/900x500/auto/#666:#444/text:Third slide" alt="Third slide">
+                    </div>
+                    <div class="col-md-3">
+                        <img data-src="holder.js/900x500/auto/#666:#444/text:Third slide" alt="Third slide">
+                    </div>
+                    <div class="col-md-3">
+                        <img data-src="holder.js/900x500/auto/#666:#444/text:Third slide" alt="Third slide">
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carousel-trending" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel-trending" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
 </div>
 </body>
 </html>

@@ -29,30 +29,40 @@
 <div class="debug footer">
 <!--    Footer Part 1 Shop Intro     -->
     <div class="debug row footer1">
-        <div class="debug col-lg-3">
+        <div class="debug col-lg-3 footer-content" style="justify-content: center">
             logo
         </div>
         
-        <div class="debug col-lg-6">
+        <div class="debug col-lg-6 footer-content">
             <h5 class="header5">ABOUT THE SHOP</h5>
             <p>Sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio.</p>
         </div>
         
-        <div class="debug col-lg-3">
+        <div class="debug col-lg-3 footer-content">
             <h5 class="header5">FOLLOW US ON SOCIAL</h5>
-            <div class="row social-icon">
-                <i class="fa fa-facebook" aria-hidden="true"></i>
-                <i class="fa fa-twitter" aria-hidden="true"></i>
-                <i class="fa fa-google" aria-hidden="true"></i>
-                <i class="fa fa-youtube" aria-hidden="true"></i>
-                <i class="fa fa-skype" aria-hidden="true"></i>
+            <div class="row social-icon debug">
+                <a href="">
+                    <i class="fa fa-facebook debug" aria-hidden="true"></i>
+                </a>
+                <a href="">
+                    <i class="fa fa-twitter debug" aria-hidden="true"></i>
+                </a>
+                <a href="">
+                    <i class="fa fa-google debug" aria-hidden="true"></i>
+                </a>
+                <a href="">
+                    <i class="fa fa-youtube debug" aria-hidden="true"></i>
+                </a>
+                <a href="">
+                    <i class="fa fa-skype debug" aria-hidden="true"></i>
+                </a>
             </div>
         </div>
     </div>
     <div class="line"></div>
     <!--    Footer Part 2 Shop Activities   -->
     <div class="debug row footer2">
-        <div class="debug col-lg-3">
+        <div class="debug col-lg-4">
             <div>
                 <h5 class="header5">OPENNING TIME</h5>
                 <ul class="list-lev1">
@@ -68,71 +78,73 @@
                     </li>
                 </ul>
             </div>
-            <div class="footer-item">
-                <span><i class="fa fa-phone fa-border" style="font-weight: bold" aria-hidden="true"></i></span>
-                <span style="font-family: 'Apercu Medium'; font-size: 12px; color: rgba(40,40,40,.9); -height: 15px">Call us: </span>
-                <span style="font-family: 'Century Gothic'; font-weight: bold; font-size: 20px; -height: 20px">3999 9993</span>
+            <div class="debug footer-item">
+                <div><i class="fa fa-phone fa-call" style="font-weight: bold; font-size: 20px; line-height: 1.8rem; padding-left: 5px" aria-hidden="true"></i></div>
+                <div style="font-family: 'Apercu Medium'; font-size: 15px; color: rgba(40,40,40,.9)">Call us: </div>
+                <div style="font-family: 'Century Gothic'; font-size: 25px; letter-spacing: 2px">3999 9993</div>
             </div>
         </div>
         
-        <div class="debug col-lg-3">
-            <h5 class="header5">CATEGORIES</h5>
-            <div>
-                <ul class="list-lev1">
-                    <li class="list-lev2">
-                        <a href="">
-                            Coats/Jackets
-                        </a>
-                    </li>
-                    <li class="list-lev2">
-                        <a href="">
-                            Tops
-                        </a>
-                    </li>
-                    <li class="list-lev2">
-                        <a href="">
-                            Bottoms
-                        </a>
-                    </li>
-                    <li class="list-lev2">
-                        <a href="">
-                            Accessories
-                        </a>
-                    </li>
-                </ul>
+        <div class="debug col-lg-4 row">
+            <div class="debug col-sm-6">
+                <h5 class="header5">CATEGORIES</h5>
+                <div>
+                    <ul class="list-lev1">
+                        <li class="list-lev2 debug">
+                            <a href="" class="debug list-lev1-item">
+                                Coats/Jackets
+                            </a>
+                        </li>
+                        <li class="list-lev2 debug">
+                            <a href="" class="debug list-lev1-item">
+                                Tops
+                            </a>
+                        </li>
+                        <li class="list-lev2 debug">
+                            <a href="" class="debug list-lev1-item">
+                                Bottoms
+                            </a>
+                        </li>
+                        <li class="list-lev2 debug">
+                            <a href="" class="debug list-lev1-item">
+                                Accessories
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="debug col-sm-6">
+
+                <h5 class="header5">INFORMATIONS</h5>
+                <div>
+                    <ul class="list-lev1">
+                        <li class="list-lev2">
+                            <a href="" class="debug list-lev1-item">
+                                Store Information
+                            </a>
+                        </li>
+                        <li class="list-lev2">
+                            <a href="" class="debug list-lev1-item">
+                                Our Brands
+                            </a>
+                        </li>
+                        <li class="list-lev2">
+                            <a href="" class="debug list-lev1-item">
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
-        
-        <div class="debug col-lg-3">
-            <h5 class="header5">INFORMATIONS</h5>
-            <div>
-                <ul class="list-lev1">
-                    <li class="list-lev2">
-                        <a href="">
-                            Store Information
-                        </a>
-                    </li>
-                    <li class="list-lev2">
-                        <a href="">
-                            Our Brands
-                        </a>
-                    </li>
-                    <li class="list-lev2">
-                        <a href="">
-                            Contact
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        
-        <div class="debug col-lg-3">
+
+        <div class="debug col-lg-4">
             <h5 class="header5">CONTACT</h5>
-            <ul class="list-lev1">
+            <ul class="list-lev1 debug">
                 <li class="list-lev2" style="font-weight: bold">
-                    Warehouse & Offices
+                    <div class="debug list-lev1-item">Warehouse & Offices</div>
                 </li>
-                <li class="list-lev2-item">
+                <li class="list-lev2-item debug">
                     <span>7th Floor, A Building, 51 Nguyen Hue Street, Dist. 1, Ho Chi Minh City, Vietnam</span>
                     <br>
                     <span>
@@ -140,11 +152,11 @@
                     </span>
                 </li>
             </ul>
-            <ul class="list-lev1">
+            <ul class="list-lev1 debug">
                 <li class="list-lev2"  style="font-weight: bold">
-                    Retail Store
+                    <div class="debug list-lev1-item">Retail Store</div>
                 </li>
-                <li class="list-lev2-item">
+                <li class="list-lev2-item debug">
                     <span>15 Nguyen Hue Street, Dist. 1, Ho Chi Minh City, Vietnam</span>
                     <br>
                     <span>
