@@ -27,13 +27,15 @@
 <div class="container-fluid">
 <!--    Header-->
     <?php
-    include "./header.php";
+    include "header.php";
     ?>
 <!--    Content-->
-
+    <?php
+    include "../views/User_Homepage.php"
+    ?>
 <!--    Footer-->
     <?php
-    include "./footer.php";
+    include "footer.php";
     ?>
 </div>
 

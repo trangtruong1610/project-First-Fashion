@@ -5,8 +5,8 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <!-- Local Source -->
-    <script src="../assets/scripts/scripts.js"></script>
-    <link rel="stylesheet" href="../assets/css/styles.css">
+    <script src="scripts/scripts.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -25,7 +25,6 @@
 <body>
 <div class="container-fluid" style="min-height: max-content">
 <!--Banner-->
-    <!--Carousel skeleton-->
     <div id="carouselId" class="carousel slide" data-ride="carousel" style="height: 350px; background-color: yellow">
         <ol class="carousel-indicators">
             <li data-target="#carouselId" data-slide-to="0" class="active"></li>
@@ -58,24 +57,24 @@
             <span class="sr-only">Next</span>
         </a>
     </div>
-    <!--Customer Categories-->
+<!--Customer Categories-->
     <div id="categories">
         <div class="debug row cus-target">
-            <div class="col-md-4 debug cus-target-bg" style="background-image: url('../assets/images/Cus-category-men.jpg')">
+            <div class="col-md-4 debug cus-target-bg" style="background-image: url('images/Cus-category-men.jpg')">
                 <div class="filter">
                     <a href="">
                         <span class="cus-target">FOR MEN</span>
                     </a>
                 </div>
             </div>
-            <div class="col-md-4 debug cus-target-bg" style="background-image: url('../assets/images/Cus-category-women.jpg')">
+            <div class="col-md-4 debug cus-target-bg" style="background-image: url('images/Cus-category-women.jpg')">
                 <div class="filter">
                     <a href="">
                         <span class="cus-target">FOR WOMEN</span>
                     </a>
                 </div>
             </div>
-            <div class="col-md-4 debug cus-target-bg" style="background-image: url('../assets/images/Cus-category-children.jpg')">
+            <div class="col-md-4 debug cus-target-bg" style="background-image: url('images/Cus-category-children.jpg')">
                 <div class="filter">
                     <a href="">
                         <span class="cus-target">FOR CHILDREN</span>
@@ -88,21 +87,21 @@
     <div id="brands">
         <div class="debug" style="margin-top: 20px">
             <div class="header debug">
-                <div class="homepage-header"><img src="../assets/images/left-lines.png"></div>
+                <div class="homepage-header"><img src="images/left-lines.png"></div>
                 <span>TOP BRANDS</span>
-                <div class="homepage-header"><img src="../assets/images/right-lines.png"></div>
+                <div class="homepage-header"><img src="images/right-lines.png"></div>
             </div>
             <div class="con-box debug row">
-                <button class="col-md-2 box debug"><img src="../assets/images/1280px-Burberry_Logo.svg.png"></button>
-                <button class="col-md-2 box debug"><img src="../assets/images/1280px-Calvin_klein_logo.svg.png"></button>
-                <button class="col-md-2 box debug"><img src="../assets/images/Cartier_logo.svg"></button>
-                <button class="col-md-2 box debug"><img src="../assets/images/1280px-Chanel_logo.svg.png"></button>
-                <button class="col-md-2 box debug"><img src="../assets/images/1280px-Louis_Vuitton_logo.svg.png"></button>
-                <button class="col-md-2 box debug"><img src="../assets/images/1280px-Chanel_logo.svg.png"></button>
-                <button class="col-md-2 box debug"><img src="../assets/images/Cartier_logo.svg"></button>
-                <button class="col-md-2 box debug"><img src="../assets/images/1280px-Louis_Vuitton_logo.svg.png"></button>
-                <button class="col-md-2 box debug"><img src="../assets/images/1280px-Calvin_klein_logo.svg.png"></button>
-                <button class="col-md-2 box debug"><img src="../assets/images/1280px-Prada-Logo.svg.png"></button>
+                <button class="col-md-2 box debug"><img src="images/1280px-Burberry_Logo.svg.png"></button>
+                <button class="col-md-2 box debug"><img src="images/1280px-Calvin_klein_logo.svg.png"></button>
+                <button class="col-md-2 box debug"><img src="images/Cartier_logo.svg"></button>
+                <button class="col-md-2 box debug"><img src="images/1280px-Chanel_logo.svg.png"></button>
+                <button class="col-md-2 box debug"><img src="images/1280px-Louis_Vuitton_logo.svg.png"></button>
+                <button class="col-md-2 box debug"><img src="images/1280px-Chanel_logo.svg.png"></button>
+                <button class="col-md-2 box debug"><img src="images/Cartier_logo.svg"></button>
+                <button class="col-md-2 box debug"><img src="images/1280px-Louis_Vuitton_logo.svg.png"></button>
+                <button class="col-md-2 box debug"><img src="images/1280px-Calvin_klein_logo.svg.png"></button>
+                <button class="col-md-2 box debug"><img src="images/1280px-Prada-Logo.svg.png"></button>
             </div>
         </div>
     </div>
@@ -110,9 +109,9 @@
     <div id="trending">
         <div class="debug" style="margin-top: 20px">
             <div class="header debug">
-                <div class="homepage-header"><img src="../assets/images/left-lines.png"></div>
+                <div class="homepage-header"><img src="images/left-lines.png"></div>
                 <span>TRENDING</span>
-                <div class="homepage-header"><img src="../assets/images/right-lines.png"></div>
+                <div class="homepage-header"><img src="images/right-lines.png"></div>
             </div>
         </div>
         <div class="container-fluid">
@@ -126,23 +125,23 @@
                         <div class="carousel-item active">
                             <div class="d-none d-lg-block">
                                 <div class="slide-box">
-                                    <img src="../assets/images/Cus-category-men.jpg" alt="First slide">
-                                    <img src="../assets/images/Cus-category-women.jpg" alt="First slide">
-                                    <img src="../assets/images/Cus-category-children.jpg" alt="First slide">
-                                    <img src="../assets/images/Cus-category-women.jpg" alt="First slide">
+                                    <img src="images/Cus-category-men.jpg" alt="First slide">
+                                    <img src="images/Cus-category-women.jpg" alt="First slide">
+                                    <img src="images/Cus-category-children.jpg" alt="First slide">
+                                    <img src="images/Cus-category-women.jpg" alt="First slide">
                                 </div>
                             </div>
                             <div class="d-none d-md-block d-lg-none">
                                 <div class="slide-box">
-                                    <img src="../assets/images/Cus-category-men.jpg" alt="First slide">
-                                    <img src="../assets/images/Cus-category-women.jpg" alt="First slide">
-                                    <img src="../assets/images/Cus-category-children.jpg" alt="First slide">
+                                    <img src="images/Cus-category-men.jpg" alt="First slide">
+                                    <img src="images/Cus-category-women.jpg" alt="First slide">
+                                    <img src="images/Cus-category-children.jpg" alt="First slide">
                                 </div>
                             </div>
                             <div class="d-none d-sm-block d-md-none">
                                 <div class="slide-box">
-                                    <img src="../assets/images/Cus-category-men.jpg" alt="First slide">
-                                    <img src="../assets/images/Cus-category-women.jpg" alt="First slide">
+                                    <img src="images/Cus-category-men.jpg" alt="First slide">
+                                    <img src="images/Cus-category-women.jpg" alt="First slide">
                                 </div>
                             </div>
                             <div class="d-block d-sm-none">
@@ -152,27 +151,27 @@
                         <div class="carousel-item">
                             <div class="d-none d-lg-block">
                                 <div class="slide-box">
-                                    <img src="../assets/images/Cus-category-children.jpg" alt="Second slide">
-                                    <img src="../assets/images/Cus-category-men.jpg" alt="Second slide">
-                                    <img src="../assets/images/Cus-category-women.jpg" alt="Second slide">
-                                    <img src="../assets/images/Cus-category-children.jpg" alt="Second slide">
+                                    <img src="images/Cus-category-children.jpg" alt="Second slide">
+                                    <img src="images/Cus-category-men.jpg" alt="Second slide">
+                                    <img src="images/Cus-category-women.jpg" alt="Second slide">
+                                    <img src="images/Cus-category-children.jpg" alt="Second slide">
                                 </div>
                             </div>
                             <div class="d-none d-md-block d-lg-none">
                                 <div class="slide-box">
-                                    <img src="../assets/images/Cus-category-children.jpg" alt="Second slide">
-                                    <img src="../assets/images/Cus-category-men.jpg" alt="Second slide">
-                                    <img src="../assets/images/Cus-category-women.jpg" alt="Second slide">
+                                    <img src="images/Cus-category-children.jpg" alt="Second slide">
+                                    <img src="images/Cus-category-men.jpg" alt="Second slide">
+                                    <img src="images/Cus-category-women.jpg" alt="Second slide">
                                 </div>
                             </div>
                             <div class="d-none d-sm-block d-md-none">
                                 <div class="slide-box">
-                                    <img src="../assets/images/Cus-category-children.jpg" alt="Second slide">
-                                    <img src="../assets/images/Cus-category-men.jpg" alt="Second slide">
+                                    <img src="images/Cus-category-children.jpg" alt="Second slide">
+                                    <img src="images/Cus-category-men.jpg" alt="Second slide">
                                 </div>
                             </div>
                             <div class="d-block d-sm-none">
-                                <img class="d-block w-100" src="../assets/images/Cus-category-children.jpg" alt="Second slide">
+                                <img class="d-block w-100" src="images/Cus-category-children.jpg" alt="Second slide">
                             </div>
                         </div>
                     </div>

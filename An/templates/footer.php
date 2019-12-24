@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Local Sources -->
-    <link rel="stylesheet" href="../assets/css/styles.css">
-    <script src="/An/assets/scripts/scripts.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://bit.ly/2QeX4Qh"></script>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -26,7 +26,7 @@
             crossorigin="anonymous"></script>
 </head>
 <body>
-<div class="debug footer">
+<div class="debug footer container-fluid">
 <!--    Footer Part 1 Shop Intro     -->
     <div class="debug row footer1">
         <div class="debug col-lg-3 footer-content" style="justify-content: center">
@@ -80,8 +80,8 @@
             </div>
             <div class="debug footer-item">
                 <div><i class="fa fa-phone fa-call" style="font-weight: bold; font-size: 20px; line-height: 1.8rem; padding-left: 5px" aria-hidden="true"></i></div>
-                <div style="font-family: 'Apercu Medium'; font-size: 15px; color: rgba(40,40,40,.9)">Call us: </div>
-                <div style="font-family: 'Century Gothic'; font-size: 25px; letter-spacing: 2px">3999 9993</div>
+                <div style="font-family: 'Apercu Medium',sans-serif; font-size: 15px; color: rgba(40,40,40,.9)">Call us: </div>
+                <div style="font-family: 'Century Gothic',sans-serif; font-size: 25px; letter-spacing: 2px">3999 9993</div>
             </div>
         </div>
         
