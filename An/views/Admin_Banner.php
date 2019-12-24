@@ -1,5 +1,5 @@
 <?php
-require ("Connection.php");
+require("Connection.php");
 $conn = conn_db();
 
 //Upload Image
