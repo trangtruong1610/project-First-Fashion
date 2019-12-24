@@ -2,71 +2,71 @@
     /*#region Century Gothic Font*/
         @font-face {
             font-family: "Century Gothic";
-            src: url("/assets/fonts/Century Gothic/GOTHIC.TTF");
+            src: url("/An/assetsets/fonts/Century Gothic/GOTHIC.TTF");
         }
         @font-face {
             font-family: "Century Gothic Bold";
-            src: url("/assets/fonts/Century Gothic/GOTHICB.TTF");
+            src: url("/An/assetsets/fonts/Century Gothic/GOTHICB.TTF");
         }
         @font-face {
             font-family: "Century Gothic Bold Italic";
-            src: url("/assets/fonts/Century Gothic/GOTHICBI.TTF");
+            src: url("/An/assetsets/fonts/Century Gothic/GOTHICBI.TTF");
         }
         @font-face {
             font-family: "Century Gothic Italic";
-            src: url('/assets/fonts/Century Gothic/GOTHICBI.TTF');
+            src: url('/An/assetsets/fonts/Century Gothic/GOTHICBI.TTF');
         }
     /*#endregion Century Gothic Font*/
     /*#region Cambria Font*/
         @font-face {
             font-family: "Cambria";
-            src: url("/assets/fonts/Cambria/cambria.ttc");
+            src: url("/An/assetsets/fonts/Cambria/cambria.ttc");
         }
         @font-face {
             font-family: "Cambria Bold";
-            src: url("/assets/fonts/Cambria/cambriab.ttf");
+            src: url("/An/assetsets/fonts/Cambria/cambriab.ttf");
         }
         @font-face {
             font-family: "Cambria Italic";
-            src: url("/assets/fonts/Cambria/cambriai.ttf");
+            src: url("/An/assetsets/fonts/Cambria/cambriai.ttf");
         }
         @font-face {
             font-family: "Cambria Z";
-            src: url("/assets/fonts/Cambria/cambriaz.ttf");
+            src: url("/An/assetsets/fonts/Cambria/cambriaz.ttf");
         }
     /*#endregion Cambria Font*/
     /*#region Apercu Font*/
         @font-face {
             font-family: "Apercu";
-            src: url("/assets/fonts/Apercu/Apercu Bold.otf");
+            src: url("/An/assetsets/fonts/Apercu/Apercu Bold.otf");
         }
         @font-face {
             font-family: "Apercu Bold Italic";
-            src: url("/assets/fonts/Apercu/Apercu Bold Italic.otf");
+            src: url("/An/assetsets/fonts/Apercu/Apercu Bold Italic.otf");
         }
         @font-face {
             font-family: "Apercu Italic";
-            src: url("/assets/fonts/Apercu/Apercu Italic.otf");
+            src: url("/An/assetsets/fonts/Apercu/Apercu Italic.otf");
         }
         @font-face {
             font-family: "Apercu Light Italic";
-            src: url("/assets/fonts/Apercu/Apercu Light Italic.otf");
+            src: url("/An/assetsets/fonts/Apercu/Apercu Light Italic.otf");
         }
          @font-face {
              font-family: "Apercu Medium";
-             src: url("/assets/fonts/Apercu/Apercu Medium.otf");
+             src: url("/An/assetsets/fonts/Apercu/Apercu Medium.otf");
          }
          @font-face {
              font-family: "Apercu Medium Italic";
-             src: url("/assets/fonts/Apercu/Apercu Medium Italic.otf");
+             src: url("/An/assetsets/fonts/Apercu/Apercu Medium Italic.otf");
          }
          @font-face {
              font-family: "Apercu Regular";
-             src: url("/assets/fonts/Apercu/Apercu Regular.otf");
+             src: url("/An/assetsets/fonts/Apercu/Apercu Regular.otf");
          }
          @font-face {
              font-family: "Apercu Light";
-             src: url("/assets/fonts/Apercu/Apercu Light.otf");
+             src: url("/An/assetsets/fonts/Apercu/Apercu Light.otf");
          }
     /*#endregion Apercu Font*/
 /*#endregion Fonts*/
