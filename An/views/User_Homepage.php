@@ -22,7 +22,7 @@
             integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
             crossorigin="anonymous"></script>
 </head>
-<body>
+<body class="content">
 <div class="container-fluid" style="min-height: max-content">
 <!--Banner-->
     <div id="carouselId" class="carousel slide" data-ride="carousel" style="height: 350px; background-color: yellow">
@@ -59,6 +59,11 @@
     </div>
 <!--Customer Categories-->
     <div id="categories">
+        <div class="header debug">
+            <div class="homepage-header"><img src="images/left-lines.png"></div>
+            <span>CATERGORIES</span>
+            <div class="homepage-header"><img src="images/right-lines.png"></div>
+        </div>
         <div class="debug row cus-target">
             <div class="col-md-4 debug cus-target-bg" style="background-image: url('images/Cus-category-men.jpg')">
                 <div class="filter">

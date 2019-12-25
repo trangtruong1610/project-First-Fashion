@@ -15,10 +15,44 @@ $('.carousel.carousel-multi-item.v-2 .carousel-item').each(function(){
     }
 });
 // Range Price Slider
-var rangeslider = document.getElementById("sliderRange");
-var output = document.getElementById("demo");
-output.innerHTML = rangeslider.value;
+function PriceRange() { (function () {
+    var parent = document.querySelector(".price-slider");
+    if(!parent) return;
 
-rangeslider.oninput = function() {
-    output.innerHTML = this.value;
-}
+    var
+        rangeS = parent.querySelectorAll("input[type=range]"),
+        numberS = parent.querySelectorAll("input[type=number]");
+
+    rangeS.forEach(function(el) {
+        el.oninput = function() {
+            var slide1 = parseFloat(rangeS[0].value),
+                slide2 = parseFloat(rangeS[1].value);
+
+            if (slide1 > slide2) {
+                [slide1, slide2] = [slide2, slide1];
+            }
+
+            numberS[0].value = slide1;
+            numberS[1].value = slide2;
+        }
+    });
+
+    numberS.forEach(function(el) {
+        el.oninput = function() {
+            var number1 = parseFloat(numberS[0].value),
+                number2 = parseFloat(numberS[1].value);
+
+            if (number1 > number2) {
+                var tmp = number1;
+                numberS[0].value = number2;
+                numberS[1].value = tmp;
+            }
+
+            rangeS[0].value = number1;
+            rangeS[1].value = number2;
+
+        }
+    });
+
+})()
+};

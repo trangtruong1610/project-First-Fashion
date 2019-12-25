@@ -8,11 +8,19 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Local Sources -->
     <link rel="stylesheet" href="css/styles.css">
-    <script src="https://bit.ly/2QeX4Qh"></script>
+    <script src="scripts/scripts.js"></script>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Font Awesme -->
+    <link rel="stylesheet" href="css/fonts.scss">
+    <link rel="stylesheet" href="fonts/Font%20Awesome%205.12.0/css/all.css">
+    <link rel="stylesheet" href="fonts/Font%20Awesome%205.12.0/css/brands.css">
+    <link rel="stylesheet" href="fonts/Font%20Awesome%205.12.0/css/fontawesome.css">
+    <link rel="stylesheet" href="fonts/Font%20Awesome%205.12.0/css/regular.css">
+    <link rel="stylesheet" href="fonts/Font%20Awesome%205.12.0/css/solid.css">
+    <link rel="stylesheet" href="fonts/Font%20Awesome%205.12.0/css/svg-with-js.css">
+    <link rel="stylesheet" href="fonts/Font%20Awesome%205.12.0/css/v4-shims.css">
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -27,6 +35,7 @@
 </head>
 <body>
 <div class="debug footer container-fluid">
+    <div id="line-break-content-footer"></div>
 <!--    Footer Part 1 Shop Intro     -->
     <div class="debug row footer1">
         <div class="debug col-lg-3 footer-content" style="justify-content: center">
@@ -34,27 +43,27 @@
         </div>
         
         <div class="debug col-lg-6 footer-content">
-            <h5 class="header5">ABOUT THE SHOP</h5>
+            <div class="header5">ABOUT THE SHOP</div>
             <p>Sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio.</p>
         </div>
         
         <div class="debug col-lg-3 footer-content">
-            <h5 class="header5">FOLLOW US ON SOCIAL</h5>
+            <div class="header5">FOLLOW US ON SOCIAL</div>
             <div class="row social-icon debug">
                 <a href="">
-                    <i class="fa fa-facebook debug" aria-hidden="true"></i>
+                    <i class="fab fa-facebook-f fa-lg"></i>
                 </a>
                 <a href="">
-                    <i class="fa fa-twitter debug" aria-hidden="true"></i>
+                    <i class="fab fa-twitter fa-lg" aria-hidden="true"></i>
                 </a>
                 <a href="">
-                    <i class="fa fa-google debug" aria-hidden="true"></i>
+                    <i class="fab fa-google fa-lg" aria-hidden="true"></i>
                 </a>
                 <a href="">
-                    <i class="fa fa-youtube debug" aria-hidden="true"></i>
+                    <i class="fab fa-youtube fa-lg" aria-hidden="true"></i>
                 </a>
                 <a href="">
-                    <i class="fa fa-skype debug" aria-hidden="true"></i>
+                    <i class="fab fa-skype fa-lg" aria-hidden="true"></i>
                 </a>
             </div>
         </div>
@@ -64,7 +73,7 @@
     <div class="debug row footer2">
         <div class="debug col-lg-4">
             <div>
-                <h5 class="header5">OPENNING TIME</h5>
+                <div class="header5">OPENNING TIME</div>
                 <ul class="list-lev1">
                     <li class="list-lev2">
                         <span>Monday - Friday</span>
@@ -78,16 +87,18 @@
                     </li>
                 </ul>
             </div>
-            <div class="debug footer-item">
-                <div><i class="fa fa-phone fa-call" style="font-weight: bold; font-size: 20px; line-height: 1.8rem; padding-left: 5px" aria-hidden="true"></i></div>
-                <div style="font-family: 'Apercu Medium',sans-serif; font-size: 15px; color: rgba(40,40,40,.9)">Call us: </div>
-                <div style="font-family: 'Century Gothic',sans-serif; font-size: 25px; letter-spacing: 2px">3999 9993</div>
+            <div class="footer-item debug">
+                <div class="fa-call">
+                    <i class="fas fa-phone fa-lg debug" aria-hidden="true"></i>
+                </div>
+                <div id="text-call">Call us: </div>
+                <div id="num-call">3999 9993</div>
             </div>
         </div>
         
         <div class="debug col-lg-4 row">
             <div class="debug col-sm-6">
-                <h5 class="header5">CATEGORIES</h5>
+                <div class="header5">CATEGORIES</div>
                 <div>
                     <ul class="list-lev1">
                         <li class="list-lev2 debug">
@@ -115,7 +126,7 @@
             </div>
             <div class="debug col-sm-6">
 
-                <h5 class="header5">INFORMATIONS</h5>
+                <div class="header5">INFORMATIONS</div>
                 <div>
                     <ul class="list-lev1">
                         <li class="list-lev2">
@@ -139,7 +150,7 @@
         </div>
 
         <div class="debug col-lg-4">
-            <h5 class="header5">CONTACT</h5>
+            <div class="header5">CONTACT</div>
             <ul class="list-lev1 debug">
                 <li class="list-lev2" style="font-weight: bold">
                     <div class="debug list-lev1-item">Warehouse & Offices</div>
@@ -168,8 +179,9 @@
     </div>
     <div class="line"></div>
 <!--    Footer Part 3 Copyright Note    -->
-    <div class="debug copyright-footer footer3">
-        © 2019 First Fashion Store.<br>All Rights Reserved.
+    <div class="debug footer3">
+        <div class="copyright-footer">© 2019 First Fashion Store.</div>
+        <div class="copyright-footer">All Rights Reserved.</div>
     </div>
 </div>
 </body>
