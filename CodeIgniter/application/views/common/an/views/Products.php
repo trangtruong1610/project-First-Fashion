@@ -1,3 +1,5 @@
+<?php $this->load->view('/common/trang/view/header'); ?>
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -219,3 +221,5 @@
 </script>
 </body>
 </html>
+
+<?php $this->load->view('/common/an/templates/footer'); ?>

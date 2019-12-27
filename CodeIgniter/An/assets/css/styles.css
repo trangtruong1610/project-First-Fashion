@@ -76,6 +76,14 @@
 /*}*/
 /*#endregion Debug*/
 /*#region Styles*/
+.line-header {
+	border-bottom: 2px solid rgba(30,30,30,.8);
+	margin-bottom: 20px;
+}
+.line-footer {
+	border-top: 2px solid rgba(30,30,30,.8);
+	margin-top: 20px;
+}
 .footer {
     display: table-row;
     position: relative;

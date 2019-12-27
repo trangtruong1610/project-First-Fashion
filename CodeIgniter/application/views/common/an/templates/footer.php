@@ -27,6 +27,7 @@
 </head>
 <body>
 <div class="debug footer">
+	<div class="line-footer"></div>
 <!--    Footer Part 1 Shop Intro     -->
     <div class="debug row footer1">
         <div class="debug col-lg-3 footer-content" style="justify-content: center">
