@@ -1,5 +1,6 @@
 <?php
-class Home extends CI_Controller
+
+class Contact extends CI_Controller
 {
 	public function __construct()
 	{
@@ -8,9 +9,8 @@ class Home extends CI_Controller
 
 	public function index()
 	{
-		$this->load->view('/client/User_Homepage.php');
+		$this->load->view('/client/contact.php');
 	}
 }
-
 
 ?>

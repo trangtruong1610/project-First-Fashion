@@ -1,16 +1,27 @@
+<<<<<<< HEAD
 <?php $this->load->view('/common/trang/view/header'); ?>
 
 <!doctype html>
 <html lang="en">
 <head>
     <title>Products</title>
+=======
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Prouducts</title>
+>>>>>>> Trang
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Local Sources -->
     <link rel="stylesheet" href="<?= base_url('CodeIgniter/An/assets/css/styles.css') ?>">
+<<<<<<< HEAD
     <script src="<?= base_url('CodeIgniter/An/assets/scripts/scripts.js') ?>"></script>
+=======
+    <script src="<?php echo base_url('CodeIgniter/An/assets/scripts/scripts.js') ?>"></script>
+>>>>>>> Trang
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -88,6 +99,7 @@
                 </div>
                 <div class="price-slider debug">
                     <div class="slider-number-input debug">
+<<<<<<< HEAD
                         <input type="number" value="0" min="0" max="2000">
                         to
                         <input type="number" value="1000" min="0" max="2000">
@@ -95,6 +107,15 @@
                     <div class="slider-range debug">
 						<input value="0" min="0" max="2000" step="50" type="range">
                         <input value="1000" min="0" max="2000" step="100" type="range">
+=======
+                        <input type="number" value="0" min="0" max="2000"/>
+                        to
+                        <input type="number" value="1000" min="0" max="2000"/>
+                    </div>
+                    <div class="slider-range debug">
+                        <input value="0" min="0" max="2000" step="50" type="range"/>
+                        <input value="1000" min="0" max="2000" step="100" type="range"/>
+>>>>>>> Trang
                         <svg class="debug" width="100%" height="20">
                             <line x1="4" y1="0" x2="300" y2="0" stroke="#212121" stroke-width="12" stroke-dasharray="1 28"></line>
                         </svg>
@@ -221,5 +242,8 @@
 </script>
 </body>
 </html>
+<<<<<<< HEAD
 
 <?php $this->load->view('/common/an/templates/footer'); ?>
+=======
+>>>>>>> Trang

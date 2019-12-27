@@ -8,7 +8,11 @@ class Product extends CI_Controller
 
 	public function index()
 	{
+<<<<<<< HEAD
 		$this->load->view('/common/An/views/Products.php');
+=======
+		$this->load->view('/client/Product.php');
+>>>>>>> Trang
 	}
 }
 
