@@ -42,19 +42,19 @@
             <h5 class="header5">FOLLOW US ON SOCIAL</h5>
             <div class="row social-icon debug">
                 <a href="">
-                    <i class="fa fa-facebook debug" aria-hidden="true"></i>
+                    <i class="fab fa-facebook fa-2x debug" aria-hidden="true"></i>
                 </a>
                 <a href="">
-                    <i class="fa fa-twitter debug" aria-hidden="true"></i>
+                    <i class="fab fa-twitter fa-2x debug" aria-hidden="true"></i>
                 </a>
                 <a href="">
-                    <i class="fa fa-google debug" aria-hidden="true"></i>
+                    <i class="fab fa-google fa-2x debug" aria-hidden="true"></i>
                 </a>
                 <a href="">
-                    <i class="fa fa-youtube debug" aria-hidden="true"></i>
+                    <i class="fab fa-youtube fa-2x debug" aria-hidden="true"></i>
                 </a>
                 <a href="">
-                    <i class="fa fa-skype debug" aria-hidden="true"></i>
+                    <i class="fab fa-skype fa-2x debug" aria-hidden="true"></i>
                 </a>
             </div>
         </div>
@@ -115,7 +115,7 @@
             </div>
             <div class="debug col-sm-6">
 
-                <h5 class="header5">INFORMATIONS</h5>
+                <h5 class="header5">INFORMATION</h5>
                 <div>
                     <ul class="list-lev1">
                         <li class="list-lev2">
@@ -157,7 +157,7 @@
                     <div class="debug list-lev1-item">Retail Store</div>
                 </li>
                 <li class="list-lev2-item debug">
-                    <span>15 Nguyen Hue Street, Dist. 1, Ho Chi Minh City, Vietnam</span>
+                    <span>24 Phan Liem Street, Da Kao Ward, Dist. 1, Ho Chi Minh City, Vietnam</span>
                     <br>
                     <span>
                         (+84)28 3999 9993 / (+84)28 3999 9992

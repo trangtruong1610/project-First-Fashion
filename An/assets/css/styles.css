@@ -1,23 +1,89 @@
-/*#region Debug*/
-.debug {
-    border: 1px red solid;
+/*#region Fonts*/
+/*#region Century Gothic Font*/
+@font-face {
+    font-family: "Century Gothic";
+    src: url("/CodeIgniter/An/assets/fonts/Century Gothic/GOTHIC.TTF");
 }
+@font-face {
+    font-family: "Century Gothic Bold";
+    src: url("/CodeIgniter/An/assets/fonts/Century Gothic/GOTHICB.TTF");
+}
+@font-face {
+    font-family: "Century Gothic Bold Italic";
+    src: url("/CodeIgniter/An/assets/fonts/Century Gothic/GOTHICBI.TTF");
+}
+@font-face {
+    font-family: "Century Gothic Italic";
+    src: url('/CodeIgniter/An/assets/fonts/Century Gothic/GOTHICBI.TTF');
+}
+/*#endregion Century Gothic Font*/
+/*#region Cambria Font*/
+@font-face {
+    font-family: "Cambria";
+    src: url("/CodeIgniter/An/assets/fonts/Cambria/cambria.ttc");
+}
+@font-face {
+    font-family: "Cambria Bold";
+    src: url("/CodeIgniter/An/assets/fonts/Cambria/cambriab.ttf");
+}
+@font-face {
+    font-family: "Cambria Italic";
+    src: url("/CodeIgniter/An/assets/fonts/Cambria/cambriai.ttf");
+}
+@font-face {
+    font-family: "Cambria Z";
+    src: url("/CodeIgniter/An/assets/fonts/Cambria/cambriaz.ttf");
+}
+/*#endregion Cambria Font*/
+/*#region Apercu Font*/
+@font-face {
+    font-family: "Apercu";
+    src: url("/CodeIgniter/An/assets/fonts/Apercu/Apercu Bold.otf");
+}
+@font-face {
+    font-family: "Apercu Bold Italic";
+    src: url("/CodeIgniter/An/assets/fonts/Apercu/Apercu Bold Italic.otf");
+}
+@font-face {
+    font-family: "Apercu Italic";
+    src: url("/CodeIgniter/An/assets/fonts/Apercu/Apercu Italic.otf");
+}
+@font-face {
+    font-family: "Apercu Light Italic";
+    src: url("/CodeIgniter/An/assets/fonts/Apercu/Apercu Light Italic.otf");
+}
+@font-face {
+    font-family: "Apercu Medium";
+    src: url("/CodeIgniter/An/assets/fonts/Apercu/Apercu Medium.otf");
+}
+@font-face {
+    font-family: "Apercu Medium Italic";
+    src: url("/CodeIgniter/An/assets/fonts/Apercu/Apercu Medium Italic.otf");
+}
+@font-face {
+    font-family: "Apercu Regular";
+    src: url("/CodeIgniter/An/assets/fonts/Apercu/Apercu Regular.otf");
+}
+@font-face {
+    font-family: "Apercu Light";
+    src: url("/CodeIgniter/An/assets/fonts/Apercu/Apercu Light.otf");
+}
+/*#endregion Apercu Font*/
+/*#endregion Fonts*/
+/*#region Debug*/
+/*.debug {*/
+/*    border: 1px red solid;*/
+/*}*/
 /*#endregion Debug*/
 /*#region Styles*/
 .footer {
     display: table-row;
     position: relative;
     height: max-content;
+    border-top: 2px solid black;
     font-size: 15px;
     font-family: Cambria, "Century Gothic", Apercu, sans-serif;
     color: rgba(30,30,30,.8);
-}
-#line-break-content-footer {
-    margin-top: 50px;
-    border-top: 2px solid rgba(50,50,50,.8);
-}
-#line-break-content-header {
-    border-top: 2px solid rgba(50,50,50,.8);
 }
 .footer1 {
     height: max-content;
@@ -28,15 +94,13 @@
     padding: 25px;
 }
 .footer3 {
+    bottom: 0;
     width: 100%;
     justify-content: center;
-    height: fit-content;
-    margin: 10px;
-    display: block;
-    vertical-align: middle;
+    height: max-content;
 }
 .footer-content {
-    padding: 20px;
+    padding: 10px;
 }
 .line {
     border-top: 1px solid rgba(50, 50, 50, .4);
@@ -44,11 +108,12 @@
 }
 
 .copyright-footer {
+    font-family: Cambria;
     text-align: center;
     font-size: 13px;
     color: rgba(50, 50,50, .7);
     font-weight: bold;
-    line-height: 20px;
+    padding: 10px;
 }
 .list-lev2, .list-lev2, .list-lev2-item{
     margin: 0 0 12px 0;
@@ -103,58 +168,42 @@ li > .tab {
     justify-content: flex-start;
 }
 
-.social-icon a {
+.social-icon > a > i {
     color: rgba(40,40,40,.9);
     font-size: 25px;
-    margin: 15px;
 }
-.social-icon > a:first-child {
-    margin-left: 0 !important;
+.social-icon > a:not(:first-child) {
+    margin-left: 15px;
 }
-.social-icon > a:last-child {
-    margin-right: 0 !important;
+.social-icon > a:not(:last-child) {
+    margin-right: 15px;
 }
+
 .social-icon > a:hover {
     cursor: pointer;
     opacity: .7;
     transform: scale(1.1);
 }
-.fa-call i:before {
-    text-align: center;
-    vertical-align: middle;
-    display: block;
-}
 .fa-call {
-    border: 4px solid rgba(40,40,40,.9) !important;
+    border: 3px solid rgba(40,40,40,.9) !important;
     border-radius: 50% !important;
-    width: 40px;
-    height: 40px;
-    text-align: center;
-    vertical-align: middle;
+    height: 2rem;
+    width: 2rem;
 }
+
 .footer-item {
     display: flex;
     position: relative;
     color: rgba(50,50,50,1);
-    line-height: 40px;
-    height: 40px;
+    line-height: 3rem;
+    height: 3rem;
     margin-bottom: 20px;
-}
-#text-call {
-    font-family: 'Apercu Medium',sans-serif;
-    font-size: 15px;
-    color: rgba(40,40,40,.9);
-}
-#num-call {
-    font-family: 'Century Gothic',sans-serif;
-    font-size: 25px;
-    letter-spacing: 2px;
 }
 .footer-item > div:not(:last-child) {
     margin-right: 10px !important;
 }
 .list-lev2 > a {
-    text-decoration: none;
+    text-decoration: none !important;
     color: rgba(30,30,30,.7);
 }
 
@@ -170,7 +219,7 @@ a:hover {
 }
 .cus-target {
     font-size: 30px;
-    font-family: "Century Gothic", sans-serif;
+    font-family: "Century Gothic Bold", sans-serif;
     font-weight: bold;
     color: whitesmoke;
     text-align: center;
@@ -185,6 +234,7 @@ a:hover {
 }
 .cus-target-bg:hover {
     background-size: 380px;
+    text-shadow: rgba(30,30,30,.7) 3px 2px 1px;
 }
 .filter:hover {
     backdrop-filter: grayscale(0);
@@ -257,10 +307,35 @@ body {
     justify-content: space-between;
 }
 
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .slide-box img {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .slide-box img {
+        -ms-flex: 0 0 33.3333%;
+        flex: 0 0 33.3333%;
+        max-width: 33.3333%;
+    }
+}
+
+@media (min-width: 992px)
+{
+    .slide-box img {
+        -ms-flex: 0 0 25%;
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+}
+
 .carousel-caption {
-background-color: rgba(0, 0, 0, 0.5);
-padding: 20px;
-border-radius: .5rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: .5rem;
 }
 .crumb-bread ol, .side-menu-item ol {
     list-style: none;

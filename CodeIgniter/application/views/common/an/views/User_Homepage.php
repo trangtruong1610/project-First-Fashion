@@ -6,8 +6,8 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <!-- Local Source -->
-
-    <script src="<?php echo base_url('CodeIgniter/An/assets/scripts/scripts.js') ?>"></script>
+	<link rel="stylesheet" href="<?= base_url('CodeIgniter/An/assets/css/fontawesome.css') ?>">
+    <script src="<?= base_url('CodeIgniter/An/assets/scripts/scripts.js') ?>"></script>
 	<link rel="stylesheet" href="<?= base_url('CodeIgniter/An/assets/css/styles.css') ?>">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
