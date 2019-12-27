@@ -1,7 +1,7 @@
 /*#region Debug*/
-/*.debug {*/
-/*    border: 1px red solid;*/
-/*}*/
+.debug {
+    border: 1px red solid;
+}
 /*#endregion Debug*/
 /*#region Styles*/
 .footer {
@@ -457,6 +457,10 @@ input[type=range]::-ms-thumb {
     text-align: right;
     padding: 0 10px;
     width: 40%;
+}
+.product-list-header {
+    font-family: Cambria !important;
+    font-size: 13px !important;
 }
 /*#endregion Styles*/
 /*#region Responsive*/

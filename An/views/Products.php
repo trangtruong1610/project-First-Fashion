@@ -86,13 +86,13 @@
                 </div>
                 <div class="price-slider debug">
                     <div class="slider-number-input debug">
-                        <input type="number" value="100000" min="0" max="10000000" step="10000"/>
+                        <input type="number" value="0" min="0" max="10000000"/>
                         to
-                        <input type="number" value="500000" min="0" max="10000000" step="100000"/>
+                        <input type="number" value="500000" min="0" max="10000000"/>
                     </div>
                     <div class="slider-range debug">
-                        <input value="100000" min="0" max="10000000" step="10000" type="range"/>
-                        <input value="500000" min="100000" max="10000000" step="100000" type="range"/>
+                        <input value="0" min="0" max="10000000" step="10000" type="range"/>
+                        <input value="2000000" min="0" max="10000000" step="100000" type="range"/>
                         <svg class="debug" width="100%" height="20">
                             <line x1="4" y1="0" x2="300" y2="0" stroke="#212121" stroke-width="12" stroke-dasharray="1 28"></line>
                         </svg>
@@ -209,7 +209,41 @@
         <div class="col-sm-9 debug">
             <div id="filter"></div>
             <div id="product-page-all" class="side-menu-item">
-
+                <div class="product-list-header debug">
+                    <div id="page-products" class="btn-group" data-toggle="buttons">
+                        <button type="button" class="btn btn-dark">1</button>
+                    </div>
+                </div>
+                <div class="card-deck">
+                    <div class="card">
+                        <img class="card-img-top" src="images/Cus-category-women.jpg" alt="">
+                        <div class="card-body">
+                            <h4 class="card-title">Title</h4>
+                            <p class="card-text">Text</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="images/Cus-category-children.jpg" alt="">
+                        <div class="card-body">
+                            <h4 class="card-title">Title</h4>
+                            <p class="card-text">Text</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="images/Cus-category-men.jpg" alt="">
+                        <div class="card-body">
+                            <h4 class="card-title">Title</h4>
+                            <p class="card-text">Text</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="images/Cus-category-children.jpg" alt="">
+                        <div class="card-body">
+                            <h4 class="card-title">Title</h4>
+                            <p class="card-text">Text</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
