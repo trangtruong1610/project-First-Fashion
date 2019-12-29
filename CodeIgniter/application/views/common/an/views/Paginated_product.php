@@ -37,14 +37,20 @@
 		$product_list = $query->result_array();
 		$record_per_row = 3;
 		$row = round(count($product_list) / $record_per_row,0);
-
-		for ($i = 0; $i < $row; $i++) {
-			$n = $i*$record_per_row;
+		$remain_record = count($product_list) % $record_per_row;
+		if($remain_record > 0) {
+			$row_of_list = $row++;
+		}
+			for ($i = 0; $i < $row_of_list; $i++) {
+				$n = $i*$record_per_row;
+				$add_j_loop = $remain_record * $record_per_row;
+				if($i > $row) {
+					$j_loop = $add_j_loop;
+				} else {$j_loop = $record_per_row;}
 	?>
 		<div class="card-decks">
-
 			<?php
-			for($j = 0; $j < 3; $j+=$n) {
+			for($j = 0; $j < $j_loop; $j+=$n) {
 			?>
 			<div class="card">
 				<img class="card-img" src="<?php echo $product_list[$j]['ProductName']; ?>" alt="">
