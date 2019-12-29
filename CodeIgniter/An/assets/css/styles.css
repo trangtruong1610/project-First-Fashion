@@ -71,18 +71,14 @@
 /*#endregion Apercu Font*/
 /*#endregion Fonts*/
 /*#region Debug*/
-/*.debug {*/
-/*    border: 1px red solid;*/
-/*}*/
+.debug {
+    border: 1px red solid;
+}
 /*#endregion Debug*/
 /*#region Styles*/
-.line-header {
-	border-bottom: 2px solid rgba(30,30,30,.8);
-	margin-bottom: 20px;
-}
 .line-footer {
-	border-top: 2px solid rgba(30,30,30,.8);
 	margin-top: 20px;
+	border-top: 2px rgba(30,30,30,.7);
 }
 .footer {
 	display: table-row;
@@ -117,17 +113,10 @@
 
 .copyright-footer {
 	font-family: Cambria;
-<<<<<<< HEAD
-    text-align: center;
-    font-size: 13px;
-    color: rgba(50, 50,50, .7);
-    font-weight: bold;
-=======
 	text-align: center;
 	font-size: 13px;
 	color: rgba(50, 50,50, .7);
 	font-weight: bold;
->>>>>>> Trang
 	padding: 10px;
 }
 .list-lev2, .list-lev2, .list-lev2-item{
@@ -184,13 +173,8 @@ li > .tab {
 }
 
 .social-icon > a > i {
-<<<<<<< HEAD
-    color: rgba(40,40,40,.9);
-    font-size: 25px;
-=======
 	color: rgba(40,40,40,.9);
 	font-size: 25px;
->>>>>>> Trang
 }
 .social-icon > a:not(:first-child) {
 	margin-left: 15px;
@@ -223,13 +207,8 @@ li > .tab {
 	margin-right: 10px !important;
 }
 .list-lev2 > a {
-<<<<<<< HEAD
-    text-decoration: none !important;
-    color: rgba(30,30,30,.7);
-=======
 	text-decoration: none !important;
 	color: rgba(30,30,30,.7);
->>>>>>> Trang
 }
 
 a:hover {
@@ -243,15 +222,6 @@ a:hover {
 	font-size: 14px;
 }
 .cus-target {
-<<<<<<< HEAD
-    font-size: 30px;
-    font-family: "Century Gothic Bold", sans-serif;
-    font-weight: bold;
-    color: whitesmoke;
-    text-align: center;
-    margin: 20px;
-    line-height: 380px;
-=======
 	font-size: 30px;
 	font-family: "Century Gothic Bold", sans-serif;
 	font-weight: bold;
@@ -259,7 +229,6 @@ a:hover {
 	text-align: center;
 	margin: 20px;
 	line-height: 380px;
->>>>>>> Trang
 }
 .cus-target-bg {
 	height: 350px;
@@ -268,11 +237,7 @@ a:hover {
 	background-repeat: no-repeat;
 }
 .cus-target-bg:hover {
-<<<<<<< HEAD
-    background-size: 380px;
-=======
 	background-size: 380px;
->>>>>>> Trang
 	text-shadow: rgba(30,30,30,.7) 3px 2px 1px;
 }
 .filter:hover {
@@ -433,348 +398,84 @@ body {
 	margin-left: 15px;
 }
 .price-slider {
-	width: 300px;
-	margin: auto;
+	width: 100%;
 	text-align: center;
 	position: relative;
-	height: 6em;
+	font-family: "Chaparral Pro";
+	margin: 40px 0;
+	justify-content: center;
 }
-.price-slider svg,
+.slider-number-input, .slider-range-input {
+	position: relative;
+	width: 90%;
+	margin: 30px auto;
+	text-align: center;
+}
+.slider-number-input input[type=number] {
+	width: 40%;
+	border-radius: 5px;
+	text-align: right;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+.slider-number-input input::-webkit-outer-spin-button, .slider-number-input input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+}
+.slider-number-input input[type=number] {
+	-moz-appearance:textfield;
+}
+.currency-symbol {
+	padding: 2px;
+	position: absolute;
+}
+.slider-range-input {
+	position: relative;
+	width: 90%;
+	margin: 30px auto;
+	height: 25px;
+	text-align: center;
+}
 .price-slider input[type=range] {
+	-webkit-appearance: none;
+	appearance: none;
+	pointer-events: none;
 	position: absolute;
 	left: 0;
-	bottom: 0;
-}
-input[type=number] {
-	border: 1px solid #ddd;
-	text-align: center;
-	font-size: 1.6em;
-	-moz-appearance: textfield;
-}
-input[type=number]::-webkit-outer-spin-button,
-input[type=number]::-webkit-inner-spin-button {
-	-webkit-appearance: none;
-}
-input[type=number]:invalid,
-input[type=number]:out-of-range {
-	border: 2px solid #e60023;
-}
-input[type=range] {
-	-webkit-appearance: none;
-	width: 100%;
-}
-input[type=range]:focus {
-	outline: none;
-}
-input[type=range]:focus::-webkit-slider-runnable-track {
-	background: #1da1f2;
-}
-input[type=range]:focus::-ms-fill-lower {
-	background: #1da1f2;
-}
-input[type=range]:focus::-ms-fill-upper {
-	background: #1da1f2;
-}
-input[type=range]::-webkit-slider-runnable-track {
-	width: 100%;
-	height: 5px;
-	cursor: pointer;
-	animate: 0.2s;
-	background: #1da1f2;
-	border-radius: 1px;
-	box-shadow: none;
-	border: 0;
-}
-input[type=range]::-webkit-slider-thumb {
-	z-index: 2;
-	position: relative;
-	box-shadow: 0px 0px 0px #000;
-	border: 1px solid #1da1f2;
-	height: 18px;
-	width: 18px;
-	border-radius: 25px;
-	background: #a1d0ff;
-	cursor: pointer;
-	-webkit-appearance: none;
-	margin-top: -7px;
-}
-input[type=range]::-moz-range-track {
-	width: 100%;
-	height: 5px;
-	cursor: pointer;
-	animate: 0.2s;
-	background: #1da1f2;
-	border-radius: 1px;
-	box-shadow: none;
-	border: 0;
-}
-input[type=range]::-moz-range-thumb {
-	z-index: 2;
-	position: relative;
-	box-shadow: 0px 0px 0px #000;
-	border: 1px solid #1da1f2;
-	height: 18px;
-	width: 18px;
-	border-radius: 25px;
-	background: #a1d0ff;
-	cursor: pointer;
-}
-input[type=range]::-ms-track {
-	width: 100%;
-	height: 5px;
-	cursor: pointer;
-	animate: 0.2s;
+	top: 0;
 	background: transparent;
-	border-color: transparent;
-	color: transparent;
+	border: .5px dotted rgba(40,40,40,.4);
+	height: 25px;
+	width: 100%;
+	margin: 0;
+	padding: 2.5px;
+	border-radius: 15px;
 }
-input[type=range]::-ms-fill-lower,
-input[type=range]::-ms-fill-upper {
-	background: #1da1f2;
-	border-radius: 1px;
-	box-shadow: none;
-	border: 0;
-}
-input[type=range]::-ms-thumb {
-	z-index: 2;
-	position: relative;
-	box-shadow: 0px 0px 0px #000;
-	border: 1px solid #1da1f2;
-	height: 18px;
-	width: 18px;
-	border-radius: 25px;
-	background: #a1d0ff;
+.price-slider input[type=range]::-webkit-slider-thumb {
+	pointer-events: all;
+	-webkit-appearance: none;
+	appearance: none;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background: rgba(220,220,220,.9);
+-webkit-box-shadow: inset rgba(30,30,30,.5) -2px -2px 10px;
 	cursor: pointer;
 }
-.slider-number-input,.slider-range {
-	font-family: 'Cambria';
+.price-slider input[type=range]::-moz-range-thumb {
+	pointer-events: all;
+	width: 18px;
+	height: 18px;
+	border-radius: 50%;
+	background: rgba(220,220,220,.9);
+	-webkit-box-shadow: inset rgba(30,30,30,.5) -2px -2px 10px;
 }
-.slider-number-input {
-	margin: 20px 10px;
-}
-.price-slider {
-	margin: 20px 0;
-}
-.slider-range svg, .slider-range input {
-	margin: 20px 15px;
-	width: 90%;
-}
-.slider-number-input {
-	width: 90%;
-	margin: 0 15px 30px;
-}
-.slider-range svg {
-	transform: translate(0, 30px);
-}
-.slider-number-input input {
-	font-size: 15px;
-	text-align: right;
-	padding: 0 10px;
-	width: 40%;
+.product-menu-item {
+	width: 100%;
+	display: block;
 }
 .product-list-header {
-	font-family: Cambria !important;
-	font-size: 13px !important;
-}
-.crumb-bread ol, .side-menu-item ol {
-	list-style: none;
-}
-.crumb-bread ol {
-	font-family: "Cambria Z";
-	font-size: 13px;
-	padding-left: 0;
-}
-.crumb-bread {
-	display: inline-block;
-}
-.crumb-bread li > a {
-	color: rgba(30,30,30,.8);
-}
-.crumb-bread li:not(:link) {
-	font-weight: bold;
-	color: rgba(80,100,200,.9);
-}
-.crumb-bread a::after {
-	display: inline-block;
-	color: rgba(40,40,40,.8);
-	content: '/';
-	font-size: 80%;
-	font-weight: bold;
-	padding: 0 3px;
-}
-.side-menu-item ol, .side-menu-item.list-item {
-	position: sticky;
-	font-family: "Sitka Display";
-	font-weight: bold;
-	font-size: 15px;
-	padding-left: 20px;
-	line-height: 25px;
-}
-.list-item li {
-	margin-bottom: 5px;
-}
-.list-item a {
-	color: rgba(30,30,30,.9);
-}
-.side-menu-item, .side-menu-header {
-	padding: 10px;
-	font-family: "Century Gothic";
-	font-weight: bold;
-	font-size: 15px;
-}
-.side-menu-item.side-menu-header {
-	background-color: rgba(30,30,30,1);
-}
-.side-menu-header span {
-	margin-right: 10px;
-	color: rgba(250,250,240,1);
-}
-#list-brands {
-	margin-left: 15px;
-}
-.price-slider {
-	width: 300px;
-	margin: auto;
-	text-align: center;
-	position: relative;
-	height: 6em;
-}
-.price-slider svg,
-.price-slider input[type=range] {
-	position: absolute;
-	left: 0;
-	bottom: 0;
-}
-input[type=number] {
-	border: 1px solid #ddd;
-	text-align: center;
-	font-size: 1.6em;
-	-moz-appearance: textfield;
-}
-input[type=number]::-webkit-outer-spin-button,
-input[type=number]::-webkit-inner-spin-button {
-	-webkit-appearance: none;
-}
-input[type=number]:invalid,
-input[type=number]:out-of-range {
-	border: 2px solid #e60023;
-}
-input[type=range] {
-	-webkit-appearance: none;
 	width: 100%;
-}
-input[type=range]:focus {
-	outline: none;
-}
-input[type=range]:focus::-webkit-slider-runnable-track {
-	background: #1da1f2;
-}
-input[type=range]:focus::-ms-fill-lower {
-	background: #1da1f2;
-}
-input[type=range]:focus::-ms-fill-upper {
-	background: #1da1f2;
-}
-input[type=range]::-webkit-slider-runnable-track {
-	width: 100%;
-	height: 5px;
-	cursor: pointer;
-	animate: 0.2s;
-	background: #1da1f2;
-	border-radius: 1px;
-	box-shadow: none;
-	border: 0;
-}
-input[type=range]::-webkit-slider-thumb {
-	z-index: 2;
-	position: relative;
-	box-shadow: 0px 0px 0px #000;
-	border: 1px solid #1da1f2;
-	height: 18px;
-	width: 18px;
-	border-radius: 25px;
-	background: #a1d0ff;
-	cursor: pointer;
-	-webkit-appearance: none;
-	margin-top: -7px;
-}
-input[type=range]::-moz-range-track {
-	width: 100%;
-	height: 5px;
-	cursor: pointer;
-	animate: 0.2s;
-	background: #1da1f2;
-	border-radius: 1px;
-	box-shadow: none;
-	border: 0;
-}
-input[type=range]::-moz-range-thumb {
-	z-index: 2;
-	position: relative;
-	box-shadow: 0px 0px 0px #000;
-	border: 1px solid #1da1f2;
-	height: 18px;
-	width: 18px;
-	border-radius: 25px;
-	background: #a1d0ff;
-	cursor: pointer;
-}
-input[type=range]::-ms-track {
-	width: 100%;
-	height: 5px;
-	cursor: pointer;
-	animate: 0.2s;
-	background: transparent;
-	border-color: transparent;
-	color: transparent;
-}
-input[type=range]::-ms-fill-lower,
-input[type=range]::-ms-fill-upper {
-	background: #1da1f2;
-	border-radius: 1px;
-	box-shadow: none;
-	border: 0;
-}
-input[type=range]::-ms-thumb {
-	z-index: 2;
-	position: relative;
-	box-shadow: 0px 0px 0px #000;
-	border: 1px solid #1da1f2;
-	height: 18px;
-	width: 18px;
-	border-radius: 25px;
-	background: #a1d0ff;
-	cursor: pointer;
-}
-.slider-number-input,.slider-range {
-	font-family: 'Cambria';
-}
-.slider-number-input {
-	margin: 20px 10px;
-}
-.price-slider {
-	margin: 20px 0;
-}
-.slider-range svg, .slider-range input {
-	margin: 20px 15px;
-	width: 90%;
-}
-.slider-number-input {
-	width: 90%;
-	margin: 0 15px 30px;
-}
-.slider-range svg {
-	transform: translate(0, 30px);
-}
-.slider-number-input input {
-	font-size: 15px;
-	text-align: right;
-	padding: 0 10px;
-	width: 40%;
-}
-.product-list-header {
-	font-family: Cambria !important;
-	font-size: 13px !important;
+	margin-bottom: 30px;
 }
 /*#endregion Styles*/
 /*#region Responsive*/
