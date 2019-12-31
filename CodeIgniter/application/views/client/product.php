@@ -9,8 +9,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<!-- Local Sources -->
-	<link rel="stylesheet" href="<?= base_url('CodeIgniter/An/assets/css/styles.css') ?>">
-	<script src="<?php echo base_url('CodeIgniter/An/assets/scripts/scripts.js') ?>"></script>
+	<link rel="stylesheet" href="<?= base_url('../An/assets/css/styles.css') ?>">
+	<script src="<?php echo base_url('../An/assets/scripts/scripts.js') ?>"></script>
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
 		  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -212,11 +212,11 @@
 			<div id="filter"></div>
 			<div id="product-page-all" class="side-menu-item">
 				<?php foreach ($data as $row) : ?>
-					<div class="card mb-3 d-inline-block mr-3 mt-4" style="width: 18rem; height: 300px;">
-						<img src="..." class="card-img-top" alt="...">
+					<div class="card mb-5 d-inline-block mr-3 mt-4 mx-auto" style="width: 18rem; height: 300px;">
+						<img src="<?=$row['File']?>" class="card-img-top" alt="..." style="width: auto;max-height: 100%;">
 						<div class="card-body">
-							<a href=""><p class="card-text text-center"><?=$row['ProductName']?></p></a>
-							<p class="card-text text-center"><?=$row['ListPrice']?></p>
+							<a href="<?= base_url()."product/{$row['id']}"?>"><p class="card-text text-center"><?=$row['Name']?></p></a>
+							<p class="card-text text-center"><?=$row['Price']?></p>
 						</div>
 					</div>
 				<?php endforeach ?>

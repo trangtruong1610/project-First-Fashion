@@ -6,17 +6,19 @@ class Product extends CI_Controller
 		parent::__construct();
 	}
 
-	public function load_db()
+		public function get_all()
 	{
 		$this->load->model('product_all');
 		$result = $this->product_all->get_all();
-		return $result;
-	}
-	public function index()
-	{
-		$result = $this->load_db();
 		$data['data'] = $result;
-		$this->load->view('/client/Product.php', $data);
+		$this->load->view('/client/Product', $data);
+	}
+	public function get_by_id($id)
+	{
+		$this->load->model('product_all');
+		$result = $this->product_all->get_by_id($id);
+		$data['data'] = $result;
+		$this->load->view('/client/product_id', $data);
 	}
 }
 ?>
