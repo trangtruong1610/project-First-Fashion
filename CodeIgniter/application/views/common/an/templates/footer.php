@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Local Sources -->
-	<link href="<?php echo base_url('CodeIgniter/An/assets/css/styles.css') ?>" rel="stylesheet">
+	<link href="<?php echo base_url('CodeIgniter/An/assets/css/master_style.css') ?>" rel="stylesheet">
 	<link href="<?php echo base_url('CodeIgniter/An/assets/css/fontawesome.css') ?>" rel="stylesheet">
 	<script src="<?php echo base_url('CodeIgniter/An/assets/scripts/scripts.js') ?>"></script>
 	<!-- Bootstrap CSS -->
@@ -42,19 +42,19 @@
             <h5 class="header5">FOLLOW US ON SOCIAL</h5>
             <div class="row social-icon debug">
                 <a href="">
-                    <i class="fab fa-facebook fa-2x debug" aria-hidden="true"></i>
+                    <i class="fab fa-facebook debug" aria-hidden="true"></i>
                 </a>
                 <a href="">
-                    <i class="fab fa-twitter fa-2x debug" aria-hidden="true"></i>
+                    <i class="fab fa-twitter debug" aria-hidden="true"></i>
                 </a>
                 <a href="">
-                    <i class="fab fa-google fa-2x debug" aria-hidden="true"></i>
+                    <i class="fab fa-google debug" aria-hidden="true"></i>
                 </a>
                 <a href="">
-                    <i class="fab fa-youtube fa-2x debug" aria-hidden="true"></i>
+                    <i class="fab fa-youtube debug" aria-hidden="true"></i>
                 </a>
                 <a href="">
-                    <i class="fab fa-skype fa-2x debug" aria-hidden="true"></i>
+                    <i class="fab fa-skype debug" aria-hidden="true"></i>
                 </a>
             </div>
         </div>
@@ -64,7 +64,7 @@
     <div class="debug row footer2">
         <div class="debug col-lg-4">
             <div>
-                <h5 class="header5">OPENNING TIME</h5>
+                <div class="header5">OPENNING TIME</div>
                 <ul class="list-lev1">
                     <li class="list-lev2">
                         <span>Monday - Friday</span>
@@ -79,15 +79,14 @@
                 </ul>
             </div>
             <div class="debug footer-item">
-                <div><i class="fa fa-phone fa-call" style="font-weight: bold; font-size: 20px; line-height: 1.8rem; padding-left: 5px" aria-hidden="true"></i></div>
-                <div style="font-family: 'Apercu Medium'; font-size: 15px; color: rgba(40,40,40,.9)">Call us: </div>
-                <div style="font-family: 'Century Gothic'; font-size: 25px; letter-spacing: 2px">3999 9993</div>
+                <div><i class="fa fa-phone fa-call fa-2x" style="font-weight: bold; line-height: 33px; padding-left: 5px" aria-hidden="true"></i></div>
+                <div style="font-family: MuseoSansW01-Rounded300; font-size: 15px; color: rgba(40,40,40,.9)">Call us: </div>
+                <div style="font-family: Vesta-Black; font-size: 30px; letter-spacing: 2px">1800 1779</div>
             </div>
         </div>
-        
         <div class="debug col-lg-4 row">
             <div class="debug col-sm-6">
-                <h5 class="header5">CATEGORIES</h5>
+                <div class="header5">CATEGORIES</div>
                 <div>
                     <ul class="list-lev1">
                         <li class="list-lev2 debug">
@@ -115,7 +114,7 @@
             </div>
             <div class="debug col-sm-6">
 
-                <h5 class="header5">INFORMATION</h5>
+                <div class="header5">INFORMATIONS</div>
                 <div>
                     <ul class="list-lev1">
                         <li class="list-lev2">
@@ -141,11 +140,11 @@
         <div class="debug col-lg-4">
             <h5 class="header5">CONTACT</h5>
             <ul class="list-lev1 debug">
-                <li class="list-lev2" style="font-weight: bold">
-                    <div class="debug list-lev1-item">Warehouse & Offices</div>
+                <li class="list-lev2">
+                    <div class="debug list-lev1-item" style="text-shadow: black .5px .5px .5px">Warehouse & Offices</div>
                 </li>
                 <li class="list-lev2-item debug">
-                    <span>7th Floor, A Building, 51 Nguyen Hue Street, Dist. 1, Ho Chi Minh City, Vietnam</span>
+                    <span>7th Floor, A Building, 51 Nguyen Hue Street, Ben Nghe Ward, District 1, Ho Chi Minh City, Vietnam</span>
                     <br>
                     <span>
                         (+84)28 3899 9983 / (+84)28 3899 9982
@@ -153,14 +152,14 @@
                 </li>
             </ul>
             <ul class="list-lev1 debug">
-                <li class="list-lev2"  style="font-weight: bold">
-                    <div class="debug list-lev1-item">Retail Store</div>
+                <li class="list-lev2">
+                    <div class="debug list-lev1-item" style="text-shadow: black .5px .5px .5px">Retail Store</div>
                 </li>
                 <li class="list-lev2-item debug">
-                    <span>24 Phan Liem Street, Da Kao Ward, Dist. 1, Ho Chi Minh City, Vietnam</span>
+                    <span>24 Phan Liem Street, Da Kao Ward, District 1, Ho Chi Minh City, Vietnam</span>
                     <br>
                     <span>
-                        (+84)28 3999 9993 / (+84)28 3999 9992
+                        (+84) 1800 1779
                     </span>
                 </li>
             </ul>

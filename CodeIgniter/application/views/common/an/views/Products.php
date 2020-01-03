@@ -1,14 +1,16 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>Products</title>
+    <title><?php ?></title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Local Sources -->
-    <link rel="stylesheet" href="<?= base_url('CodeIgniter/An/assets/css/styles.css') ?>">
-    <script src="<?php echo base_url('CodeIgniter/An/assets/scripts/scripts.js') ?>"></script>
+	<link rel="stylesheet" href="<?= base_url('/CodeIgniter/An/assets/css/master_style.css')?>">
+	<link rel="stylesheet" href="<?= base_url('/CodeIgniter/An/assets/css/fonts.css')?>">
+	<link rel="stylesheet" href="<?= base_url('/CodeIgniter/An/assets/css/fontawesome.css') ?>">
+    <script src="<?=base_url('/CodeIgniter/An/assets/scripts/scripts.js') ?>"></script>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -30,7 +32,7 @@
 <div class="container-fluid debug">
     <!--Page Title Bar-->
     <div id="page-title-bar" class="page-title-bar">
-        <div class="container">
+        <div class="container-fluid debug">
             <nav class="crumb-bread">
                 <ol>
                     <li class="crumb-bread"><a href="">Fashion</a> </li>
@@ -76,26 +78,6 @@
                     </ol>
                 </div>
             </div>
-            <!--Prices-->
-            <div id="MenuPrice" class="debug">
-                <div class="side-menu-item side-menu-header debug">
-                    <span>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                    </span>
-                    <span>FILTER BY PRICE</span>
-                </div>
-                <div class="price-slider debug">
-                    <div class="slider-number-input debug">
-						<input type="number" value="0" min="0" max="2000" id="min">
-                        to
-                        <input type="number" value="1000" min="0" max="2000" id="max">
-                    </div>
-                    <div class="slider-range-input debug">
-						<input type="range" value="0" min="0" max="2000" step="50">
-						<input type="range" value="1000" min="0" max="2000" step="50">
-					</div>
-                </div>
-            </div>
             <!--Brands-->
             <div id="MenuBrand" class="debug">
                 <div class="side-menu-item side-menu-header debug">
@@ -105,126 +87,26 @@
                     <span>PRODUCT BRANDS</span>
                 </div>
                 <div id="list-brands" class="side-menu-item list-item">
-                    <div class="form-check">
+					<?php foreach($brand as $row) :?>
+					<div class="form-check">
                         <label class="form-check-label">
-                            <input type="checkbox" class="form-check-input" name="" id="brand-item" value="checkedValue">
-                            Burberry
+                            <input type="checkbox" class="form-check-input" name="" id="<?=$row['NameCate']?>" value="checkedValue">
+							<?=$row['NameCate']?>
                         </label>
                     </div>
-                </div>
-                <div id="list-brands" class="side-menu-item list-item">
-                    <div class="form-check">
-                        <label class="form-check-label">
-                            <input type="checkbox" class="form-check-input" name="" id="brand-item" value="checkedValue">
-                            Calvin Klein
-                        </label>
-                    </div>
-                </div>
-                <div id="list-brands" class="side-menu-item list-item">
-                    <div class="form-check">
-                        <label class="form-check-label">
-                            <input type="checkbox" class="form-check-input" name="" id="brand-item" value="checkedValue">
-                            Chanel
-                        </label>
-                    </div>
-                </div>
-                <div id="list-brands" class="side-menu-item list-item">
-                        <div class="form-check">
-                            <label class="form-check-label">
-                                <input type="checkbox" class="form-check-input" name="" id="brand-item" value="checkedValue">
-                                Dior
-                            </label>
-                        </div>
-                </div>
-                <div id="list-brands" class="side-menu-item list-item">
-                    <div class="form-check">
-                        <label class="form-check-label">
-                            <input type="checkbox" class="form-check-input" name="" id="brand-item" value="checkedValue">
-                            Dolce & Gabbana
-                        </label>
-                    </div>
-                </div>
-                <div id="list-brands" class="side-menu-item list-item">
-                    <div class="form-check">
-                        <label class="form-check-label">
-                            <input type="checkbox" class="form-check-input" name="" id="brand-item" value="checkedValue">
-                            Gap
-                        </label>
-                    </div>
-                </div>
-                <div id="list-brands" class="side-menu-item list-item">
-                    <div class="form-check">
-                        <label class="form-check-label">
-                            <input type="checkbox" class="form-check-input" name="" id="brand-item" value="checkedValue">
-                            Givenchy
-                        </label>
-                    </div>
-                </div>
-                <div id="list-brands" class="side-menu-item list-item">
-                    <div class="form-check">
-                        <label class="form-check-label">
-                            <input type="checkbox" class="form-check-input" name="" id="brand-item" value="checkedValue">
-                            Gucci
-                        </label>
-                    </div>
-                </div>
-                <div id="list-brands" class="side-menu-item list-item">
-                    <div class="form-check">
-                        <label class="form-check-label">
-                            <input type="checkbox" class="form-check-input" name="" id="brand-item" value="checkedValue">
-                            Hugo Boss
-                        </label>
-                    </div>
-                </div>
-                <div id="list-brands" class="side-menu-item list-item">
-                    <div class="form-check">
-                        <label class="form-check-label">
-                            <input type="checkbox" class="form-check-input" name="" id="brand-item" value="checkedValue">
-                            Louis Vuitton
-                        </label>
-                    </div>
-                </div>
-                <div id="list-brands" class="side-menu-item list-item">
-                    <div class="form-check">
-                        <label class="form-check-label">
-                            <input type="checkbox" class="form-check-input" name="" id="brand-item" value="checkedValue">
-                            Prada
-                        </label>
-                    </div>
-                </div>
-                <div id="list-brands" class="side-menu-item list-item">
-                    <div class="form-check">
-                        <label class="form-check-label">
-                            <input type="checkbox" class="form-check-input" name="" id="brand-item" value="checkedValue">
-                            Valentino
-                        </label>
-                    </div>
-                </div>
+					<?php endforeach;?>
+					<a href="" name="Submit" id="" class="btn btn-dark" type="button" value="Submit" style="margin-top: 20px; color: #f5f5f5; font-family: MuseoSansW01-Rounded300">Submit</a>
+				</div>
             </div>
         </div>
         <!--Product page-->
         <div class="col-sm-9 debug">
             <div id="filter"></div>
-            <div id="product-page-all" class="product-menu-item">
-				<div class="product-list-header debug">
-					<span>Showing <?php  ?> of  <?php ?></span>
-					<select name="filter-product" onchange="window.location.href='filter.php?='+this.value">
-						<option value="p">Price</option>
-						<option value="b">Brand</option>
-						<option value="n">Name</option>
-					</select>
-				</div>
-				<div class="product-list">
-					<?php
-					include "Paginated_product.php";
-					?>
-				</div>
+            <div id="product-page-all" class="side-menu-item">
+				<?php include "list_product.php";?>
             </div>
         </div>
     </div>
 </div>
-<script>
-    $(window).onload = PriceRange();
-</script>
 </body>
 </html>

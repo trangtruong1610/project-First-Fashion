@@ -1,0 +1,124 @@
+.header {
+	font-family: "Charlemagne Std";
+	font-size: 15px;
+	font-weight: bold;
+	text-align: center;
+	color: rgba(40, 40, 40, .9);
+	line-height: 20px;
+	margin-top: 50px;
+	margin-bottom: 30px;
+	display: inline-flex;
+	width: 100%;
+	justify-content: center;
+}
+.cus-target {
+	font-size: 30px;
+	font-family: Vesta-Black;
+	font-weight: bold;
+	color: whitesmoke;
+	text-align: center;
+	margin: 20px;
+	line-height: 380px;
+}
+.cus-target-bg {
+	height: 350px;
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+.cus-target-bg:hover {
+	background-size: 380px;
+	text-shadow: rgba(30,30,30,.7) 3px 2px 1px;
+}
+.filter:hover {
+	backdrop-filter: grayscale(0);
+}
+.filter {
+	height: 350px;
+	backdrop-filter: grayscale(.8);
+}
+.icon-bg {
+	background-color: rgba(30,30,30, .5) !important;
+	width: 50px !important;
+	height: 50px !important;
+	display: inline-block;
+	position: absolute;
+	z-index: 1;
+	display: -ms-flexbox;
+	-ms-flex-align: center;
+	align-items: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	text-align: center;
+	border-radius: 50%;
+	display: flex;
+}
+.con-box {
+	padding: 0 20px;
+	width: 100%;
+	display: inline-flex;
+	justify-content: center;
+}
+.box {
+	position: relative;
+	display: block;
+	width: 200px;
+	height: 100px;
+	padding-right:15px;
+	padding-left:15px;
+	line-height: 100px;
+	margin: 15px;
+	background: none;
+	border: none;
+}
+.box > img {
+	vertical-align: middle;
+	width: 100%;
+}
+.box:hover {
+	background-color: rgba(220,220,220,.5) !important;
+}
+
+.homepage-header > img{
+	width: 200px;
+	height: auto;
+	margin: 0 15px;
+}
+.carousel {
+	width: 100%;
+}
+
+.slide-box {
+	display: flex;
+	justify-content: space-between;
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+	.slide-box img {
+		-ms-flex: 0 0 50%;
+		flex: 0 0 50%;
+		max-width: 50%;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+	.slide-box img {
+		-ms-flex: 0 0 33.3333%;
+		flex: 0 0 33.3333%;
+		max-width: 33.3333%;
+	}
+}
+
+@media (min-width: 992px)
+{
+	.slide-box img {
+		-ms-flex: 0 0 25%;
+		flex: 0 0 25%;
+		max-width: 25%;
+	}
+}
+.carousel-caption {
+	background-color: rgba(0, 0, 0, 0.5);
+	padding: 20px;
+	border-radius: .5rem;
+}

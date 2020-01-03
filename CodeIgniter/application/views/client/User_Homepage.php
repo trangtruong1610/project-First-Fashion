@@ -7,7 +7,9 @@
     <meta charset="utf-8">
     <!-- Local Source -->
 	<link rel="stylesheet" href="<?= base_url('CodeIgniter/An/assets/css/fontawesome.css') ?>">
-    <script src="<?= base_url('CodeIgniter/An/assets/scripts/scripts.js') ?>"></script>
+	<link rel="stylesheet" href="<?= base_url('CodeIgniter/An/assets/css/fonts.css') ?>">
+	<link rel="stylesheet" href="<?= base_url('CodeIgniter/An/assets/css/Deco-line.css') ?>">
+    <script src="<?php echo base_url('CodeIgniter/An/assets/scripts/scripts.js') ?>"></script>
 	<link rel="stylesheet" href="<?= base_url('CodeIgniter/An/assets/css/styles.css') ?>">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -112,9 +114,9 @@
     <div id="trending">
         <div class="debug" style="margin-top: 20px">
             <div class="header debug">
-                <div class="homepage-header"><img src="<?php echo base_url('CodeIgniter/An/assets/images/left-lines.png')?>"></div>
+				<div class="homepage-header"><img src="/CodeIgniter/An/assets/images/left-lines.png"></div>
                 <span>TRENDING</span>
-                <div class="homepage-header"><img src="<?php echo base_url('CodeIgniter/An/assets/images/right-lines.png')?>"></div>
+                <div class="homepage-header"><img src="/CodeIgniter/An/assets/images/right-lines.png"></div>
             </div>
         </div>
         <div class="container-fluid">

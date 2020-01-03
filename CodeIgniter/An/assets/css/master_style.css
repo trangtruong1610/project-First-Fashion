@@ -1,0 +1,15 @@
+@import url('/CodeIgniter/An/assets/css/Fonts.css');
+@import url('/CodeIgniter/An/assets/css/fontawesome.css');
+@import url('/CodeIgniter/An/assets/css/debug.css');
+@import url('/CodeIgniter/An/assets/css/footer.css');
+@import url('/CodeIgniter/An/assets/css/homepage.css');
+@import url('/CodeIgniter/An/assets/css/product.css');
+@import url('/CodeIgniter/An/assets/css/detail_product.css');
+@import url('/CodeIgniter/An/assets/css/dashboard.css');
+/*General*/
+.wrap {
+	padding: 20px;
+	border-top: 2px solid rgba(30,30,30,.8);
+	border-bottom: 2px solid rgba(30,30,30,.8);
+	width: 100%;
+}
