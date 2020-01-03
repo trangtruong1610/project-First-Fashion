@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>product detail</title>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<!-- Local Sources -->
+	<link rel="stylesheet" href="/CodeIgniter/An/assets/css/styles.css">
+	<script src="/CodeIgniter/An/assets/scripts/scripts.js></script"></script>
+
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js";
+	integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo";
+	crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+		crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+		crossorigin="anonymous"></script>
+</head>
+<div class="debug container-fluid wrap">
+	<div class="row">
+		<!--product images-->
+		<div class="col-md-6 col-sm-4 row debug">
+			<div class="img-ava col-md-9">
+				<img src="/CodeIgniter/An/assets/images/Cus-category-women.jpg" class="img-fluid rounded-top" alt="">
+			</div>
+			<div class="img-sub col-md-3 debug">
+				<div class="card">
+					<img class="card-img-top" src="/CodeIgniter/An/assets/images/Cus-category-children.jpg" alt="">
+				</div>
+				<div class="card" style="margin-bottom: 10px;">
+					<img class="card-img-top" src="/CodeIgniter/An/assets/images/Cus-category-men.jpg" alt="">
+				</div>
+				<div class="card" style="margin-bottom: 10px;">
+					<img class="card-img-top" src="/CodeIgniter/An/assets/images/Cus-category-women.jpg" alt="">
+				</div>
+			</div>
+		</div>
+		<!--product detail-->
+		<div class="col-md-6 col-sm-8 debug">
+			<div class="product_detail">
+				<div>
+					<h3>Product Title</h3>
+					<h4>Price</h4>
+				</div>
+				<hr class="p_line">
+				<div class="debug" style="text-align: center; width: 100%; margin: 20px 0">
+					Quantity: 'stock'
+				</div>
+				<div class="p_action-group">
+					<a name="download" id="r" class="btn btn-light" href="#" role="button" download="<?=$row['ProductName']?>.pdf">Download 'product' detail</a>
+					<a class="btn btn-light" href="" role="button" >Add to compare</a>
+				</div>
+				<hr class="p_line">
+				<div class="product_info">
+					<div>brief</div>
+					<div id="" class="p_detail">
+						<div>SKU: </div><br>
+						<div>Categories: </div>
+					</div>
+					<div class="social-icon">
+						<a href="">
+							<i class="fab fa-facebook debug" aria-hidden="true"></i>
+						</a>
+						<a href="">
+							<i class="fab fa-twitter debug" aria-hidden="true"></i>
+						</a>
+						<a href="">
+							<i class="fab fa-google debug" aria-hidden="true"></i>
+						</a>
+						<a href="">
+							<i class="fab fa-youtube debug" aria-hidden="true"></i>
+						</a>
+						<a href="">
+							<i class="fab fa-skype debug" aria-hidden="true"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--product description-->
+	<div class="container-fluid debug">
+		<div id="#" name="descriptioin" style="width: 100%;">
+			product description
+		</div>
+		<div id="e" name="add_info" style="width: 100%;">
+			<table class="table table-striped table-responsive">
+				<thead>
+					<th scope="colgroup">Material</th>
+					<th scope="colgroup">Available Sizes</th>
+					<th scope="colgroup">Available Colors</th>
+				</thead>
+				<tbody>
+				<tr>
+					<td scope="row">Material</td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td scope="row">Available Sizes</td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td scope="row">Available Colors</td>
+					<td></td>
+					<td></td>
+				</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<!--product suggestion-->
+	<hr class="p_line">
+	<div class="container-fluid debug">
+		<div class="product_detail header">
+			YOU MAY ALSO LIKE
+		</div>
+		<div class="card-deck">
+			<div class="card">
+				<img class="card-img-top" src="holder.js/100x180/" alt="" style="height: 300px">
+				<div class="card-body">
+					<h4 class="card-title">Title</h4>
+					<p class="card-text">Text</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<body>
+</body>
+</html>

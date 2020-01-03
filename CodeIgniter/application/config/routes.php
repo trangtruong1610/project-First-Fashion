@@ -59,3 +59,7 @@ $route['product/(:num)'] = 'product/get_by_id/$1';
 
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
+
+//Will chage routes later
+$route['/product_detail'] = 'product_detail/index/';
+$route['/dashboard'] = 'dashboard/index/';

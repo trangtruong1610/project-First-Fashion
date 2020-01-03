@@ -18,11 +18,11 @@
             <div class="row justify-content-md-center">
                 <div class="col-sm">
                     <div><a href="https://goo.gl/maps/AeXBFa4uUzb8CZgw7"><i class="fas fa-map-marker-alt"></i></a></div>
-                    24 Phan Liêm, Đa Kao, Quận 1, Hồ Chí Minh, Vietnam
+					24 Phan Liem Street, Da Kao Ward, District 1, Ho Chi Minh City, Vietnam
                 </div>
                 <div class="col-sm">
                     <div><a href="tel:+84 1800 1779"><i class="fas fa-phone-square-alt"></i></a></div>
-                    <div>+84 1800 1779</div>
+                    <div>(+84) 1800 1779</div>
                 </div>
                 <div class="col-sm">
                     <div><a href="mailto:aptech2@aprotrain.com"><i class="fas fa-envelope"></i></a></div>

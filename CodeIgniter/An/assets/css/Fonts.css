@@ -1,0 +1,206 @@
+/*#region Fonts*/
+/*Esta*/
+	@font-face {font-family: "EstaItalic";
+		src: url("http://db.onlinewebfonts.com/t/d4e0d7b88e3f1073a0e96fa2b4b4ee6d.eot"); /* IE9*/
+		src: url("http://db.onlinewebfonts.com/t/d4e0d7b88e3f1073a0e96fa2b4b4ee6d.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+		url("http://db.onlinewebfonts.com/t/d4e0d7b88e3f1073a0e96fa2b4b4ee6d.woff2") format("woff2"), /* chrome firefox */
+		url("http://db.onlinewebfonts.com/t/d4e0d7b88e3f1073a0e96fa2b4b4ee6d.woff") format("woff"), /* chrome firefox */
+		url("http://db.onlinewebfonts.com/t/d4e0d7b88e3f1073a0e96fa2b4b4ee6d.ttf") format("truetype"), /* chrome firefox opera Safari, Android, iOS 4.2+*/
+		url("http://db.onlinewebfonts.com/t/d4e0d7b88e3f1073a0e96fa2b4b4ee6d.svg#EstaItalic") format("svg"); /* iOS 4.1- */
+	}
+	@font-face {font-family: "EstaBold";
+		src: url("http://db.onlinewebfonts.com/t/e0f5c2c8ef656e58fee822b1c4d35046.eot"); /* IE9*/
+		src: url("http://db.onlinewebfonts.com/t/e0f5c2c8ef656e58fee822b1c4d35046.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+		url("http://db.onlinewebfonts.com/t/e0f5c2c8ef656e58fee822b1c4d35046.woff2") format("woff2"), /* chrome firefox */
+		url("http://db.onlinewebfonts.com/t/e0f5c2c8ef656e58fee822b1c4d35046.woff") format("woff"), /* chrome firefox */
+		url("http://db.onlinewebfonts.com/t/e0f5c2c8ef656e58fee822b1c4d35046.ttf") format("truetype"), /* chrome firefox opera Safari, Android, iOS 4.2+*/
+		url("http://db.onlinewebfonts.com/t/e0f5c2c8ef656e58fee822b1c4d35046.svg#EstaBold") format("svg"); /* iOS 4.1- */
+	}
+	@font-face {font-family: "Esta";
+		src: url("http://db.onlinewebfonts.com/t/ba53a3a50f5734959c3dad0142c1eedb.eot"); /* IE9*/
+		src: url("http://db.onlinewebfonts.com/t/ba53a3a50f5734959c3dad0142c1eedb.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+		url("http://db.onlinewebfonts.com/t/ba53a3a50f5734959c3dad0142c1eedb.woff2") format("woff2"), /* chrome firefox */
+		url("http://db.onlinewebfonts.com/t/ba53a3a50f5734959c3dad0142c1eedb.woff") format("woff"), /* chrome firefox */
+		url("http://db.onlinewebfonts.com/t/ba53a3a50f5734959c3dad0142c1eedb.ttf") format("truetype"), /* chrome firefox opera Safari, Android, iOS 4.2+*/
+		url("http://db.onlinewebfonts.com/t/ba53a3a50f5734959c3dad0142c1eedb.svg#Esta") format("svg"); /* iOS 4.1- */
+	}
+	/*Vesta*/
+	@font-face {font-family: "Vesta Regular";
+		src: url("http://db.onlinewebfonts.com/t/73b72b9110d1b267cb1a21a680b1459f.eot"); /* IE9*/
+		src: url("http://db.onlinewebfonts.com/t/73b72b9110d1b267cb1a21a680b1459f.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+		url("http://db.onlinewebfonts.com/t/73b72b9110d1b267cb1a21a680b1459f.woff2") format("woff2"), /* chrome firefox */
+		url("http://db.onlinewebfonts.com/t/73b72b9110d1b267cb1a21a680b1459f.woff") format("woff"), /* chrome firefox */
+		url("http://db.onlinewebfonts.com/t/73b72b9110d1b267cb1a21a680b1459f.ttf") format("truetype"), /* chrome firefox opera Safari, Android, iOS 4.2+*/
+		url("http://db.onlinewebfonts.com/t/73b72b9110d1b267cb1a21a680b1459f.svg#Vesta") format("svg"); /* iOS 4.1- */
+	}
+	@font-face {font-family: "Vesta-SemiBold";
+		src: url("http://db.onlinewebfonts.com/t/bb8f54fa79c323c9e7c25f9124d45c7e.eot"); /* IE9*/
+		src: url("http://db.onlinewebfonts.com/t/bb8f54fa79c323c9e7c25f9124d45c7e.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+		url("http://db.onlinewebfonts.com/t/bb8f54fa79c323c9e7c25f9124d45c7e.woff2") format("woff2"), /* chrome firefox */
+		url("http://db.onlinewebfonts.com/t/bb8f54fa79c323c9e7c25f9124d45c7e.woff") format("woff"), /* chrome firefox */
+		url("http://db.onlinewebfonts.com/t/bb8f54fa79c323c9e7c25f9124d45c7e.ttf") format("truetype"), /* chrome firefox opera Safari, Android, iOS 4.2+*/
+		url("http://db.onlinewebfonts.com/t/bb8f54fa79c323c9e7c25f9124d45c7e.svg#Vesta") format("svg"); /* iOS 4.1- */
+	}
+	@font-face {font-family: "Vesta-Light";
+		src: url("http://db.onlinewebfonts.com/t/3fdf12d532ba36d002471ea314487346.eot"); /* IE9*/
+		src: url("http://db.onlinewebfonts.com/t/3fdf12d532ba36d002471ea314487346.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+		url("http://db.onlinewebfonts.com/t/3fdf12d532ba36d002471ea314487346.woff2") format("woff2"), /* chrome firefox */
+		url("http://db.onlinewebfonts.com/t/3fdf12d532ba36d002471ea314487346.woff") format("woff"), /* chrome firefox */
+		url("http://db.onlinewebfonts.com/t/3fdf12d532ba36d002471ea314487346.ttf") format("truetype"), /* chrome firefox opera Safari, Android, iOS 4.2+*/
+		url("http://db.onlinewebfonts.com/t/3fdf12d532ba36d002471ea314487346.svg#Vesta") format("svg"); /* iOS 4.1- */
+	}/*Light*/
+	@font-face {font-family: "Vesta-Italic";
+		src: url("http://db.onlinewebfonts.com/t/c00321950d212eebeee86280ecfe97d1.eot"); /* IE9*/
+		src: url("http://db.onlinewebfonts.com/t/c00321950d212eebeee86280ecfe97d1.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+		url("http://db.onlinewebfonts.com/t/c00321950d212eebeee86280ecfe97d1.woff2") format("woff2"), /* chrome firefox */
+		url("http://db.onlinewebfonts.com/t/c00321950d212eebeee86280ecfe97d1.woff") format("woff"), /* chrome firefox */
+		url("http://db.onlinewebfonts.com/t/c00321950d212eebeee86280ecfe97d1.ttf") format("truetype"), /* chrome firefox opera Safari, Android, iOS 4.2+*/
+		url("http://db.onlinewebfonts.com/t/c00321950d212eebeee86280ecfe97d1.svg#Vesta") format("svg"); /* iOS 4.1- */
+	} /*Italic*/
+	@font-face {font-family: "Vesta-Bold";
+		src: url("http://db.onlinewebfonts.com/t/d797fa8c97e3d2e33d9ad970476ad808.eot"); /* IE9*/
+		src: url("http://db.onlinewebfonts.com/t/d797fa8c97e3d2e33d9ad970476ad808.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+		url("http://db.onlinewebfonts.com/t/d797fa8c97e3d2e33d9ad970476ad808.woff2") format("woff2"), /* chrome firefox */
+		url("http://db.onlinewebfonts.com/t/d797fa8c97e3d2e33d9ad970476ad808.woff") format("woff"), /* chrome firefox */
+		url("http://db.onlinewebfonts.com/t/d797fa8c97e3d2e33d9ad970476ad808.ttf") format("truetype"), /* chrome firefox opera Safari, Android, iOS 4.2+*/
+		url("http://db.onlinewebfonts.com/t/d797fa8c97e3d2e33d9ad970476ad808.svg#Vesta") format("svg"); /* iOS 4.1- */
+	}
+	@font-face {font-family: "Vesta-Medium";
+		src: url("http://db.onlinewebfonts.com/t/24e446569158d14fd5ae874234bdfce0.eot"); /* IE9*/
+		src: url("http://db.onlinewebfonts.com/t/24e446569158d14fd5ae874234bdfce0.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+		url("http://db.onlinewebfonts.com/t/24e446569158d14fd5ae874234bdfce0.woff2") format("woff2"), /* chrome firefox */
+		url("http://db.onlinewebfonts.com/t/24e446569158d14fd5ae874234bdfce0.woff") format("woff"), /* chrome firefox */
+		url("http://db.onlinewebfonts.com/t/24e446569158d14fd5ae874234bdfce0.ttf") format("truetype"), /* chrome firefox opera Safari, Android, iOS 4.2+*/
+		url("http://db.onlinewebfonts.com/t/24e446569158d14fd5ae874234bdfce0.svg#Vesta") format("svg"); /* iOS 4.1- */
+	} /*Medium*/
+	@font-face {font-family: "Vesta-Black"; src: url("//db.onlinewebfonts.com/t/4a22ed170bd7ad8847780410d42dbdce.eot"); src: url("//db.onlinewebfonts.com/t/4a22ed170bd7ad8847780410d42dbdce.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/4a22ed170bd7ad8847780410d42dbdce.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/4a22ed170bd7ad8847780410d42dbdce.woff") format("woff"), url("//db.onlinewebfonts.com/t/4a22ed170bd7ad8847780410d42dbdce.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/4a22ed170bd7ad8847780410d42dbdce.svg#Vesta") format("svg"); }/*Black*/
+/*Lora*/
+	@font-face {font-family: "Lora-Bold";
+		src: url("http://db.onlinewebfonts.com/t/08aac859b9b566ef55a7e480af3011d2.eot"); /* IE9*/
+		src: url("http://db.onlinewebfonts.com/t/08aac859b9b566ef55a7e480af3011d2.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+		url("http://db.onlinewebfonts.com/t/08aac859b9b566ef55a7e480af3011d2.woff2") format("woff2"), /* chrome firefox */
+		url("http://db.onlinewebfonts.com/t/08aac859b9b566ef55a7e480af3011d2.woff") format("woff"), /* chrome firefox */
+		url("http://db.onlinewebfonts.com/t/08aac859b9b566ef55a7e480af3011d2.ttf") format("truetype"), /* chrome firefox opera Safari, Android, iOS 4.2+*/
+		url("http://db.onlinewebfonts.com/t/08aac859b9b566ef55a7e480af3011d2.svg#Lora") format("svg"); /* iOS 4.1- */
+	}
+@font-face {font-family: "Lora-Regular";
+	src: url("http://db.onlinewebfonts.com/t/194a4e87b627adf12e8094e7babca496.eot"); /* IE9*/
+	src: url("http://db.onlinewebfonts.com/t/194a4e87b627adf12e8094e7babca496.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+	url("http://db.onlinewebfonts.com/t/194a4e87b627adf12e8094e7babca496.woff2") format("woff2"), /* chrome firefox */
+	url("http://db.onlinewebfonts.com/t/194a4e87b627adf12e8094e7babca496.woff") format("woff"), /* chrome firefox */
+	url("http://db.onlinewebfonts.com/t/194a4e87b627adf12e8094e7babca496.ttf") format("truetype"), /* chrome firefox opera Safari, Android, iOS 4.2+*/
+	url("http://db.onlinewebfonts.com/t/194a4e87b627adf12e8094e7babca496.svg#Lora") format("svg"); /* iOS 4.1- */
+}
+@font-face {font-family: "Lora-Italic";
+	src: url("http://db.onlinewebfonts.com/t/27244172ffbd7b3db6df5be1609d96a3.eot"); /* IE9*/
+	src: url("http://db.onlinewebfonts.com/t/27244172ffbd7b3db6df5be1609d96a3.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+	url("http://db.onlinewebfonts.com/t/27244172ffbd7b3db6df5be1609d96a3.woff2") format("woff2"), /* chrome firefox */
+	url("http://db.onlinewebfonts.com/t/27244172ffbd7b3db6df5be1609d96a3.woff") format("woff"), /* chrome firefox */
+	url("http://db.onlinewebfonts.com/t/27244172ffbd7b3db6df5be1609d96a3.ttf") format("truetype"), /* chrome firefox opera Safari, Android, iOS 4.2+*/
+	url("http://db.onlinewebfonts.com/t/27244172ffbd7b3db6df5be1609d96a3.svg#Lora") format("svg"); /* iOS 4.1- */
+}
+/*Charlemagne Std*/
+@font-face {font-family: "Charlemagne Std";
+	src: url("http://db.onlinewebfonts.com/t/5f81cce6bdf565e42056ab354b37b83c.eot"); /* IE9*/
+	src: url("http://db.onlinewebfonts.com/t/5f81cce6bdf565e42056ab354b37b83c.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+	url("http://db.onlinewebfonts.com/t/5f81cce6bdf565e42056ab354b37b83c.woff2") format("woff2"), /* chrome firefox */
+	url("http://db.onlinewebfonts.com/t/5f81cce6bdf565e42056ab354b37b83c.woff") format("woff"), /* chrome firefox */
+	url("http://db.onlinewebfonts.com/t/5f81cce6bdf565e42056ab354b37b83c.ttf") format("truetype"), /* chrome firefox opera Safari, Android, iOS 4.2+*/
+	url("http://db.onlinewebfonts.com/t/5f81cce6bdf565e42056ab354b37b83c.svg#Charlemagne Std") format("svg"); /* iOS 4.1- */
+}
+@font-face {font-family: "CharlemagneC";
+	src: url("http://db.onlinewebfonts.com/t/c648a4693e466f6bf206311cce9b6180.eot"); /* IE9*/
+	src: url("http://db.onlinewebfonts.com/t/c648a4693e466f6bf206311cce9b6180.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+	url("http://db.onlinewebfonts.com/t/c648a4693e466f6bf206311cce9b6180.woff2") format("woff2"), /* chrome firefox */
+	url("http://db.onlinewebfonts.com/t/c648a4693e466f6bf206311cce9b6180.woff") format("woff"), /* chrome firefox */
+	url("http://db.onlinewebfonts.com/t/c648a4693e466f6bf206311cce9b6180.ttf") format("truetype"), /* chrome firefox opera Safari, Android, iOS 4.2+*/
+	url("http://db.onlinewebfonts.com/t/c648a4693e466f6bf206311cce9b6180.svg#CharlemagneC") format("svg"); /* iOS 4.1- */
+}
+@font-face {font-family: "Charlemagne Std Bold";
+	src: url("http://db.onlinewebfonts.com/t/3155bb9a43a1e1349fde80b0116fe6cd.eot"); /* IE9*/
+	src: url("http://db.onlinewebfonts.com/t/3155bb9a43a1e1349fde80b0116fe6cd.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+	url("http://db.onlinewebfonts.com/t/3155bb9a43a1e1349fde80b0116fe6cd.woff2") format("woff2"), /* chrome firefox */
+	url("http://db.onlinewebfonts.com/t/3155bb9a43a1e1349fde80b0116fe6cd.woff") format("woff"), /* chrome firefox */
+	url("http://db.onlinewebfonts.com/t/3155bb9a43a1e1349fde80b0116fe6cd.ttf") format("truetype"), /* chrome firefox opera Safari, Android, iOS 4.2+*/
+	url("http://db.onlinewebfonts.com/t/3155bb9a43a1e1349fde80b0116fe6cd.svg#Charlemagne Std") format("svg"); /* iOS 4.1- */
+}
+/*Museo W01 900*/
+@font-face {font-family: "MuseoSansW01-Rounded300";
+	src: url("http://db.onlinewebfonts.com/t/1b4cd06b44538d529084b3599f708643.eot"); /* IE9*/
+	src: url("http://db.onlinewebfonts.com/t/1b4cd06b44538d529084b3599f708643.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+	url("http://db.onlinewebfonts.com/t/1b4cd06b44538d529084b3599f708643.woff2") format("woff2"), /* chrome firefox */
+	url("http://db.onlinewebfonts.com/t/1b4cd06b44538d529084b3599f708643.woff") format("woff"), /* chrome firefox */
+	url("http://db.onlinewebfonts.com/t/1b4cd06b44538d529084b3599f708643.ttf") format("truetype"), /* chrome firefox opera Safari, Android, iOS 4.2+*/
+	url("http://db.onlinewebfonts.com/t/1b4cd06b44538d529084b3599f708643.svg#MuseoSansW01-Rounded300") format("svg"); /* iOS 4.1- */
+}
+@font-face {font-family: "MuseoW01-900";
+	src: url("http://db.onlinewebfonts.com/t/4cc9d692753925335e7af83ecf6e6815.eot"); /* IE9*/
+	src: url("http://db.onlinewebfonts.com/t/4cc9d692753925335e7af83ecf6e6815.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+	url("http://db.onlinewebfonts.com/t/4cc9d692753925335e7af83ecf6e6815.woff2") format("woff2"), /* chrome firefox */
+	url("http://db.onlinewebfonts.com/t/4cc9d692753925335e7af83ecf6e6815.woff") format("woff"), /* chrome firefox */
+	url("http://db.onlinewebfonts.com/t/4cc9d692753925335e7af83ecf6e6815.ttf") format("truetype"), /* chrome firefox opera Safari, Android, iOS 4.2+*/
+	url("http://db.onlinewebfonts.com/t/4cc9d692753925335e7af83ecf6e6815.svg#MuseoW01-900") format("svg"); /* iOS 4.1- */
+}
+/*Lulo Clean W01*/
+@font-face {font-family: "LuloCleanW01-One";
+	src: url("http://db.onlinewebfonts.com/t/116d187134420de5733c7c45bbc80c46.eot"); /* IE9*/
+	src: url("http://db.onlinewebfonts.com/t/116d187134420de5733c7c45bbc80c46.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+	url("http://db.onlinewebfonts.com/t/116d187134420de5733c7c45bbc80c46.woff2") format("woff2"), /* chrome firefox */
+	url("http://db.onlinewebfonts.com/t/116d187134420de5733c7c45bbc80c46.woff") format("woff"), /* chrome firefox */
+	url("http://db.onlinewebfonts.com/t/116d187134420de5733c7c45bbc80c46.ttf") format("truetype"), /* chrome firefox opera Safari, Android, iOS 4.2+*/
+	url("http://db.onlinewebfonts.com/t/116d187134420de5733c7c45bbc80c46.svg#LuloCleanW01-One") format("svg"); /* iOS 4.1- */
+}
+@font-face {font-family: "LuloCleanW01-OneBold";
+	src: url("http://db.onlinewebfonts.com/t/39a2c7f346d5cfae7045aeb2fb50d9ad.eot"); /* IE9*/
+	src: url("http://db.onlinewebfonts.com/t/39a2c7f346d5cfae7045aeb2fb50d9ad.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+	url("http://db.onlinewebfonts.com/t/39a2c7f346d5cfae7045aeb2fb50d9ad.woff2") format("woff2"), /* chrome firefox */
+	url("http://db.onlinewebfonts.com/t/39a2c7f346d5cfae7045aeb2fb50d9ad.woff") format("woff"), /* chrome firefox */
+	url("http://db.onlinewebfonts.com/t/39a2c7f346d5cfae7045aeb2fb50d9ad.ttf") format("truetype"), /* chrome firefox opera Safari, Android, iOS 4.2+*/
+	url("http://db.onlinewebfonts.com/t/39a2c7f346d5cfae7045aeb2fb50d9ad.svg#LuloCleanW01-OneBold") format("svg"); /* iOS 4.1- */
+}
+/*Athelas W01*/
+@font-face {font-family: "AthelasW01-Regular";
+	src: url("http://db.onlinewebfonts.com/t/8a8da4e29aedaa26c72e1b57293ddf2d.eot"); /* IE9*/
+	src: url("http://db.onlinewebfonts.com/t/8a8da4e29aedaa26c72e1b57293ddf2d.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+	url("http://db.onlinewebfonts.com/t/8a8da4e29aedaa26c72e1b57293ddf2d.woff2") format("woff2"), /* chrome firefox */
+	url("http://db.onlinewebfonts.com/t/8a8da4e29aedaa26c72e1b57293ddf2d.woff") format("woff"), /* chrome firefox */
+	url("http://db.onlinewebfonts.com/t/8a8da4e29aedaa26c72e1b57293ddf2d.ttf") format("truetype"), /* chrome firefox opera Safari, Android, iOS 4.2+*/
+	url("http://db.onlinewebfonts.com/t/8a8da4e29aedaa26c72e1b57293ddf2d.svg#AthelasW01-Regular") format("svg"); /* iOS 4.1- */
+}
+/*Wrexham*/
+@font-face {font-family: "Wrexham";
+	src: url("http://db.onlinewebfonts.com/t/87f3446bd715401c8cfeb58b6649d2e2.eot"); /* IE9*/
+	src: url("http://db.onlinewebfonts.com/t/87f3446bd715401c8cfeb58b6649d2e2.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+	url("http://db.onlinewebfonts.com/t/87f3446bd715401c8cfeb58b6649d2e2.woff2") format("woff2"), /* chrome firefox */
+	url("http://db.onlinewebfonts.com/t/87f3446bd715401c8cfeb58b6649d2e2.woff") format("woff"), /* chrome firefox */
+	url("http://db.onlinewebfonts.com/t/87f3446bd715401c8cfeb58b6649d2e2.ttf") format("truetype"), /* chrome firefox opera Safari, Android, iOS 4.2+*/
+	url("http://db.onlinewebfonts.com/t/87f3446bd715401c8cfeb58b6649d2e2.svg#Wrexham") format("svg"); /* iOS 4.1- */
+}
+/*Wenceslas*/
+@font-face {font-family: "Wenceslas";
+	src: url("http://db.onlinewebfonts.com/t/cdb02d0a9a8fb3ccc665b8cf6d6b6900.eot"); /* IE9*/
+	src: url("http://db.onlinewebfonts.com/t/cdb02d0a9a8fb3ccc665b8cf6d6b6900.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+	url("http://db.onlinewebfonts.com/t/cdb02d0a9a8fb3ccc665b8cf6d6b6900.woff2") format("woff2"), /* chrome firefox */
+	url("http://db.onlinewebfonts.com/t/cdb02d0a9a8fb3ccc665b8cf6d6b6900.woff") format("woff"), /* chrome firefox */
+	url("http://db.onlinewebfonts.com/t/cdb02d0a9a8fb3ccc665b8cf6d6b6900.ttf") format("truetype"), /* chrome firefox opera Safari, Android, iOS 4.2+*/
+	url("http://db.onlinewebfonts.com/t/cdb02d0a9a8fb3ccc665b8cf6d6b6900.svg#Wenceslas") format("svg"); /* iOS 4.1- */
+}
+/*FontAwesome*/
+@font-face {font-family: "FontAwesome";
+	src: url("/Codeigniter/An/assets/fonts/font_awesome/fa-brands-400.eot") format("embedded-opentype"), /* IE6-IE8 */
+	url("/Codeigniter/An/assets/fonts/font_awesome/fa-brands-400.woff2") format("woff2"), /* chrome firefox */
+	url("/Codeigniter/An/assets/fonts/font_awesome/fa-brands-400.woff") format("woff"), /* chrome firefox */
+	url("/Codeigniter/An/assets/fonts/font_awesome/fa-brands-400.ttf") format("truetype"), /* chrome firefox opera Safari, Android, iOS 4.2+*/
+	url("/Codeigniter/An/assets/fonts/font_awesome/fa-brands-400.svg#Wenceslas") format("svg"); /* iOS 4.1- */
+	src: url("/Codeigniter/An/assets/fonts/font_awesome/fa-regular-400.eot") format("embedded-opentype"), /* IE6-IE8 */
+	url("/Codeigniter/An/assets/fonts/font_awesome/fa-regular-400.woff2") format("woff2"), /* chrome firefox */
+	url("/Codeigniter/An/assets/fonts/font_awesome/fa-regular-400.woff") format("woff"), /* chrome firefox */
+	url("/Codeigniter/An/assets/fonts/font_awesome/fa-regular-400.ttf") format("truetype"), /* chrome firefox opera Safari, Android, iOS 4.2+*/
+	url("/Codeigniter/An/assets/fonts/font_awesome/fa-regular-400.svg#Wenceslas") format("svg"); /* iOS 4.1- */
+	src: url("/Codeigniter/An/assets/fonts/font_awesome/fa-solid-400.eot") format("embedded-opentype"), /* IE6-IE8 */
+	url("/Codeigniter/An/assets/fonts/font_awesome/fa-solid-400.woff2") format("woff2"), /* chrome firefox */
+	url("/Codeigniter/An/assets/fonts/font_awesome/fa-solid-400.woff") format("woff"), /* chrome firefox */
+	url("/Codeigniter/An/assets/fonts/font_awesome/fa-solid-400.ttf") format("truetype"), /* chrome firefox opera Safari, Android, iOS 4.2+*/
+	url("/Codeigniter/An/assets/fonts/font_awesome/fa-solid-400.svg#Wenceslas") format("svg"); /* iOS 4.1- */
+
+}
