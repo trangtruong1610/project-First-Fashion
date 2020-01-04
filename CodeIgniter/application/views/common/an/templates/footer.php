@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Local Sources -->
-	<link href="<?php echo base_url('CodeIgniter/An/assets/css/master_style.css') ?>" rel="stylesheet">
-	<link href="<?php echo base_url('CodeIgniter/An/assets/css/fontawesome.css') ?>" rel="stylesheet">
-	<script src="<?php echo base_url('CodeIgniter/An/assets/scripts/scripts.js') ?>"></script>
+	<link href="<?php echo base_url('../An/assets/css/styles.css') ?>" rel="stylesheet">
+	<link href="<?php echo base_url('../An/assets/css/fontawesome.css') ?>" rel="stylesheet">
+	<script src="<?php echo base_url('../An/assets/scripts/scripts.js') ?>"></script>
 	<!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -84,6 +84,7 @@
                 <div style="font-family: Vesta-Black; font-size: 30px; letter-spacing: 2px">1800 1779</div>
             </div>
         </div>
+        
         <div class="debug col-lg-4 row">
             <div class="debug col-sm-6">
                 <div class="header5">CATEGORIES</div>
@@ -118,17 +119,12 @@
                 <div>
                     <ul class="list-lev1">
                         <li class="list-lev2">
-                            <a href="" class="debug list-lev1-item">
-                                Store Information
-                            </a>
-                        </li>
-                        <li class="list-lev2">
-                            <a href="" class="debug list-lev1-item">
+                            <a href="#brands" class="debug list-lev1-item">
                                 Our Brands
                             </a>
                         </li>
                         <li class="list-lev2">
-                            <a href="" class="debug list-lev1-item">
+                            <a href="<?=base_url().'contact'?>" class="debug list-lev1-item">
                                 Contact
                             </a>
                         </li>

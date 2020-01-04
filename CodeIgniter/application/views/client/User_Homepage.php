@@ -6,11 +6,9 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <!-- Local Source -->
-	<link rel="stylesheet" href="<?= base_url('CodeIgniter/An/assets/css/fontawesome.css') ?>">
-	<link rel="stylesheet" href="<?= base_url('CodeIgniter/An/assets/css/fonts.css') ?>">
-	<link rel="stylesheet" href="<?= base_url('CodeIgniter/An/assets/css/Deco-line.css') ?>">
-    <script src="<?php echo base_url('CodeIgniter/An/assets/scripts/scripts.js') ?>"></script>
-	<link rel="stylesheet" href="<?= base_url('CodeIgniter/An/assets/css/styles.css') ?>">
+
+    <script src="<?php echo base_url('../An/assets/scripts/scripts.js') ?>"></script>
+	<link rel="stylesheet" href="<?= base_url('../An/assets/css/styles.css') ?>">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -92,21 +90,21 @@
     <div id="brands">
         <div class="debug" style="margin-top: 20px">
             <div class="header debug">
-                <div class="homepage-header"><img src="<?php echo base_url('CodeIgniter/An/assets/images/left-lines.png')?>"></div>
+                <div class="homepage-header"><img src="<?php echo base_url('../An/assets/images/left-lines.png')?>"></div>
                 <span>TOP BRANDS</span>
-                <div class="homepage-header"><img src="<?php echo base_url('CodeIgniter/An/assets/images/right-lines.png')?>"></div>
+                <div class="homepage-header"><img src="<?php echo base_url('../An/assets/images/right-lines.png')?>"></div>
             </div>
             <div class="con-box debug row">
-                <button class="col-md-2 box debug"><img src="<?php echo base_url('CodeIgniter/An/assets/images/1280px-Burberry_Logo.svg.png')?>"></button>
-                <button class="col-md-2 box debug"><img src="<?php echo base_url('CodeIgniter/An/assets/images/1280px-Calvin_klein_logo.svg.png')?>"></button>
-                <button class="col-md-2 box debug"><img src="<?php echo base_url('CodeIgniter/An/assets/images/Cartier_logo.svg')?>"></button>
-                <button class="col-md-2 box debug"><img src="<?php echo base_url('CodeIgniter/An/assets/images/1280px-Chanel_logo.svg.png')?>"></button>
-                <button class="col-md-2 box debug"><img src="<?php echo base_url('CodeIgniter/An/assets/images/1280px-Louis_Vuitton_logo.svg.png')?>"></button>
-                <button class="col-md-2 box debug"><img src="<?php echo base_url('CodeIgniter/An/assets/images/1280px-Chanel_logo.svg.png')?>"></button>
-                <button class="col-md-2 box debug"><img src="<?php echo base_url('CodeIgniter/An/assets/images/Cartier_logo.svg')?>"></button>
-                <button class="col-md-2 box debug"><img src="<?php echo base_url('CodeIgniter/An/assets/images/1280px-Louis_Vuitton_logo.svg.png')?>"></button>
-                <button class="col-md-2 box debug"><img src="<?php echo base_url('CodeIgniter/An/assets/images/1280px-Calvin_klein_logo.svg.png')?>"></button>
-                <button class="col-md-2 box debug"><img src="<?php echo base_url('CodeIgniter/An/assets/images/1280px-Prada-Logo.svg.png')?>"></button>
+                <button class="col-md-2 box debug"><img src="<?php echo base_url('../An/assets/images/1280px-Burberry_Logo.svg.png')?>"></button>
+                <button class="col-md-2 box debug"><img src="<?php echo base_url('../An/assets/images/1280px-Calvin_klein_logo.svg.png')?>"></button>
+                <button class="col-md-2 box debug"><img src="<?php echo base_url('../An/assets/images/Cartier_logo.svg')?>"></button>
+                <button class="col-md-2 box debug"><img src="<?php echo base_url('../An/assets/images/1280px-Chanel_logo.svg.png')?>"></button>
+                <button class="col-md-2 box debug"><img src="<?php echo base_url('../An/assets/images/1280px-Louis_Vuitton_logo.svg.png')?>"></button>
+                <button class="col-md-2 box debug"><img src="<?php echo base_url('../An/assets/images/1280px-Chanel_logo.svg.png')?>"></button>
+                <button class="col-md-2 box debug"><img src="<?php echo base_url('../An/assets/images/Cartier_logo.svg')?>"></button>
+                <button class="col-md-2 box debug"><img src="<?php echo base_url('../An/assets/images/1280px-Louis_Vuitton_logo.svg.png')?>"></button>
+                <button class="col-md-2 box debug"><img src="<?php echo base_url('../An/assets/images/1280px-Calvin_klein_logo.svg.png')?>"></button>
+                <button class="col-md-2 box debug"><img src="<?php echo base_url('../An/assets/images/1280px-Prada-Logo.svg.png')?>"></button>
             </div>
         </div>
     </div>
@@ -114,9 +112,9 @@
     <div id="trending">
         <div class="debug" style="margin-top: 20px">
             <div class="header debug">
-				<div class="homepage-header"><img src="/CodeIgniter/An/assets/images/left-lines.png"></div>
+                <div class="homepage-header"><img src="<?php echo base_url('../An/assets/images/left-lines.png')?>"></div>
                 <span>TRENDING</span>
-                <div class="homepage-header"><img src="/CodeIgniter/An/assets/images/right-lines.png"></div>
+                <div class="homepage-header"><img src="<?php echo base_url('../An/assets/images/right-lines.png')?>"></div>
             </div>
         </div>
         <div class="container-fluid">
@@ -130,23 +128,23 @@
                         <div class="carousel-item active">
                             <div class="d-none d-lg-block">
                                 <div class="slide-box">
-                                    <img src="<?php echo base_url('CodeIgniter/An/assets/images/Cus-category-men.jpg" alt="First slide')?>">
-                                    <img src="<?php echo base_url('CodeIgniter/An/assets/images/Cus-category-women.jpg" alt="First slide')?>">
-                                    <img src="<?php echo base_url('CodeIgniter/An/assets/images/Cus-category-children.jpg" alt="First slide')?>">
-                                    <img src="<?php echo base_url('CodeIgniter/An/assets/images/Cus-category-women.jpg" alt="First slide')?>">
+                                    <img src="<?php echo base_url('../An/assets/images/Cus-category-men.jpg" alt="First slide')?>">
+                                    <img src="<?php echo base_url('../An/assets/images/Cus-category-women.jpg" alt="First slide')?>">
+                                    <img src="<?php echo base_url('../An/assets/images/Cus-category-children.jpg" alt="First slide')?>">
+                                    <img src="<?php echo base_url('../An/assets/images/Cus-category-women.jpg" alt="First slide')?>">
                                 </div>
                             </div>
                             <div class="d-none d-md-block d-lg-none">
                                 <div class="slide-box">
-                                    <img src="<?php echo base_url('CodeIgniter/An/assets/images/Cus-category-men.jpg" alt="First slide')?>">
-                                    <img src="<?php echo base_url('CodeIgniter/An/assets/images/Cus-category-women.jpg" alt="First slide')?>">
-                                    <img src="<?php echo base_url('CodeIgniter/An/assets/images/Cus-category-children.jpg" alt="First slide')?>">
+                                    <img src="<?php echo base_url('../An/assets/images/Cus-category-men.jpg" alt="First slide')?>">
+                                    <img src="<?php echo base_url('../An/assets/images/Cus-category-women.jpg" alt="First slide')?>">
+                                    <img src="<?php echo base_url('../An/assets/images/Cus-category-children.jpg" alt="First slide')?>">
                                 </div>
                             </div>
                             <div class="d-none d-sm-block d-md-none">
                                 <div class="slide-box">
-                                    <img src="<?php echo base_url('CodeIgniter/An/assets/images/Cus-category-men.jpg" alt="First slide')?>">
-                                    <img src="<?php echo base_url('CodeIgniter/An/assets/images/Cus-category-women.jpg" alt="First slide')?>">
+                                    <img src="<?php echo base_url('../An/assets/images/Cus-category-men.jpg" alt="First slide')?>">
+                                    <img src="<?php echo base_url('../An/assets/images/Cus-category-women.jpg" alt="First slide')?>">
                                 </div>
                             </div>
                             <div class="d-block d-sm-none">
@@ -156,27 +154,27 @@
                         <div class="carousel-item">
                             <div class="d-none d-lg-block">
                                 <div class="slide-box">
-                                    <img src="<?php echo base_url('CodeIgniter/An/assets/images/Cus-category-children.jpg" alt="Second slide')?>">
-                                    <img src="<?php echo base_url('CodeIgniter/An/assets/images/Cus-category-men.jpg" alt="Second slide')?>">
-                                    <img src="<?php echo base_url('CodeIgniter/An/assets/images/Cus-category-women.jpg" alt="Second slide')?>">
-                                    <img src="<?php echo base_url('CodeIgniter/An/assets/images/Cus-category-children.jpg" alt="Second slide')?>">
+                                    <img src="<?php echo base_url('../An/assets/images/Cus-category-children.jpg" alt="Second slide')?>">
+                                    <img src="<?php echo base_url('../An/assets/images/Cus-category-men.jpg" alt="Second slide')?>">
+                                    <img src="<?php echo base_url('../An/assets/images/Cus-category-women.jpg" alt="Second slide')?>">
+                                    <img src="<?php echo base_url('../An/assets/images/Cus-category-children.jpg" alt="Second slide')?>">
                                 </div>
                             </div>
                             <div class="d-none d-md-block d-lg-none">
                                 <div class="slide-box">
-                                    <img src="<?php echo base_url('CodeIgniter/An/assets/images/Cus-category-children.jpg" alt="Second slide')?>">
-                                    <img src="<?php echo base_url('CodeIgniter/An/assets/images/Cus-category-men.jpg" alt="Second slide')?>">
-                                    <img src="<?php echo base_url('CodeIgniter/An/assets/images/Cus-category-women.jpg" alt="Second slide')?>">
+                                    <img src="<?php echo base_url('../An/assets/images/Cus-category-children.jpg" alt="Second slide')?>">
+                                    <img src="<?php echo base_url('../An/assets/images/Cus-category-men.jpg" alt="Second slide')?>">
+                                    <img src="<?php echo base_url('../An/assets/images/Cus-category-women.jpg" alt="Second slide')?>">
                                 </div>
                             </div>
                             <div class="d-none d-sm-block d-md-none">
                                 <div class="slide-box">
-                                    <img src="<?php echo base_url('CodeIgniter/An/assets/images/Cus-category-children.jpg" alt="Second slide')?>">
-                                    <img src="<?php echo base_url('CodeIgniter/An/assets/images/Cus-category-men.jpg" alt="Second slide')?>">
+                                    <img src="<?php echo base_url('../An/assets/images/Cus-category-children.jpg" alt="Second slide')?>">
+                                    <img src="<?php echo base_url('../An/assets/images/Cus-category-men.jpg" alt="Second slide')?>">
                                 </div>
                             </div>
                             <div class="d-block d-sm-none">
-                                <img class="d-block w-100" src="<?php echo base_url('CodeIgniter/An/assets/images/Cus-category-children.jpg" alt="Second slide')?>">
+                                <img class="d-block w-100" src="<?php echo base_url('../An/assets/images/Cus-category-children.jpg" alt="Second slide')?>">
                             </div>
                         </div>
                     </div>
