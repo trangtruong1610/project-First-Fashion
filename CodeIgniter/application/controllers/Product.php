@@ -8,7 +8,7 @@ class Product extends CI_Controller
 		$this->load->library("pagination");
 	}
 
-		public function get_all()
+	public function get_all()
 	{
 		$this->load->model('product_all');
 		$result = $this->product_all->get_all();
@@ -18,25 +18,12 @@ class Product extends CI_Controller
 	public function get_by_id($id)
 	{
 		$this->load->model('product_all');
-		$result = $this->product_all->get_by_id($id);
-		$data['data'] = $result;
-		$this->load->view('/client/product_id', $data);
+		$files = $this->product_all->get_file_by_id($id);
+		$data['files'] = $files;
+		$all_data = $this->product_all->get_by_id($id);
+		$data['data'] = $all_data;
+		$this->load->view('common/an/views/product_detail.php', $data);
 	}
 
-	
-		public function index()
-	{
-		$config = array();
-		$config['total_rows'] = $this->product_all->record_count();
-		$config['per_page'] = 9;
-		$config['uri_segment'] = 3;
-
-		$this->pagination->initialize($config);
-		$result = $this->load_db();
-		$data['product'] = $result;
-		$data['brand'] = $this->product_all->get_brand();
-
-		$this->load->view('/client/product.php', $data);
-	}
 }
 ?>

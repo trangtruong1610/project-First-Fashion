@@ -463,7 +463,7 @@ class CI_Pagination {
 				}
 			}
 
-			// Add the page segment to the end of the query string, where the
+			// Dashboard the page segment to the end of the query string, where the
 			// page number will be appended.
 			$base_url .= $query_string_sep.http_build_query(array_merge($get, array($this->query_string_segment => '')));
 		}
@@ -654,7 +654,7 @@ class CI_Pagination {
 		// in the penultimate link so we'll kill all double slashes.
 		$output = preg_replace('#([^:"])//+#', '\\1/', $output);
 
-		// Add the wrapper HTML if exists
+		// Dashboard the wrapper HTML if exists
 		return $this->full_tag_open.$output.$this->full_tag_close;
 	}
 
@@ -684,7 +684,7 @@ class CI_Pagination {
 	// --------------------------------------------------------------------
 
 	/**
-	 * Add "rel" attribute
+	 * Dashboard "rel" attribute
 	 *
 	 * @link	http://www.w3.org/TR/html5/links.html#linkTypes
 	 * @param	string	$type

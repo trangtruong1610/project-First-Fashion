@@ -1370,7 +1370,7 @@ class CI_Image_lib {
 			$drp_color = str_split(substr($this->wm_shadow_color, 1, 6), 2);
 			$drp_color = imagecolorclosest($src_img, hexdec($drp_color[0]), hexdec($drp_color[1]), hexdec($drp_color[2]));
 
-			// Add the shadow to the source image
+			// Dashboard the shadow to the source image
 			if ($this->wm_use_truetype)
 			{
 				imagettftext($src_img, $this->wm_font_size, 0, $x_shad, $y_shad, $drp_color, $this->wm_font_path, $this->wm_text);
@@ -1390,7 +1390,7 @@ class CI_Image_lib {
 		$txt_color = str_split(substr($this->wm_font_color, 1, 6), 2);
 		$txt_color = imagecolorclosest($src_img, hexdec($txt_color[0]), hexdec($txt_color[1]), hexdec($txt_color[2]));
 
-		// Add the text to the source image
+		// Dashboard the text to the source image
 		if ($this->wm_use_truetype)
 		{
 			imagettftext($src_img, $this->wm_font_size, 0, $x_axis, $y_axis, $txt_color, $this->wm_font_path, $this->wm_text);

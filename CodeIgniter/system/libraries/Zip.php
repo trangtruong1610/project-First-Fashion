@@ -128,7 +128,7 @@ class CI_Zip {
 	// --------------------------------------------------------------------
 
 	/**
-	 * Add Directory
+	 * Dashboard Directory
 	 *
 	 * Lets you add a virtual directory into which you can place files.
 	 *
@@ -173,7 +173,7 @@ class CI_Zip {
 	// --------------------------------------------------------------------
 
 	/**
-	 * Add Directory
+	 * Dashboard Directory
 	 *
 	 * @param	string	$dir	the directory name
 	 * @param	int	$file_mtime
@@ -222,7 +222,7 @@ class CI_Zip {
 	// --------------------------------------------------------------------
 
 	/**
-	 * Add Data to Zip
+	 * Dashboard Data to Zip
 	 *
 	 * Lets you add files to the archive. If the path is included
 	 * in the filename it will be placed within a directory. Make
@@ -252,7 +252,7 @@ class CI_Zip {
 	// --------------------------------------------------------------------
 
 	/**
-	 * Add Data to Zip
+	 * Dashboard Data to Zip
 	 *
 	 * @param	string	$filepath	the file name/path
 	 * @param	string	$data	the data to be encoded

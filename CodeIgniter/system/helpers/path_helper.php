@@ -76,7 +76,7 @@ if ( ! function_exists('set_realpath'))
 			show_error('Not a valid path: '.$path);
 		}
 
-		// Add a trailing slash, if this is a directory
+		// Dashboard a trailing slash, if this is a directory
 		return is_dir($path) ? rtrim($path, DIRECTORY_SEPARATOR).DIRECTORY_SEPARATOR : $path;
 	}
 }

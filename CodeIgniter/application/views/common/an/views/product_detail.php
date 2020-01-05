@@ -1,16 +1,30 @@
+<?php $this->load->view('/common/trang/view/header'); ?>
+
+<?php
+if (isset($_POST["add"])){
+	$id = (int)($_POST['add']);
+	array_push($_SESSION['compare'], $id);
+}
+$res = array_slice($_SESSION['compare'], -3, 3, true);
+var_dump($_SESSION['compare']);
+echo '<br>';
+var_dump($res);
+
+?>
+
 <!doctype html>
 <html lang="en">
 <head>
-    <title><?php ?></title>
+    <title>Product</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Local Sources -->
-	<link rel="stylesheet" href="<?= base_url('/CodeIgniter/An/assets/css/master_style.css')?>">
-	<link rel="stylesheet" href="<?= base_url('/CodeIgniter/An/assets/css/fonts.css')?>">
-	<link rel="stylesheet" href="<?= base_url('/CodeIgniter/An/assets/css/fontawesome.css') ?>">
-    <script src="<?=base_url('/CodeIgniter/An/assets/scripts/scripts.js') ?>"></script>
+	<link rel="stylesheet" href="<?= base_url('../An/assets/css/master_style.css')?>">
+	<link rel="stylesheet" href="<?= base_url('../An/assets/css/fonts.css')?>">
+	<link rel="stylesheet" href="<?= base_url('../An/assets/css/fontawesome.css') ?>">
+    <script src="<?=base_url('../An/assets/scripts/scripts.js') ?>"></script>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -34,30 +48,27 @@
 		<!--product images-->
 		<div class="col-md-6 col-sm-4 row debug">
 			<div class="img-ava col-md-9">
-				<img data-target="" src="/CodeIgniter/An/assets/images/Cus-category-women.jpg" class="img-fluid rounded-top" alt="">
+				<?php foreach ($data as $d) :?>
+				<img data-target="" src="<?=$d['File']?>" class="img-fluid rounded-top" alt="">
 			</div>
 			<div class="img-sub col-md-3 debug">
+				<?php foreach ($files as $file) :?>
 				<div class="card">
-					<img class="card-img-top" src="/CodeIgniter/An/assets/images/Cus-category-children.jpg" alt="">
+					<img class="card-img-top" src="<?=$file['link']?>" alt="">
 				</div>
-				<div class="card" style="margin-bottom: 10px;">
-					<img class="card-img-top" src="/CodeIgniter/An/assets/images/Cus-category-men.jpg" alt="">
-				</div>
-				<div class="card" style="margin-bottom: 10px;">
-					<img class="card-img-top" src="/CodeIgniter/An/assets/images/Cus-category-women.jpg" alt="">
-				</div>
+				<?php endforeach;?>
 			</div>
 		</div>
 		<!--product detail-->
 		<div class="col-md-6 col-sm-8 debug">
 			<div class="product_detail">
 				<div>
-					<h3>Product Title</h3>
-					<h4>Price</h4>
+					<h3><?=$d['Name']?></h3>
+					<h4><?=$d['Price']?></h4>
 				</div>
 				<hr class="p_line">
 				<div class="debug" style="text-align: center; width: 100%; margin: 20px 0">
-					Quantity: 'stock'
+					Quantity: <?=$d['Status'] = 1 ? 'In Stock': 'Sold Out'?>
 				</div>
 				<div class="p_action-group">
 					<a name="download" id="r" class="btn btn-light" href="#" role="button" download="">
@@ -66,18 +77,18 @@
 						</span>
 						<i class="fa fa-download" aria-hidden="true"></i>
 					</a>
-					<a class="btn btn-light" href="" role="button" >
-						<span>
-							Add to compare
-						</span>
+					<form action="" method="post">
+						<button class="btn btn-light btn-block" onclick="myFunction()" name="add" type="submit" formmethod="post" value="<?=$d['id']?>" >
+						Add to compare
 						<i class="fa fa-refresh" aria-hidden="true"></i>
-					</a>
+
+						</button>
+					</form>
 				</div>
 				<hr class="p_line">
 				<div class="product_info">
 					<div>brief</div>
 					<div id="" class="p_detail">
-						<div>SKU: </div><br>
 						<div>Categories: </div>
 					</div>
 					<div class="social-icon">
@@ -108,6 +119,7 @@
 				<ul id="tabs" class="nav nav-tabs">
 					<li class="nav-item">
 						<a href="" data-target="#description" data-toggle="tab" class="nav-link small text-uppercase">Description</a>
+
 					</li>
 					<li class="nav-item">
 						<a href="" data-target="#additional-info" data-toggle="tab" class="nav-link small text-uppercase active">Additional Information</a>
@@ -117,7 +129,7 @@
 					<div id="description" class="tab-pane fade">
 						<div class="row pb-2">
 							<div class="col-sm-12">
-								Product Description
+								<?=$d['Description']?>
 							</p>
 							</div>
 						</div>
@@ -128,19 +140,16 @@
 								<table class="table table-striped table-inverse table-responsive">
 									<tbody>
 									<tr>
-										<td scope="row" class="tb-header">Material</td>
-										<td></td>
-										<td></td>
+										<td>Material : </td>
+										<td scope="row" class="tb-header"><?=$d['Material']?></td>
 									</tr>
 									<tr>
-										<td scope="row" class="tb-header">Available Sizes</td>
-										<td></td>
-										<td></td>
+										<td>Size :</td>
+										<td scope="row" class="tb-header"><?=$d['Size']?></td>
 									</tr>
 									<tr>
-										<td scope="row " class="tb-header">Available Colors</td>
-										<td></td>
-										<td></td>
+										<td>Color :</td>
+										<td scope="row " class="tb-header"><?=$d['Color']?></td>
 									</tr>
 									</tbody>
 								</table>
@@ -151,6 +160,7 @@
 		</div>
 		</div>
 	</div>
+	<?php endforeach;?>
 	<!--product suggestion-->
 	<div class="container-fluid debug" style="margin-top: 50px">
 		<div class="header debug">
@@ -170,4 +180,12 @@
 	</div>
 </div>
 </body>
+<script>
+	// When the user clicks on <div>, open the popup
+	function myFunction() {
+		alert("Add to compare success");
+	}
+</script>
 </html>
+
+<?php $this->load->view('/common/an/templates/footer'); ?>

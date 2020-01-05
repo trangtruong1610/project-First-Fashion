@@ -101,7 +101,7 @@ class CI_DB_Cache {
 			$path = $this->db->cachedir;
 		}
 
-		// Add a trailing slash to the path if needed
+		// Dashboard a trailing slash to the path if needed
 		$path = realpath($path)
 			? rtrim(realpath($path), DIRECTORY_SEPARATOR).DIRECTORY_SEPARATOR
 			: rtrim($path, '/').'/';

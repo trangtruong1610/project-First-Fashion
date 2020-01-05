@@ -15,43 +15,6 @@
 </head>
 <body>
     <div id="header">
-        <div id="search-bar">
-            <nav class="navbar navbar-light">
-                <div id="login-form">
-                    <div class="dropdown">
-                        <a class="dropdown" href="http://example.com" id="dropdown10" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Login / Register</a>
-                        <div class="dropdown-menu">
-                            <form class="px-4 py-3">
-                                <div class="form-group">
-                                    <label for="exampleDropdownFormEmail1">Email address</label>
-                                    <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
-                                </div>
-                                <div class="form-group">
-                                    <label for="exampleDropdownFormPassword1">Password</label>
-                                    <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
-                                </div>
-                                <div class="form-group">
-                                    <div class="form-check">
-                                        <input type="checkbox" class="form-check-input" id="dropdownCheck">
-                                        <label class="form-check-label" for="dropdownCheck">
-                                            Remember me
-                                        </label>
-                                    </div>
-                                </div>
-                                <button type="submit" class="btn btn-primary">Sign in</button>
-                            </form>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">New around here? Sign up</a>
-                            <a class="dropdown-item" href="#">Forgot password?</a>
-                        </div>
-                    </div>
-                </div>
-                <form class="form-inline">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                </form>
-            </nav>
-        </div>
         <div class="logo">
             this is logo
         </div>
@@ -76,6 +39,9 @@
 				</li>
                 <li class="nav-item active">
                     <a class="nav-link" href="<?=base_url().'contact'?>">CONTACT<span class="sr-only">(current)</span></a>
+                </li>
+				<li class="nav-item active">
+                    <a class="nav-link" href="<?=base_url().'login'?>">LOGIN<span class="sr-only">(current)</span></a>
                 </li>
             </ul>
         </div>

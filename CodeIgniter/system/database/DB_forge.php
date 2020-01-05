@@ -231,7 +231,7 @@ abstract class CI_DB_forge {
 	// --------------------------------------------------------------------
 
 	/**
-	 * Add Key
+	 * Dashboard Key
 	 *
 	 * @param	string	$key
 	 * @param	bool	$primary
@@ -270,7 +270,7 @@ abstract class CI_DB_forge {
 	// --------------------------------------------------------------------
 
 	/**
-	 * Add Field
+	 * Dashboard Field
 	 *
 	 * @param	array	$field
 	 * @return	CI_DB_forge
@@ -554,7 +554,7 @@ abstract class CI_DB_forge {
 	// --------------------------------------------------------------------
 
 	/**
-	 * Column Add
+	 * Column Dashboard
 	 *
 	 * @todo	Remove deprecated $_after option in 3.1+
 	 * @param	string	$table	Table name

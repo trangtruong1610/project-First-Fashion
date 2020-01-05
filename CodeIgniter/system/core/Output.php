@@ -709,7 +709,7 @@ class CI_Output {
 		// Send the HTTP cache control headers
 		$this->set_cache_header($last_modified, $expire);
 
-		// Add headers from cache file.
+		// Dashboard headers from cache file.
 		foreach ($cache_info['headers'] as $header)
 		{
 			$this->set_header($header[0], $header[1]);

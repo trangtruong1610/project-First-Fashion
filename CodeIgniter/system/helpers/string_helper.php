@@ -242,7 +242,7 @@ if ( ! function_exists('random_string'))
 if ( ! function_exists('increment_string'))
 {
 	/**
-	 * Add's _1 to a string or increment the ending number to allow _2, _3, etc
+	 * Dashboard's _1 to a string or increment the ending number to allow _2, _3, etc
 	 *
 	 * @param	string	required
 	 * @param	string	What should the duplicate number be appended with

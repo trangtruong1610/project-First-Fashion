@@ -1,11 +1,11 @@
-@import url('/CodeIgniter/An/assets/css/Fonts.css');
-@import url('/CodeIgniter/An/assets/css/fontawesome.css');
-@import url('/CodeIgniter/An/assets/css/debug.css');
-@import url('/CodeIgniter/An/assets/css/footer.css');
-@import url('/CodeIgniter/An/assets/css/homepage.css');
-@import url('/CodeIgniter/An/assets/css/product.css');
-@import url('/CodeIgniter/An/assets/css/detail_product.css');
-@import url('/CodeIgniter/An/assets/css/dashboard.css');
+@import url('Fonts.css');
+@import url('fontawesome.css');
+@import url('debug.css');
+@import url('footer.css');
+@import url('homepage.css');
+@import url('product.css');
+@import url('detail_product.css');
+@import url('dashboard.css');
 /*General*/
 .wrap {
 	padding: 20px;

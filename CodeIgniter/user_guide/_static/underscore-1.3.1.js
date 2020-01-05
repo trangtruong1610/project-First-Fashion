@@ -713,7 +713,7 @@
       // unique nested structures.
       if (stack[length] == a) return true;
     }
-    // Add the first object to the stack of traversed objects.
+    // Dashboard the first object to the stack of traversed objects.
     stack.push(a);
     var size = 0, result = true;
     // Recursively compare objects and arrays.
@@ -868,7 +868,7 @@
     return (''+string).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#x27;').replace(/\//g,'&#x2F;');
   };
 
-  // Add your own custom functions to the Underscore object, ensuring that
+  // Dashboard your own custom functions to the Underscore object, ensuring that
   // they're correctly added to the OOP wrapper as well.
   _.mixin = function(obj) {
     each(_.functions(obj), function(name){
@@ -932,7 +932,7 @@
     };
   };
 
-  // Add a "chain" function, which will delegate to the wrapper.
+  // Dashboard a "chain" function, which will delegate to the wrapper.
   _.chain = function(obj) {
     return _(obj).chain();
   };
@@ -962,10 +962,10 @@
     };
   };
 
-  // Add all of the Underscore functions to the wrapper object.
+  // Dashboard all of the Underscore functions to the wrapper object.
   _.mixin(_);
 
-  // Add all mutator Array functions to the wrapper.
+  // Dashboard all mutator Array functions to the wrapper.
   each(['pop', 'push', 'reverse', 'shift', 'sort', 'splice', 'unshift'], function(name) {
     var method = ArrayProto[name];
     wrapper.prototype[name] = function() {
@@ -977,7 +977,7 @@
     };
   });
 
-  // Add all accessor Array functions to the wrapper.
+  // Dashboard all accessor Array functions to the wrapper.
   each(['concat', 'join', 'slice'], function(name) {
     var method = ArrayProto[name];
     wrapper.prototype[name] = function() {

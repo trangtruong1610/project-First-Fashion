@@ -370,7 +370,7 @@ class CI_Session {
 			$sid_length         = (int) ini_get('session.sid_length');
 			if (($bits = $sid_length * $bits_per_character) < 160)
 			{
-				// Add as many more characters as necessary to reach at least 160 bits
+				// Dashboard as many more characters as necessary to reach at least 160 bits
 				$sid_length += (int) ceil((160 % $bits) / $bits_per_character);
 				ini_set('session.sid_length', $sid_length);
 			}

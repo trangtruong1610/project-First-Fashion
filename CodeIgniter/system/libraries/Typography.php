@@ -209,7 +209,7 @@ class CI_Typography {
 			$str .= $this->_format_newlines($chunks[$i]);
 		}
 
-		// No opening block level tag? Add it if needed.
+		// No opening block level tag? Dashboard it if needed.
 		if ( ! preg_match('/^\s*<(?:'.$this->block_elements.')/i', $str))
 		{
 			$str = preg_replace('/^(.*?)<('.$this->block_elements.')/i', '<p>$1</p><$2', $str);

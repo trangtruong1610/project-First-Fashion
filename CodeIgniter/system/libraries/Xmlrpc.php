@@ -1364,7 +1364,7 @@ class XML_RPC_Message extends CI_Xmlrpc
 				break;
 		}
 
-		// Add current element name to stack, to allow validation of nesting
+		// Dashboard current element name to stack, to allow validation of nesting
 		array_unshift($this->xh[$the_parser]['stack'], $name);
 
 		$name === 'VALUE' OR $this->xh[$the_parser]['lv'] = 0;
@@ -1539,7 +1539,7 @@ class XML_RPC_Message extends CI_Xmlrpc
 	// --------------------------------------------------------------------
 
 	/**
-	 * Add parameter
+	 * Dashboard parameter
 	 *
 	 * @param	mixed
 	 * @return	void
@@ -1702,7 +1702,7 @@ class XML_RPC_Values extends CI_Xmlrpc
 	// --------------------------------------------------------------------
 
 	/**
-	 * Add scalar value
+	 * Dashboard scalar value
 	 *
 	 * @param	scalar
 	 * @param	string
@@ -1749,7 +1749,7 @@ class XML_RPC_Values extends CI_Xmlrpc
 	// --------------------------------------------------------------------
 
 	/**
-	 * Add array value
+	 * Dashboard array value
 	 *
 	 * @param	array
 	 * @return	int
@@ -1770,7 +1770,7 @@ class XML_RPC_Values extends CI_Xmlrpc
 	// --------------------------------------------------------------------
 
 	/**
-	 * Add struct value
+	 * Dashboard struct value
 	 *
 	 * @param	object
 	 * @return	int

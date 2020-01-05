@@ -185,22 +185,3 @@
 	url("http://db.onlinewebfonts.com/t/cdb02d0a9a8fb3ccc665b8cf6d6b6900.ttf") format("truetype"), /* chrome firefox opera Safari, Android, iOS 4.2+*/
 	url("http://db.onlinewebfonts.com/t/cdb02d0a9a8fb3ccc665b8cf6d6b6900.svg#Wenceslas") format("svg"); /* iOS 4.1- */
 }
-/*FontAwesome*/
-@font-face {font-family: "FontAwesome";
-	src: url("/Codeigniter/An/assets/fonts/font_awesome/fa-brands-400.eot") format("embedded-opentype"), /* IE6-IE8 */
-	url("/Codeigniter/An/assets/fonts/font_awesome/fa-brands-400.woff2") format("woff2"), /* chrome firefox */
-	url("/Codeigniter/An/assets/fonts/font_awesome/fa-brands-400.woff") format("woff"), /* chrome firefox */
-	url("/Codeigniter/An/assets/fonts/font_awesome/fa-brands-400.ttf") format("truetype"), /* chrome firefox opera Safari, Android, iOS 4.2+*/
-	url("/Codeigniter/An/assets/fonts/font_awesome/fa-brands-400.svg#Wenceslas") format("svg"); /* iOS 4.1- */
-	src: url("/Codeigniter/An/assets/fonts/font_awesome/fa-regular-400.eot") format("embedded-opentype"), /* IE6-IE8 */
-	url("/Codeigniter/An/assets/fonts/font_awesome/fa-regular-400.woff2") format("woff2"), /* chrome firefox */
-	url("/Codeigniter/An/assets/fonts/font_awesome/fa-regular-400.woff") format("woff"), /* chrome firefox */
-	url("/Codeigniter/An/assets/fonts/font_awesome/fa-regular-400.ttf") format("truetype"), /* chrome firefox opera Safari, Android, iOS 4.2+*/
-	url("/Codeigniter/An/assets/fonts/font_awesome/fa-regular-400.svg#Wenceslas") format("svg"); /* iOS 4.1- */
-	src: url("/Codeigniter/An/assets/fonts/font_awesome/fa-solid-400.eot") format("embedded-opentype"), /* IE6-IE8 */
-	url("/Codeigniter/An/assets/fonts/font_awesome/fa-solid-400.woff2") format("woff2"), /* chrome firefox */
-	url("/Codeigniter/An/assets/fonts/font_awesome/fa-solid-400.woff") format("woff"), /* chrome firefox */
-	url("/Codeigniter/An/assets/fonts/font_awesome/fa-solid-400.ttf") format("truetype"), /* chrome firefox opera Safari, Android, iOS 4.2+*/
-	url("/Codeigniter/An/assets/fonts/font_awesome/fa-solid-400.svg#Wenceslas") format("svg"); /* iOS 4.1- */
-
-}

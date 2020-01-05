@@ -762,7 +762,7 @@ class CI_Loader {
 	// --------------------------------------------------------------------
 
 	/**
-	 * Add Package Path
+	 * Dashboard Package Path
 	 *
 	 * Prepends a parent path to the library, model, helper and config
 	 * path arrays.
@@ -786,7 +786,7 @@ class CI_Loader {
 
 		$this->_ci_view_paths = array($path.'views/' => $view_cascade) + $this->_ci_view_paths;
 
-		// Add config file path
+		// Dashboard config file path
 		$config =& $this->_ci_get_component('config');
 		$config->_config_paths[] = $path;
 
