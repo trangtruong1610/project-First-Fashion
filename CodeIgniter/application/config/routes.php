@@ -52,9 +52,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $route['default_controller'] = 'home';
 
 $route['contact'] = 'contact/index';
-$route['login'] = 'login/index';
+$route['login'] = 'login_page/index';
+$route['login/(:any)'] = 'login_page/login/$str';
 $route['product'] = 'product/get_all';
 $route['product/(:num)'] = 'product/get_by_id/$1';
+$route['dashboard'] = 'dashboard/index';
+$route['dashboard/add'] = 'form/view';
+$route['dashboard/delete/(:num)'] = 'form/delete/$1';
 
 
 $route['404_override'] = '';

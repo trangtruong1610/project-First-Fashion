@@ -225,7 +225,7 @@ class CI_Table {
 	// --------------------------------------------------------------------
 
 	/**
-	 * Add a table row
+	 * Dashboard a table row
 	 *
 	 * Can be passed as an array or discreet params
 	 *
@@ -269,7 +269,7 @@ class CI_Table {
 	// --------------------------------------------------------------------
 
 	/**
-	 * Add a table caption
+	 * Dashboard a table caption
 	 *
 	 * @param	string	$caption
 	 * @return	CI_Table
@@ -323,7 +323,7 @@ class CI_Table {
 
 		$out = $this->template['table_open'].$this->newline;
 
-		// Add any caption here
+		// Dashboard any caption here
 		if ($this->caption)
 		{
 			$out .= '<caption>'.$this->caption.'</caption>'.$this->newline;

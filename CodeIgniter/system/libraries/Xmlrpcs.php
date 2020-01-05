@@ -187,7 +187,7 @@ class CI_Xmlrpcs extends CI_Xmlrpc {
 	// --------------------------------------------------------------------
 
 	/**
-	 * Add Method to Class
+	 * Dashboard Method to Class
 	 *
 	 * @param	string	method name
 	 * @param	string	function

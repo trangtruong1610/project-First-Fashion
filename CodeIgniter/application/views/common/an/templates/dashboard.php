@@ -1,20 +1,26 @@
+<?php $this->load->view('/common/trang/view/header'); ?>
+
+<?php
+if(empty($_SESSION['user']) || !in_array($_SESSION['user']["role"], [1,2])) {
+	header("location: http://localhost:8080/CodeIgniter/index.php/login");
+}
+?>
+
 <!doctype html>
 <html lang="en">
 <head>
-	<title><?php ?></title>
+	<title>Dashboard</title>
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<!-- Local Sources -->
-	<link rel="stylesheet" href="<?= base_url('/CodeIgniter/An/assets/css/master_style.css')?>">
-	<link rel="stylesheet" href="<?= base_url('/CodeIgniter/An/assets/css/fonts.css')?>">
-	<link rel="stylesheet" href="<?= base_url('/CodeIgniter/An/assets/css/fontawesome.css') ?>">
-	<script src="<?=base_url('/CodeIgniter/An/assets/scripts/scripts.js') ?>"></script>
+
 	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="<?=base_url('../An/assets/css/dashboard.css') ?>">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
 		  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<!-- Optional JavaScript -->
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -29,67 +35,58 @@
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
 </head>
 <body>
-<div class="container-fluid debug">
+<div class="container-fluid ">
 	<div class="dashboard header text-uppercase">
 		Admin Dashboard
 	</div>
-	<div class="row">
-		<div class="col-md-3 col-sm-4">
-			<div id="dashboard-sb" class="debug">
-				<div id="account-info">
-					<!--Account Management-->
-					<div class="side-menu-item side-menu-header debug">
-						<div class="menu dashboard text-uppercase">Your Account</div>
-						<span><i class="fa fa-caret-down" aria-hidden="true"></i></span>
-					</div>
-					<div class="dashboard-mini-menu" id="account">
-						<ul>
-							<li>Account Information</li>
-							<li>Change Password</li>
-						</ul>
-					</div>
-					<!--Inbox/Message-->
-					<div class="side-menu-item side-menu-header debug">
-						<div class="menu dashboard text-uppercase">Inbox</div>
-						<span><i class="fa fa-caret-down" aria-hidden="true"></i></span>
-					</div>
-					<div class="dashboard-mini-menu" id="inbox">
-						<ul>
-							<li>Inbox</li>
-							<li>Sent</li>
-						</ul>
-					</div>
-					<!--Product Management-->
-					<div class="side-menu-item side-menu-header debug">
-						<div class="menu dashboard text-uppercase">Product Management</div>
-						<span><i class="fa fa-caret-down" aria-hidden="true"></i></span>
-					</div>
-					<div class="dashboard-mini-menu" id="product-management">
-						<ul>
-							<li>Product Overview</li>
-							<li>Add Product</li>
-							<li>Edit Product</li>
-							<li>Delete Product</li>
-						</ul>
-					</div>
-					<!--Page Content Management-->
-					<div class="side-menu-item side-menu-header debug">
-						<div class="menu dashboard text-uppercase">Content Management</div>
-						<span><i class="fa fa-caret-down" aria-hidden="true"></i></span>
-					</div>
-					<div class="dashboard-mini-menu" id="content-management">
-						<ul>
-							<li>Top Banner</li>
-							<li>Homepage Content</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="col-md-9 col-sm-8">
-			<?php include "../templates/dashboard.php"; ?>
-		</div>
+</div>
+<div class="container">
+<table class="table">
+	<thead>
+	<tr>
+		<th>ID</th>
+		<th>Name</th>
+		<th>Size</th>
+		<th>Color</th>
+		<th>Meterial</th>
+		<th>Price</th>
+		<th>Origin</th>
+		<th>Status</th>
+	</tr>
+	</thead>
+	<tbody>
+	<?php foreach ($data as $key => $value) : ?>
+	<tr>
+		<th scope="row"><?=$value['id']?></th>
+			<td><?=$value['Name']?></td>
+			<td><?=$value['Size']?></td>
+			<td><?=$value['Color']?></td>
+			<td><?=$value['Material']?></td>
+			<td><?=$value['Price']?></td>
+			<td><?=$value['Origin']?></td>
+			<td><?=$value['Status'] == 1 ? "In Stock" : "Sold Out" ?></td>
+			<td>
+			<a href="<?=base_url()."product/{$value['id']}"?>">View</a> |
+			<a href="<?="update.php?id={$value['id']}"?>">Edit</a>|
+			<a onclick="myFunction()" href="<?=base_url()."dashboard/delete/{$value['id']}"?>">Delete</a>
+		</td>
+	</tr>
+	<?php endforeach ?>
+	</tbody>
+</table>
+	<div class="text-center">
+	<a class="btn btn-primary btn-lg" href="<?=base_url().'/dashboard/add'?>">Add Product</a>
 	</div>
 </div>
 </body>
+<script>
+	// When the user clicks on <div>, open the popup
+	function myFunction() {
+		alert("Delete success");
+	}
+</script>
+
 </html>
+
+
+<?php $this->load->view('/common/an/templates/footer'); ?>

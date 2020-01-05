@@ -433,7 +433,7 @@ class CI_Jquery extends CI_Javascript {
 	// --------------------------------------------------------------------
 
 	/**
-	 * Add Class
+	 * Dashboard Class
 	 *
 	 * Outputs a jQuery addClass event
 	 *
@@ -920,7 +920,7 @@ class CI_Jquery extends CI_Javascript {
 	// --------------------------------------------------------------------
 
 	/**
-	 * Add Event
+	 * Dashboard Event
 	 *
 	 * Constructs the syntax for an event, and adds to into the array for compilation
 	 *

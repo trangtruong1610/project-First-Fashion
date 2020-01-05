@@ -188,7 +188,7 @@ class CI_Form_validation {
 				// If the field label wasn't passed we use the field name
 				$label = isset($row['label']) ? $row['label'] : $row['field'];
 
-				// Add the custom error message array
+				// Dashboard the custom error message array
 				$errors = (isset($row['errors']) && is_array($row['errors'])) ? $row['errors'] : array();
 
 				// Here we go!

@@ -765,7 +765,7 @@ class CI_Email {
 	// --------------------------------------------------------------------
 
 	/**
-	 * Add a Header Item
+	 * Dashboard a Header Item
 	 *
 	 * @param	string
 	 * @param	string
@@ -1579,11 +1579,11 @@ class CI_Email {
 					$temp = '';
 				}
 
-				// Add the character to our temporary line
+				// Dashboard the character to our temporary line
 				$temp .= $char;
 			}
 
-			// Add our completed line to the output
+			// Dashboard our completed line to the output
 			$output .= $temp.$this->crlf;
 		}
 

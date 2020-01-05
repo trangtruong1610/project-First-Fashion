@@ -297,7 +297,7 @@ class CI_Trackback {
 		$path = isset($target['path']) ? $target['path'] : $url;
 		empty($target['query']) OR $path .= '?'.$target['query'];
 
-		// Add the Trackback ID to the data string
+		// Dashboard the Trackback ID to the data string
 		if ($id = $this->get_id($url))
 		{
 			$data = 'tb_id='.$id.'&'.$data;

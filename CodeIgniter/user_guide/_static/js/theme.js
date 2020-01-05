@@ -17,7 +17,7 @@ $(document).ready(function () {
     // ---
     // START DOC MODIFICATION BY RUFNEX
     // v1.0 04.02.2015
-    // Add ToogleButton to get FullWidth-View by Johannes Gamperl codeigniter.de
+    // Dashboard ToogleButton to get FullWidth-View by Johannes Gamperl codeigniter.de
 
     $('#openToc').click(function () {
         $('#nav').slideToggle();

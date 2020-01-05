@@ -7,10 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Local Sources -->
-	<link rel="stylesheet" href="<?= base_url('/CodeIgniter/An/assets/css/master_style.css')?>">
-	<link rel="stylesheet" href="<?= base_url('/CodeIgniter/An/assets/css/fonts.css')?>">
-	<link rel="stylesheet" href="<?= base_url('/CodeIgniter/An/assets/css/fontawesome.css') ?>">
-    <script src="<?=base_url('/CodeIgniter/An/assets/scripts/scripts.js') ?>"></script>
+	<link rel="stylesheet" href="<?= base_url('../An/assets/css/master_style.css')?>">
+	<link rel="stylesheet" href="<?= base_url('../An/assets/css/fonts.css')?>">
+	<link rel="stylesheet" href="<?= base_url('../An/assets/css/fontawesome.css') ?>">
+    <script src="<?=base_url('../An/assets/scripts/scripts.js') ?>"></script>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -86,17 +86,17 @@
                     </span>
                     <span>PRODUCT BRANDS</span>
                 </div>
-                <div id="list-brands" class="side-menu-item list-item">
-					<?php foreach($brand as $row) :?>
-					<div class="form-check">
-                        <label class="form-check-label">
-                            <input type="checkbox" class="form-check-input" name="" id="<?=$row['NameCate']?>" value="checkedValue">
-							<?=$row['NameCate']?>
-                        </label>
-                    </div>
-					<?php endforeach;?>
-					<a href="" name="Submit" id="" class="btn btn-dark" type="button" value="Submit" style="margin-top: 20px; color: #f5f5f5; font-family: MuseoSansW01-Rounded300">Submit</a>
-				</div>
+<!--                <div id="list-brands" class="side-menu-item list-item">-->
+<!--					--><?php //foreach($brand as $row) :?>
+<!--					<div class="form-check">-->
+<!--                        <label class="form-check-label">-->
+<!--                            <input type="checkbox" class="form-check-input" name="" id="--><?//=$row['NameCate']?><!--" value="checkedValue">-->
+<!--							--><?//=$row['NameCate']?>
+<!--                        </label>-->
+<!--                    </div>-->
+<!--					--><?php //endforeach;?>
+<!--					<a href="" name="Submit" id="" class="btn btn-dark" type="button" value="Submit" style="margin-top: 20px; color: #f5f5f5; font-family: MuseoSansW01-Rounded300">Submit</a>-->
+<!--				</div>-->
             </div>
         </div>
         <!--Product page-->

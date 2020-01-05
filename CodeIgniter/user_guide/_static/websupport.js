@@ -211,7 +211,7 @@
   }
 
   /**
-   * Add a comment via ajax and insert the comment into the comment tree.
+   * Dashboard a comment via ajax and insert the comment into the comment tree.
    */
   function addComment(form) {
     var node_id = form.find('input[name="node"]').val();
@@ -490,7 +490,7 @@
     $('#rl' + id).hide();
     $('#cr' + id).show();
 
-    // Add the reply li to the children ul.
+    // Dashboard the reply li to the children ul.
     var div = $(renderTemplate(replyTemplate, {id: id})).hide();
     $('#cl' + id)
       .prepend(div)
@@ -617,7 +617,7 @@
       .fadeOut("slow");
   }
 
-  /** Add a link the user uses to open the comments popup. */
+  /** Dashboard a link the user uses to open the comments popup. */
   $.fn.comment = function() {
     return this.each(function() {
       var id = $(this).attr('id').substring(1);
@@ -696,7 +696,7 @@
         loading comments... <img src="<%loadingImage%>" alt="" /></div>\
       <ul id="cl<%id%>" class="comment-ul"></ul>\
       <div id="ca<%id%>">\
-      <p class="add-a-comment">Add a comment\
+      <p class="add-a-comment">Dashboard a comment\
         (<a href="#" class="comment-markup" id="ab<%id%>">markup</a>):</p>\
       <div class="comment-markup-box" id="mb<%id%>">\
         reStructured text markup: <i>*emph*</i>, <b>**strong**</b>, \
@@ -714,7 +714,7 @@
         </p>\
         <textarea name="proposal" id="pt<%id%>" cols="80"\
                   spellcheck="false"></textarea>\
-        <input type="submit" value="Add comment" />\
+        <input type="submit" value="Dashboard comment" />\
         <input type="hidden" name="node" value="<%id%>" />\
         <input type="hidden" name="parent" value="" />\
       </form>\
@@ -772,7 +772,7 @@
       <div class="reply-div" id="rd<%id%>">\
         <form id="rf<%id%>">\
           <textarea name="comment" cols="80"></textarea>\
-          <input type="submit" value="Add reply" />\
+          <input type="submit" value="Dashboard reply" />\
           <input type="button" value="Cancel" />\
           <input type="hidden" name="parent" value="<%id%>" />\
           <input type="hidden" name="node" value="" />\

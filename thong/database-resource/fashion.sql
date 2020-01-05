@@ -158,7 +158,7 @@ insert  into `product`(`Idcategory`,`ProductID`,`ProductName`,`File_id`,`Size`,`
 (NULL,7,'BlackGG',NULL,'37','Black','Cotton','Short sleeve cotton jersey t-shirt in black. Rib knit crewneck collar','480$','Italia',NULL),
 (NULL,8,'Christian',NULL,'39','Black','Leather','High-top buffed calfskin sneakers in black. Round toe. Tonal lace-up closure.','1350$','France',NULL),
 (NULL,9,'Tarpered',NULL,'35','Blue','Jeans','Jeans by Calvin Klein Jeans It\'s all the in jeans Mid-blue wash Regular rise Zip fly Functional','680$','Italia',NULL),
-(NULL,10,'PaddedJacket',NULL,'37','Red','Cotton','Jacket by Calvin Klein Jeans Add it to your everyday line-up Padded for comfort Detachable','720$','USA',NULL),
+(NULL,10,'PaddedJacket',NULL,'37','Red','Cotton','Jacket by Calvin Klein Jeans Dashboard it to your everyday line-up Padded for comfort Detachable','720$','USA',NULL),
 (NULL,11,'IronWhite',NULL,'36','White','Cotton','Shirt by Calvin Klein It\'s a classic Spread collar Button placket Small logo detail to chest Skinny fit Cut very closely to the body Exclusive to ASOS','300$','VietNam',NULL),
 (NULL,12,'Grainy',NULL,'15.25','Grey','Leather','Hugo Boss Crossbody. Barcode: 4021402639977','567$','Italia',NULL),
 (NULL,13,'Sunglasses',NULL,'55','Grey','Nilon','These authentic Boss by Hugo Boss Boss 1029/F/S Asian Fit 807/T4 sunglasses have Black Titanium frames and are available online for a discounted price at SmartBuyGlasses','300$','France',NULL),

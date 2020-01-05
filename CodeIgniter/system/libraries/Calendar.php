@@ -242,7 +242,7 @@ class CI_Calendar {
 		// "previous" month link
 		if ($this->show_next_prev === TRUE)
 		{
-			// Add a trailing slash to the URL if needed
+			// Dashboard a trailing slash to the URL if needed
 			$this->next_prev_url = preg_replace('/(.+?)\/*$/', '\\1/', $this->next_prev_url);
 
 			$adjusted_date = $this->adjust_date($month - 1, $year);

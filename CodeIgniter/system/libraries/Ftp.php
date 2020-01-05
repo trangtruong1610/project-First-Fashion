@@ -184,7 +184,7 @@ class CI_FTP {
 	// --------------------------------------------------------------------
 
 	/**
-	 * FTP Login
+	 * FTP LoginPage
 	 *
 	 * @return	bool
 	 */
@@ -478,7 +478,7 @@ class CI_FTP {
 			return FALSE;
 		}
 
-		// Add a trailing slash to the file path if needed
+		// Dashboard a trailing slash to the file path if needed
 		$filepath = preg_replace('/(.+?)\/*$/', '\\1/', $filepath);
 
 		$list = $this->list_files($filepath);

@@ -399,7 +399,7 @@ class CI_Javascript {
 	// --------------------------------------------------------------------
 
 	/**
-	 * Add Class
+	 * Dashboard Class
 	 *
 	 * Outputs a javascript library addClass event
 	 *
