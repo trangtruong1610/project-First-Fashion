@@ -1,5 +1,4 @@
-<?php $this->load->view('/common/trang/view/header'); ?>
-
+<?php $this->load->view('/common/trang/view/header');?>
 <?php
 if (isset($_POST["add"])){
 	$id = (int)($_POST['add']);
@@ -11,17 +10,16 @@ echo '<br>';
 var_dump($res);
 
 ?>
-
 <!doctype html>
 <html lang="en">
 <head>
-    <title>Product</title>
+    <title>Detail Product Page</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Local Sources -->
-	<link rel="stylesheet" href="<?= base_url('../An/assets/css/master_style.css')?>">
+	<link rel="stylesheet" href="<?= base_url('../An/assets/css/stylesheet.css')?>">
 	<link rel="stylesheet" href="<?= base_url('../An/assets/css/fonts.css')?>">
 	<link rel="stylesheet" href="<?= base_url('../An/assets/css/fontawesome.css') ?>">
     <script src="<?=base_url('../An/assets/scripts/scripts.js') ?>"></script>
@@ -73,7 +71,7 @@ var_dump($res);
 				<div class="p_action-group">
 					<a name="download" id="r" class="btn btn-light" href="#" role="button" download="">
 						<span>
-							Download 'product' detail
+							Download <?=$d['Name']?> detail
 						</span>
 						<i class="fa fa-download" aria-hidden="true"></i>
 					</a>
@@ -187,5 +185,4 @@ var_dump($res);
 	}
 </script>
 </html>
-
-<?php $this->load->view('/common/an/templates/footer'); ?>
+<?php $this->load->view('/common/an/templates/footer');?>

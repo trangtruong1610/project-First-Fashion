@@ -22,6 +22,10 @@ class Dashboard extends CI_Controller
 	{
 		$this->load->view('/admin/add');
 	}
+	public function update()
+	{
+		$this->load->view('/admin/update');
+	}
 }
 
 ?>

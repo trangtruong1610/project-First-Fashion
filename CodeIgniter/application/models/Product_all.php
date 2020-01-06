@@ -30,7 +30,6 @@ class Product_all extends CI_Model {
 		return $query->result_array();
 	}
 
-
 //	public function get_brand()
 //	{
 //		$sql = 'SELECT DISTINCT * FROM category WHERE cate_type = "brand" GROUP BY NameCate';

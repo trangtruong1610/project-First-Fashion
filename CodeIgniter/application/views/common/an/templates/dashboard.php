@@ -5,7 +5,6 @@ if(empty($_SESSION['user']) || !in_array($_SESSION['user']["role"], [1,2])) {
 	header("location: http://localhost:8080/CodeIgniter/index.php/login");
 }
 ?>
-
 <!doctype html>
 <html lang="en">
 <head>
@@ -16,7 +15,7 @@ if(empty($_SESSION['user']) || !in_array($_SESSION['user']["role"], [1,2])) {
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 
 	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="<?=base_url('../An/assets/css/dashboard.css') ?>">
+	<link rel="stylesheet" href="<?=base_url('../An/assets/css/stylesheet.css') ?>">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
 		  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -41,7 +40,7 @@ if(empty($_SESSION['user']) || !in_array($_SESSION['user']["role"], [1,2])) {
 	</div>
 </div>
 <div class="container">
-<table class="table">
+<table class="table"  style="text-align: center">
 	<thead>
 	<tr>
 		<th>ID</th>
@@ -52,13 +51,14 @@ if(empty($_SESSION['user']) || !in_array($_SESSION['user']["role"], [1,2])) {
 		<th>Price</th>
 		<th>Origin</th>
 		<th>Status</th>
+		<th>Actions</th>
 	</tr>
 	</thead>
 	<tbody>
 	<?php foreach ($data as $key => $value) : ?>
 	<tr>
 		<th scope="row"><?=$value['id']?></th>
-			<td><?=$value['Name']?></td>
+			<td style="text-align: left"><?=$value['Name']?></td>
 			<td><?=$value['Size']?></td>
 			<td><?=$value['Color']?></td>
 			<td><?=$value['Material']?></td>
@@ -67,7 +67,7 @@ if(empty($_SESSION['user']) || !in_array($_SESSION['user']["role"], [1,2])) {
 			<td><?=$value['Status'] == 1 ? "In Stock" : "Sold Out" ?></td>
 			<td>
 			<a href="<?=base_url()."product/{$value['id']}"?>">View</a> |
-			<a href="<?="update.php?id={$value['id']}"?>">Edit</a>|
+			<a href="<?=base_url()."dashboard/edit/{$value['id']}"?>">Edit</a>|
 			<a onclick="myFunction()" href="<?=base_url()."dashboard/delete/{$value['id']}"?>">Delete</a>
 		</td>
 	</tr>
@@ -85,8 +85,5 @@ if(empty($_SESSION['user']) || !in_array($_SESSION['user']["role"], [1,2])) {
 		alert("Delete success");
 	}
 </script>
-
 </html>
-
-
 <?php $this->load->view('/common/an/templates/footer'); ?>

@@ -1,0 +1,471 @@
+/*#region Fonts*/
+@import url(fontawesome.css);
+@import url(fonts.css);
+/*#endregion*/
+/*#region General*/
+.wrap {
+	padding: 20px;
+	border-top: 2px solid rgba(30,30,30,.8);
+	border-bottom: 2px solid rgba(30,30,30,.8);
+	width: 100%;
+}
+/*#endregion*/
+/*#region Footer*/
+.footer {
+	display: table-row;
+	position: relative;
+	height: max-content;
+	border-top: 2px solid black;
+	font-size: 15px;
+	color: rgba(30,30,30,.8);
+}
+.footer1 {
+	height: max-content;
+	padding: 25px;
+}
+.footer2 {
+	height: max-content;
+	padding: 25px;
+}
+.footer3 {
+	bottom: 0;
+	width: 100%;
+	justify-content: center;
+	height: max-content;
+}
+.footer-content {
+	padding: 10px;
+}
+.line {
+	border-top: 1px solid rgba(50, 50, 50, .4);
+	margin: 10px 30px !important;
+}
+
+.copyright-footer {
+	font-family: MuseoSansW01-Rounded300;
+	text-align: center;
+	font-size: 13px;
+	color: rgba(50, 50,50, .7);
+	font-weight: bold;
+	padding: 10px;
+}
+.list-lev2, .list-lev2, .list-lev2-item{
+	margin: 0 0 12px 0;
+}
+.list-lev1 {
+	list-style: none;
+	padding-left: 0;
+	padding-right: 0;
+}
+.list-lev2 {
+	font-family: EstaItalic;
+	font-weight: bolder;
+	font-size: 15px;
+}
+
+.list-lev1 > .list-lev2 {
+	display: flex;
+	justify-content: space-between;
+}
+
+.tab {
+	width: 10px;
+	height: 1px;
+	flex-grow: 1;
+	align-self: center;
+	margin: 0 5px;
+}
+
+li > .tab {
+	border-bottom: 1px dotted rgba(50, 50, 50, .4);
+}
+
+.header5 {
+	font-family: Vesta-Black;
+	font-size: 15px;
+	color: rgba(40, 40, 40, .9);
+	margin-bottom: 10px;
+}
+.social-icon{
+	padding: 20px;
+	justify-content: flex-start;
+}
+
+.social-icon > a > i {
+	color: rgba(40,40,40,.9);
+	font-size: 25px;
+}
+.social-icon > a:not(:first-child) {
+	margin-left: 15px;
+}
+.social-icon > a:not(:last-child) {
+	margin-right: 15px;
+}
+
+.social-icon > a:hover {
+	cursor: pointer;
+	opacity: .7;
+	transform: scale(1.2);
+}
+.fa-call {
+	border: 4px solid rgba(40,40,40,.9) !important;
+	border-radius: 50% !important;
+	height: 40px;
+	width: 40px;
+}
+
+.footer-item {
+	display: flex;
+	position: relative;
+	color: rgba(50,50,50,1);
+	line-height: 40px;
+	height: 40px;
+	margin-bottom: 20px;
+}
+.footer-item > div:not(:last-child) {
+	margin-right: 10px !important;
+}
+.list-lev2 > a {
+	text-decoration: none !important;
+	color: rgba(30,30,30,.7);
+}
+
+.list-lev2 > a:hover {
+	cursor: pointer;
+	text-decoration: none !important;
+	color: rgba(30,30,30,.9) !important;
+	text-shadow: .5px .5px 1px rgba(30,30,30,.9);
+	transform: scale(1.1);
+}
+.list-lev2-item {
+	font-size: 14px;
+	font-family: Vesta-Medium;
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+	.slide-box img {
+		-ms-flex: 0 0 50%;
+		flex: 0 0 50%;
+		max-width: 50%;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+	.slide-box img {
+		-ms-flex: 0 0 33.3333%;
+		flex: 0 0 33.3333%;
+		max-width: 33.3333%;
+	}
+}
+
+@media (min-width: 992px)
+{
+	.slide-box img {
+		-ms-flex: 0 0 25%;
+		flex: 0 0 25%;
+		max-width: 25%;
+	}
+}
+@media only screen and (max-width: 1090px) {
+	.footer1, .footer2, .footer3 {
+		text-align: center !important;
+		justify-content: center;
+	}
+	.list-lev1 {
+		margin: 20px;
+	}
+	.list-lev1-item {
+		text-align: center !important;
+		width: 100%;
+	}
+	.social-icon {
+		justify-content: center !important;
+	}
+
+}
+@media only screen and (max-width: 320px) {
+	.social-icon > a {
+		margin: 15px;
+	}
+	.fa-call {
+		display: none;
+	}
+	.footer-item {
+		justify-content: center;
+	}
+	#text-call {
+		font-size: 13px;
+	}
+	#num-call {
+		font-size: 15px;
+	}
+}
+/*#endregion*/
+/*#region Homepage*/
+.header {
+	font-family: "Charlemagne Std";
+	font-size: 15px;
+	font-weight: bold;
+	text-align: center;
+	color: rgba(40, 40, 40, .9);
+	line-height: 20px;
+	margin-top: 50px;
+	margin-bottom: 30px;
+	display: inline-flex;
+	width: 100%;
+	justify-content: center;
+}
+.cus-target {
+	font-size: 30px;
+	font-family: Vesta-Black;
+	font-weight: bold;
+	color: whitesmoke;
+	text-align: center;
+	margin: 20px;
+	line-height: 380px;
+}
+.cus-target-bg {
+	height: 350px;
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+.cus-target-bg:hover {
+	background-size: 380px;
+	text-shadow: rgba(30,30,30,.7) 3px 2px 1px;
+}
+.filter:hover {
+	backdrop-filter: grayscale(0);
+}
+.filter {
+	height: 350px;
+	backdrop-filter: grayscale(.8);
+}
+.icon-bg {
+	background-color: rgba(30,30,30, .5) !important;
+	width: 50px !important;
+	height: 50px !important;
+	display: inline-block;
+	position: absolute;
+	z-index: 1;
+	display: -ms-flexbox;
+	-ms-flex-align: center;
+	align-items: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	text-align: center;
+	border-radius: 50%;
+	display: flex;
+}
+.con-box {
+	padding: 0 20px;
+	width: 100%;
+	display: inline-flex;
+	justify-content: center;
+}
+.box {
+	position: relative;
+	display: block;
+	width: 200px;
+	height: 100px;
+	padding-right:15px;
+	padding-left:15px;
+	line-height: 100px;
+	margin: 15px;
+	background: none;
+	border: none;
+}
+.box > img {
+	vertical-align: middle;
+	width: 100%;
+}
+.box:hover {
+	background-color: rgba(220,220,220,.5) !important;
+}
+
+.homepage-header > img{
+	width: 200px;
+	height: auto;
+	margin: 0 15px;
+}
+.carousel {
+	width: 100%;
+}
+
+.slide-box {
+	display: flex;
+	justify-content: space-between;
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+	.slide-box img {
+		-ms-flex: 0 0 50%;
+		flex: 0 0 50%;
+		max-width: 50%;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+	.slide-box img {
+		-ms-flex: 0 0 33.3333%;
+		flex: 0 0 33.3333%;
+		max-width: 33.3333%;
+	}
+}
+
+@media (min-width: 992px)
+{
+	.slide-box img {
+		-ms-flex: 0 0 25%;
+		flex: 0 0 25%;
+		max-width: 25%;
+	}
+}
+.carousel-caption {
+	background-color: rgba(0, 0, 0, 0.5);
+	padding: 20px;
+	border-radius: .5rem;
+}
+/*#endregion*/
+/*#region Product*/
+.crumb-bread ol, .side-menu-item ol {
+	list-style: none;
+}
+.crumb-bread ol {
+	margin-top: 15px;
+	font-family: Lora;
+	font-weight: bold;
+	font-size: 15px;
+	padding-left: 0;
+}
+.crumb-bread {
+	display: inline-block;
+}
+.crumb-bread li > a {
+	color: rgba(30,30,30,.8);
+}
+.crumb-bread li:not(:link) {
+	font-weight: bold;
+	color: rgba(80,100,200,.9);
+}
+.crumb-bread a::after {
+	display: inline-block;
+	color: rgba(40,40,40,.8);
+	content: '/';
+	font-size: 80%;
+	font-weight: bold;
+	padding: 0 3px;
+}
+.side-menu-item ol, .side-menu-item.list-item {
+	font-family: "Hiragino Sans GB";
+	font-size: 13px;
+	padding-left: 20px;
+	line-height: 25px;
+}
+.list-item li {
+	margin-bottom: 5px;
+}
+.list-item a {
+	color: rgba(30,30,30,.9);
+}
+.side-menu-item, .side-menu-header {
+	padding: 10px;
+	font-family: Vesta-Bold;
+	font-weight: bold;
+	font-size: 15px;
+}
+.side-menu-item.side-menu-header {
+	background-color: rgba(30,30,30,1);
+}
+.side-menu-header span {
+	margin-right: 10px;
+	color: rgba(250,250,240,1);
+}
+#list-brands {
+	margin-left: 15px;
+}
+.product-list-header {
+	font-family: MuseoSansW01-Rounded300 !important;
+	font-size: 13px !important;
+}
+.action_btn {
+}
+/*#endregion*/
+/*#region Detailed Product Page*/
+[class*='col-'] > .img-sub div:not(:last-child) {
+	margin-bottom: 10px;
+}
+.product_detail {
+	padding: 0 10px;
+}
+.p_line {
+	border-bottom: 1px solid rgba(100,100,100,.2);
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.p_action-group > * {
+	width: 100%;
+	font-family: Vesta-Bold;
+	font-size: 15px;
+}
+.p_action-group > i {
+	margin-left: 10px !important;
+}
+.product_info {
+	font-family: Lora;
+	font-size: 14px;
+}
+.product_info > * {
+	margin: 15px 0;
+}
+.p_detail > div {
+	border-left: 2px solid black;
+	padding-left: 10px;
+}
+.p_action-group a:hover{
+	background-color: rgba(200,200,200,.2);
+}
+.tab-content {
+	padding: 30px 15px;
+	border: .5px solid rgba(30,30,30,.2);
+	border-top: none;
+}
+ul.nav-tabs {
+	font-family: MuseoW01-900;
+	font-size: 18px;
+}
+li.nav-item > a {
+	color: rgba(30,30,30,.8);
+}
+.tab-content {
+	font-family: MuseoSansW01-Rounded300;
+	font-size: 15px;
+}
+.tb-header {
+	font-family: MuseoSansW01-Rounded300;
+	font-size: 15px;
+	font-weight: bold;
+}
+@media only screen and (max-width: 768px) {
+	.img-sub div {
+		width: 50px;
+		height: 50px;
+		display: inline-block;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	.img-sub div:not(:last-child) {
+		margin-right: 10px;
+	}
+}
+
+/*#endregion*/
+/*#region Amin Dashboard*/
+.new_value {
+	margin: 10px 0;
+	font-size: 1em;
+}
+.new_value input {
+	border-radius: 5px;
+	width: 100%; !important;
+}
+/*#endregion*/

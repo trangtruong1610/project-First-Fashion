@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<!-- Local Sources -->
-	<link rel="stylesheet" href="<?=base_url('../An/assets/css/styles.css') ?>">
+	<link rel="stylesheet" href="<?=base_url('../An/assets/css/stylesheet.css')?>">
 	<script src="<?=base_url('../An/assets/scripts/scripts.js') ?>"></script>
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -41,8 +41,8 @@
 					<p class="card-text"><?=$row['Price']?></p>
 				</div>
 				<div class="card-footer text-muted" style="text-align: center;">
-					<a name="details" id="" class="btn btn-dark" href="<?=base_url()."product/{$row['id']}"?>" role="button">Details <i class="fas fa-search" style="margin-left: 5px; font-size: 12px;" aria-hidden="true"></i></a>
-					<a name="compare" id="add_compare" class="btn btn-dark" href="#" role="button">Compare <i class="fas fa-refresh" style="margin-left: 5px;; font-size: 12px;" aria-hidden="true"></i></a>
+					<a name="details" id="" class="btn btn-dark" href="<?=base_url()."product/{$row['id']}"?>" role="button">Details <i class="fas fa-search" style="font-size: 12px;" aria-hidden="true"></i></a>
+					<a name="compare" id="add_compare" class="btn btn-dark" href="#" role="button">Compare <i class="fas fa-refresh" style="font-size: 12px;" aria-hidden="true"></i></a>
 				</div>
 			</div>
 		</div>

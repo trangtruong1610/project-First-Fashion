@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Local Sources -->
-	<link href="<?php echo base_url('../An/assets/css/styles.css') ?>" rel="stylesheet">
+	<link href="<?php echo base_url('../An/assets/css/stylesheet.css') ?>" rel="stylesheet">
+	<!--<link href="<?php /*echo base_url('../An/assets/css/debug.css') */?>" rel="stylesheet">-->
 	<link href="<?php echo base_url('../An/assets/css/fontawesome.css') ?>" rel="stylesheet">
 	<script src="<?php echo base_url('../An/assets/scripts/scripts.js') ?>"></script>
 	<!-- Bootstrap CSS -->

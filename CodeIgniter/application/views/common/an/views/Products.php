@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Local Sources -->
-	<link rel="stylesheet" href="<?= base_url('../An/assets/css/master_style.css')?>">
+	<link rel="stylesheet" href="<?= base_url('../An/assets/css/stylesheet.css')?>">
 	<link rel="stylesheet" href="<?= base_url('../An/assets/css/fonts.css')?>">
 	<link rel="stylesheet" href="<?= base_url('../An/assets/css/fontawesome.css') ?>">
     <script src="<?=base_url('../An/assets/scripts/scripts.js') ?>"></script>
@@ -31,16 +31,16 @@
 <body>
 <div class="container-fluid debug">
     <!--Page Title Bar-->
-    <div id="page-title-bar" class="page-title-bar">
-        <div class="container-fluid debug">
-            <nav class="crumb-bread">
-                <ol>
-                    <li class="crumb-bread"><a href="">Fashion</a> </li>
-                    <li class="crumb-bread"><a href="">Products</a> </li>
-                    <li class="crumb-bread">For women</li>
-                </ol>
-            </nav>
-        </div>
+<!--    <div id="page-title-bar" class="page-title-bar">-->
+<!--        <div class="container-fluid debug">-->
+<!--            <nav class="crumb-bread">-->
+<!--                <ol>-->
+<!--                    <li class="crumb-bread"><a href="">Fashion</a> </li>-->
+<!--                    <li class="crumb-bread"><a href="">Products</a> </li>-->
+<!--                    <li class="crumb-bread">For women</li>-->
+<!--                </ol>-->
+<!--            </nav>-->
+<!--        </div>-->
     </div>
     <div class="debug row">
     <!--Left side menu-->
