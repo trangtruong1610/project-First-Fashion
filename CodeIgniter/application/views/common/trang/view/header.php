@@ -40,6 +40,9 @@
                 <li class="nav-item active">
                     <a class="nav-link" href="<?=base_url().'contact'?>">CONTACT<span class="sr-only">(current)</span></a>
                 </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="<?=base_url().'dashboard'?>">DASHBOARD<span class="sr-only">(current)</span></a>
+                </li>
 				<li class="nav-item active">
                     <a class="nav-link" href="<?=base_url().'login'?>">LOGIN<span class="sr-only">(current)</span></a>
                 </li>

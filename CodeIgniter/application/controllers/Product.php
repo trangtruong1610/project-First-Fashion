@@ -24,6 +24,29 @@ class Product extends CI_Controller
 		$data['data'] = $all_data;
 		$this->load->view('common/an/views/product_detail.php', $data);
 	}
+	public function id_compare()
+	{
+		$id = $this->input->post('add');
+		if (isset($_POST["add"])){
+			$id = (int)($_POST['add']);
+			if (count($_SESSION['compare']) < 3){
+				if (in_array($id, $_SESSION['compare']))
+				{
+					echo 'Add success';
+				}
+				else{
+					$_SESSION['compare'][] = $id;
+					echo 'Add success';
+
+				}
+			}else{
+				echo 'Compare list are full';
+			}
+
+		}
+		var_dump($_SESSION);
+		redirect(base_url()."product/{$id}");
+	}
 
 }
 ?>

@@ -1,14 +1,9 @@
 <?php $this->load->view('/common/trang/view/header'); ?>
 
 <?php
-if (isset($_POST["add"])){
-	$id = (int)($_POST['add']);
-	array_push($_SESSION['compare'], $id);
-}
-$res = array_slice($_SESSION['compare'], -3, 3, true);
+
 var_dump($_SESSION['compare']);
-echo '<br>';
-var_dump($res);
+
 
 ?>
 
@@ -77,7 +72,7 @@ var_dump($res);
 						</span>
 						<i class="fa fa-download" aria-hidden="true"></i>
 					</a>
-					<form action="" method="post">
+					<form action="<?=base_url().'product/compare'?>" method="post">
 						<button class="btn btn-light btn-block" onclick="myFunction()" name="add" type="submit" formmethod="post" value="<?=$d['id']?>" >
 						Add to compare
 						<i class="fa fa-refresh" aria-hidden="true"></i>
@@ -180,12 +175,6 @@ var_dump($res);
 	</div>
 </div>
 </body>
-<script>
-	// When the user clicks on <div>, open the popup
-	function myFunction() {
-		alert("Add to compare success");
-	}
-</script>
 </html>
 
 <?php $this->load->view('/common/an/templates/footer'); ?>

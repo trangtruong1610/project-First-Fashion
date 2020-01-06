@@ -19,21 +19,23 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 	if (empty($usernameErr) && empty($passErr)){
 		$sql = "SELECT * FROM account join accounttype on account.AccTypeID = accounttype.AccTypeID WHERE Username = '{$username}'";
 		$query = $this->db->query($sql);
-		$result = $query->result_array();
-		foreach ($result as $data)
-		if ($data != 0) {
-			if ($data["Password"] == $pass) {
+		$result = $query->row_array();
+
+		if ($result) {
+			if ($result["Password"] == $pass) {
 				$session_user = [
-					'role' => $data['id'],
+					'role' => $result['id'],
 				];
 				// save user to session and go to dashboard
 				$_SESSION['user'] = $session_user;
 				header("location: http://localhost:8080/CodeIgniter/index.php/dashboard");
 			}
 			else{
-				$mgs = "Wrong Username or Password";
+				$mgs = "Wrong Password";
 			}
-		}else {$mgs1 = "Wrong Username or Password";}
+		} else {
+			$mgs1 = "Wrong Username or Password";
+		}
 
 	}
 }
@@ -55,6 +57,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 	<link rel="stylesheet" href="<?= base_url('../trang/assets/css/login.css') ?>">
 </head>
 <body>
+<?=@$msg?>
     <form class="container" method="post">
     <div class="form-group">
         <label for="exampleInputEmail1">Username</label>

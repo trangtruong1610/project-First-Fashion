@@ -56,6 +56,7 @@ $route['login'] = 'login_page/index';
 $route['login/(:any)'] = 'login_page/login/$str';
 $route['product'] = 'product/get_all';
 $route['product/(:num)'] = 'product/get_by_id/$1';
+$route['product/compare'] = 'product/id_compare';
 $route['dashboard'] = 'dashboard/index';
 $route['dashboard/add'] = 'form/view';
 $route['dashboard/delete/(:num)'] = 'form/delete/$1';
