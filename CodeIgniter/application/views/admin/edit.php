@@ -5,6 +5,12 @@ if(empty($_SESSION['user']) || !in_array($_SESSION['user']["role"], [1,2])) {
 	header('location: http://localhost:8080/CodeIgniter/index.php/login');
 }
 ?>
+<?php
+$upload=array(
+	"name" => "img",
+	"size" => "25",
+);
+?>
 <head>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
 		  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -16,7 +22,7 @@ if(empty($_SESSION['user']) || !in_array($_SESSION['user']["role"], [1,2])) {
 <body>
 <div class="container">
 	<?php foreach ($edit as $value) :?>
-	<form action="<?=base_url().'form_update/edit_by_id/'.$value["id"]; ?>" method="post">
+	<form action="<?=base_url().'form_update/edit_by_id/'.$value["id"]; ?>" method="post" enctype="multipart/form-data">
 		<div class="text-capitalize header">product amendment</div>
 		<div class="table-responsive">
 			<table class="table table-inverse mx-auto w-auto" style="width: auto">
@@ -108,9 +114,14 @@ if(empty($_SESSION['user']) || !in_array($_SESSION['user']["role"], [1,2])) {
 						<th>Avatar</th>
 						<td class="new_value">
 							<div class="form-group">
-								<label for="origin"></label>
-								<input type="text"
-									   class="form-control" value="<?=$value['File']; ?>" name="File" id="" aria-describedby="helpId" placeholder="Revised origin">
+								<label for="avatar">
+									<input type="file" name="File">
+								</label>
+								<label for="avatar">
+									<input type="text"
+										   class="form-control" name="File" id="" aria-describedby="helpId" value="<?=$value['File']?>" style="width: 250%;">
+								</label>
+
 							</div>
 						</td>
 					</tr>
@@ -119,10 +130,10 @@ if(empty($_SESSION['user']) || !in_array($_SESSION['user']["role"], [1,2])) {
 					<td class="new_value">
 						<div class="form-check form-check-inline">
 							<label class="form-check-label" style="margin-right: 30px;">
-								<input class="form-check-input" type="radio" name="status" id="status" value="1" <?=$value['Status'] == 1 ? "checked" : "" ?>>In-stock
+								<input class="form-check-input" type="radio" name="status" id="status" value="1" <?=$value['Status'] == 1 ? "checked" : "" ?>>In stock
 							</label>
 							<label class="form-check-label">
-								<input class="form-check-input" type="radio" name="status" id="status" value="0" <?=$value['Status'] == 1 ? "" : "checked" ?>>Sold-out
+								<input class="form-check-input" type="radio" name="status" id="status" value="0" <?=$value['Status'] == 1 ? "" : "checked" ?>>Sold out
 							</label>
 						</div>
 					</td>

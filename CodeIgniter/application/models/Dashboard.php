@@ -25,9 +25,6 @@ class Dashboard extends CI_Model
 		$query = $this->db->query($sql);
 		return $query; // return true || false
 	}
-	public function alert($msg) {
-		echo "<script type='text/javascript'>alert('$msg');</script>";
-	}
 //	public function add($file)
 //	{
 //		$this->db->insert('file', $file);

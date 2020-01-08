@@ -59,6 +59,7 @@ $route['product/(:num)'] = 'product/get_by_id/$1';
 $route['dashboard'] = 'dashboard/index';
 $route['dashboard/add'] = 'form/view';
 $route['dashboard/edit/(:num)'] = 'form_update/get_by_id/$1';
+$route['dashboard/preview/(:num)'] = 'form_update/edit_by_id/$1';
 $route['dashboard/delete/(:num)'] = 'form/delete/$1';
 
 
