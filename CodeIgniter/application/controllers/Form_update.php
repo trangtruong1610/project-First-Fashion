@@ -33,17 +33,20 @@ class Form_update extends CI_Controller
 		$this->upload->initialize($config);
 
 		$field_name = "File";
+		$imgData = '';
+		if ($_FILES[$field_name]['name'] != '') {
+			if ( ! $this->upload->do_upload($field_name))
+			{
+				$error = array('error' => $this->upload->display_errors());
+				echo $error;
+			}
+			else
+			{
+				$upload_data = $this->upload->data();
+				$imgData = $upload_path.$upload_data['file_name'];
+			}
+		}
 
-		if ( ! $this->upload->do_upload($field_name))
-		{
-			$error = array('error' => $this->upload->display_errors());
-			echo $error;
-		}
-		else
-		{
-			$upload_data = $this->upload->data();
-			$imgData = $upload_path.$upload_data['file_name'];
-		}
 		return $imgData;
 	}
 	public function edit_by_id($id) {

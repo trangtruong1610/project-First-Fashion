@@ -69,7 +69,7 @@ var_dump($res);
 					Quantity: <?=$d['Status'] = 1 ? 'In Stock': 'Sold Out'?>
 				</div>
 				<div class="p_action-group">
-					<a name="download" id="r" class="btn btn-light" href="#" role="button" download="">
+					<a name="download" id="r" class="btn btn-light" href="<?=base_url()."dashboard/file/{$d['id']}"?>" role="button" download="">
 						<span>
 							Download <?=$d['Name']?> detail
 						</span>

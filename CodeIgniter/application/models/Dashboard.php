@@ -21,7 +21,10 @@ class Dashboard extends CI_Model
 		return $query->result_array();
 	}
 	public function update_product($update_data, $id) {
-		$sql = "UPDATE product SET name = '{$update_data["Name"]}', color = '{$update_data["Color"]}', size = '{$update_data["Size"]}', material = '{$update_data["Material"]}', description = '{$update_data["Description"]}', price = '{$update_data["Price"]}', origin = '{$update_data["Origin"]}', file = '{$update_data["File"]}', status = '{$update_data["status"]}' where  id = {$id}";
+		$sql = "UPDATE product SET name = '{$update_data["Name"]}', color = '{$update_data["Color"]}', size = '{$update_data["Size"]}', material = '{$update_data["Material"]}', description = '{$update_data["Description"]}', price = '{$update_data["Price"]}', origin = '{$update_data["Origin"]}', status = '{$update_data["status"]}' where  id = {$id}";
+		if($update_data["File"] != '') 	{
+			$sql .= ", file = '{$update_data["File"]}'";
+		}
 		$query = $this->db->query($sql);
 		return $query; // return true || false
 	}

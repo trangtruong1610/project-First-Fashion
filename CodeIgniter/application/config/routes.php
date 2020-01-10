@@ -61,6 +61,9 @@ $route['dashboard/add'] = 'form/view';
 $route['dashboard/edit/(:num)'] = 'form_update/get_by_id/$1';
 $route['dashboard/preview/(:num)'] = 'form_update/edit_by_id/$1';
 $route['dashboard/delete/(:num)'] = 'form/delete/$1';
+$route['dashboard/file/(:num)'] = 'product/export_file/$1';
+
+
 
 
 $route['404_override'] = '';
