@@ -167,13 +167,24 @@ var_dump($res);
 			<div class="homepage-header"><img src="/CodeIgniter/An/assets/images/right-lines.png"></div>
 		</div>
 		<div class="card-deck">
-			<div class="card">
-				<img class="card-img-top" src="holder.js/100x180/" alt="" style="height: 300px">
-				<div class="card-body">
-					<h4 class="card-title">Title</h4>
-					<p class="card-text">Text</p>
+			<?php foreach ($similar as $row): ?>
+				<div class="col-md-4 col-sm-6">
+					<div class="card h-100">
+						<div style="height: 300px; text-align: center; padding: 10px">
+							<img align="middle" class="card-img-top" src="<?=$row['File']?>" alt="<?=$row['Name']?>"
+								 style="max-height:100%; max-width: 100%; width: auto; position: relative; top: 50%; transform: translateY(-50%);">
+						</div>
+						<div class="card-body">
+							<h4 class="card-title"><?=$row['Name']?></h4>
+							<p class="card-text"><?=$row['Price']?></p>
+						</div>
+						<div class="card-footer text-muted" style="text-align: center;">
+							<a name="details" id="" class="btn btn-dark" href="<?=base_url()."product/{$row['product_id']}"?>" role="button">Details <i class="fas fa-search" style="font-size: 12px;" aria-hidden="true"></i></a>
+							<a name="compare" id="add_compare" class="btn btn-dark" href="#" role="button">Compare <i class="fas fa-refresh" style="font-size: 12px;" aria-hidden="true"></i></a>
+						</div>
+					</div>
 				</div>
-			</div>
+		<?php endforeach; ?>
 		</div>
 	</div>
 </div>

@@ -29,8 +29,10 @@
 <div class="debug footer">
 <!--    Footer Part 1 Shop Intro     -->
     <div class="debug row footer1">
-        <div class="debug col-lg-3 footer-content" style="justify-content: center">
-            logo
+        <div class="debug col-lg-3 footer-content" style="text-align: center;">
+            <div style="width: 100%; height: 150px; display: inline-block;">
+				<img class="debug" src="<?=base_url('../An/assets/images/1st Fashion logo.png');?>" style="max-width: 100%; max-height: 100%; width: auto;">
+			</div>
         </div>
         
         <div class="debug col-lg-6 footer-content">

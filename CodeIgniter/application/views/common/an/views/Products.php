@@ -53,30 +53,36 @@
                     </span>
                     <span>PRODUCT CATEGORIES</span>
                 </div>
-                <div class="side-menu-item list-item">
-                    <ol>
-                        <li class="list-item">
-                            <a href="">
-                                ACCESSORIES
-                            </a>
-                        </li>
-                        <li class="list-item">
-                            <a href="">
-                                FOR CHILDREN
-                            </a>
-                        </li>
-                        <li class="list-item">
-                            <a href="">
-                                FOR MEN
-                            </a>
-                        </li>
-                        <li class="list-item">
-                            <a href="">
-                                FOR WOMEN
-                            </a>
-                        </li>
-                    </ol>
-                </div>
+				<form method="post" action="<?php base_url().'product/select_by_category' ?>">
+					<div class="side-menu-item list-item">
+						<ol>
+							<li class="list-item">
+								<label>
+									<input type="button" name="category" value="accessories" hidden>
+									ACCESSORIES
+								</label>
+							</li>
+							<li class="list-item">
+								<label>
+									<input type="button" name="category" value="kid fashion" hidden>
+									FOR CHILDREN
+								</label>
+							</li>
+							<li class="list-item">
+								<label>
+									<input type="button" name="category" value="men" hidden>
+										FOR MEN
+								</label>
+							</li>
+							<li class="list-item">
+								<label>
+									<input  type="button" name="category" value="women" hidden>
+										FOR WOMEN
+								</label>
+							</li>
+						</ol>
+					</div>
+				</form>
             </div>
             <!--Brands-->
             <div id="MenuBrand" class="debug">
@@ -86,17 +92,19 @@
                     </span>
                     <span>PRODUCT BRANDS</span>
                 </div>
-<!--                <div id="list-brands" class="side-menu-item list-item">-->
-<!--					--><?php //foreach($brand as $row) :?>
-<!--					<div class="form-check">-->
-<!--                        <label class="form-check-label">-->
-<!--                            <input type="checkbox" class="form-check-input" name="" id="--><?//=$row['NameCate']?><!--" value="checkedValue">-->
-<!--							--><?//=$row['NameCate']?>
-<!--                        </label>-->
-<!--                    </div>-->
-<!--					--><?php //endforeach;?>
-<!--					<a href="" name="Submit" id="" class="btn btn-dark" type="button" value="Submit" style="margin-top: 20px; color: #f5f5f5; font-family: MuseoSansW01-Rounded300">Submit</a>-->
-<!--				</div>-->
+                <div id="list-brands" class="side-menu-item list-item">
+					<?php foreach($brand as $row) :?>
+					<div class="form-check">
+                        <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" name="<?=$row['CategoryName']?>" id="<?=$row['CategoryName']?>" value="<?=$row['CategoryName']?>">
+							<?=$row['CategoryName']?>
+                        </label>
+                    </div>
+					<?php endforeach;?>
+					<form action="" method="post" enctype="multipart/form-data">
+						<a href="" name="" id="" class="btn btn-dark" type="button" value="" style="margin-top: 20px; color: #f5f5f5; font-family: MuseoSansW01-Rounded300">Select</a>
+					</form>
+				</div>
             </div>
         </div>
         <!--Product page-->

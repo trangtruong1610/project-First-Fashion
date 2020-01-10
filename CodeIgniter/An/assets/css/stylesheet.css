@@ -223,18 +223,24 @@ li > .tab {
 	margin: 20px;
 	line-height: 380px;
 }
+.cus-target span:hover {
+	text-decoration: none;
+}
 .cus-target-bg {
 	height: 350px;
 	background-position: center;
 	background-size: contain;
 	background-repeat: no-repeat;
 }
+.filter > a:hover {
+	backdrop-filter: grayscale(0);
+	text-decoration: none;
+}
 .cus-target-bg:hover {
 	background-size: 380px;
 	text-shadow: rgba(30,30,30,.7) 3px 2px 1px;
-}
-.filter:hover {
-	backdrop-filter: grayscale(0);
+	text-decoration: none;
+
 }
 .filter {
 	height: 350px;
@@ -274,9 +280,8 @@ li > .tab {
 	background: none;
 	border: none;
 }
-.box > img {
-	vertical-align: middle;
-	width: 100%;
+.box img {
+	justify-content: center;
 }
 .box:hover {
 	background-color: rgba(220,220,220,.5) !important;
@@ -295,7 +300,6 @@ li > .tab {
 	display: flex;
 	justify-content: space-between;
 }
-
 @media (min-width: 576px) and (max-width: 767.98px) {
 	.slide-box img {
 		-ms-flex: 0 0 50%;

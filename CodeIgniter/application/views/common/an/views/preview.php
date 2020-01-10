@@ -77,7 +77,6 @@
 						<button class="btn btn-light btn-block" onclick="myFunction()" name="add" type="submit" formmethod="post" value="<?=$d['id']?>" >
 							Add to compare
 							<i class="fa fa-refresh" aria-hidden="true"></i>
-
 						</button>
 					</form>
 				</div>

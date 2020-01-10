@@ -8,7 +8,7 @@
     <!-- Local Source -->
 
     <script src="<?php echo base_url('../An/assets/scripts/scripts.js') ?>"></script>
-	<link rel="stylesheet" href="<?= base_url('../An/assets/css/styles.css') ?>">
+	<link rel="stylesheet" href="<?= base_url('../An/assets/css/stylesheet.css') ?>">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -28,22 +28,25 @@
 <div class="container-fluid" style="min-height: max-content">
 <!--Banner-->
     <!--Carousel skeleton-->
-    <div id="carouselId" class="carousel slide" data-ride="carousel" style="height: 350px; background-color: yellow">
+    <div id="carouselId" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
             <li data-target="#carouselId" data-slide-to="0" class="active"></li>
             <li data-target="#carouselId" data-slide-to="1"></li>
             <li data-target="#carouselId" data-slide-to="2"></li>
         </ol>
     <!--Carousel content-->
-        <div class="carousel-inner" role="listbox">
+        <div class="carousel-inner" role="listbox" style="height: 500px;">
             <div class="carousel-item active">
-                <img data-src="holder.js/900x500/auto/#777:#555/text:First slide" alt="First slide">
+                <img src="<?php echo base_url('../An/assets/images/Banner/banner1.jpg" alt="First slide'); ?>" style="max-height: 100%;
+	max-width: 100%; height: auto; position: relative; top: 50%; transform: translateY(-10%);">
             </div>
             <div class="carousel-item">
-                <img data-src="holder.js/900x500/auto/#666:#444/text:Second slide" alt="Second slide">
+                <img src="<?php echo base_url('../An/assets/images/Banner/banner2.jpg" alt="Second slide'); ?>" style="max-height: 100%;
+	max-width: 100%; height: auto; position: relative; top: 50%;">
             </div>
             <div class="carousel-item">
-                <img data-src="holder.js/900x500/auto/#666:#444/text:Third slide" alt="Third slide">
+                <img src="<?php echo base_url('../An/assets/images/Banner/banner3.jpg" alt="Third slide'); ?>" style="max-height: 100%;
+	max-width: 100%; height: auto; position: relative; top: 50%; transform: translateY(-10%);">
             </div>
         </div>
     <!--Carousel control-->
@@ -63,21 +66,21 @@
     <!--Customer Categories-->
     <div id="categories">
         <div class="debug row cus-target">
-            <div class="col-md-4 debug cus-target-bg" style="background-image: url('http://localhost:8080/CodeIgniter/An/assets/images/Cus-category-men.jpg')">
+            <div class="col-md-4 debug cus-target-bg" style="background-image: url('http://localhost:8080/CodeIgniter/An/assets/images/Category/Cus-category-men.jpg')">
                 <div class="filter">
                     <a href="">
                         <span class="cus-target">FOR MEN</span>
                     </a>
                 </div>
             </div>
-            <div class="col-md-4 debug cus-target-bg" style="background-image: url('http://localhost:8080/CodeIgniter/An/assets/images/Cus-category-women.jpg')">
+            <div class="col-md-4 debug cus-target-bg" style="background-image: url('http://localhost:8080/CodeIgniter/An/assets/images/Category/Cus-category-women.jpg')">
                 <div class="filter">
                     <a href="">
                         <span class="cus-target">FOR WOMEN</span>
                     </a>
                 </div>
             </div>
-            <div class="col-md-4 debug cus-target-bg" style="background-image: url('http://localhost:8080/CodeIgniter/An/assets/images/Cus-category-children.jpg')">
+            <div class="col-md-4 debug cus-target-bg" style="background-image: url('http://localhost:8080/CodeIgniter/An/assets/images/Category/Cus-category-children.jpg')">
                 <div class="filter">
                     <a href="">
                         <span class="cus-target">FOR CHILDREN</span>
@@ -94,19 +97,21 @@
                 <span>TOP BRANDS</span>
                 <div class="homepage-header"><img src="<?php echo base_url('../An/assets/images/right-lines.png')?>"></div>
             </div>
-            <div class="con-box debug row">
-                <button class="col-md-2 box debug"><img src="<?php echo base_url('../An/assets/images/1280px-Burberry_Logo.svg.png')?>"></button>
-                <button class="col-md-2 box debug"><img src="<?php echo base_url('../An/assets/images/1280px-Calvin_klein_logo.svg.png')?>"></button>
-                <button class="col-md-2 box debug"><img src="<?php echo base_url('../An/assets/images/Cartier_logo.svg')?>"></button>
-                <button class="col-md-2 box debug"><img src="<?php echo base_url('../An/assets/images/1280px-Chanel_logo.svg.png')?>"></button>
-                <button class="col-md-2 box debug"><img src="<?php echo base_url('../An/assets/images/1280px-Louis_Vuitton_logo.svg.png')?>"></button>
-                <button class="col-md-2 box debug"><img src="<?php echo base_url('../An/assets/images/1280px-Chanel_logo.svg.png')?>"></button>
-                <button class="col-md-2 box debug"><img src="<?php echo base_url('../An/assets/images/Cartier_logo.svg')?>"></button>
-                <button class="col-md-2 box debug"><img src="<?php echo base_url('../An/assets/images/1280px-Louis_Vuitton_logo.svg.png')?>"></button>
-                <button class="col-md-2 box debug"><img src="<?php echo base_url('../An/assets/images/1280px-Calvin_klein_logo.svg.png')?>"></button>
-                <button class="col-md-2 box debug"><img src="<?php echo base_url('../An/assets/images/1280px-Prada-Logo.svg.png')?>"></button>
-            </div>
-        </div>
+			<form method="post" action="<?=base_url().'Home/select_category'?>" enctype="multipart/form-data">
+				<div class="con-box debug row" style="text-align: center">
+					<a class="col-md-2 box debug"><img src="<?php echo base_url('../An/assets/images/Brand/adidas-originals-logo-400x400.png')?>" style="vertical-align: middle; max-height: 100%; max-width: 100%; width: auto; top:50%; transform: translateY(-50%); position: relative;"  href=""></a>
+					<a class="col-md-2 box debug"><img src="<?php echo base_url('../An/assets/images/Brand/1280px-Burberry_Logo.svg.png')?>" style="vertical-align: middle; max-height: 100%; max-width: 100%; width: auto; top:50%; transform: translateY(-50%); position: relative;" href=""></a>
+					<a class="col-md-2 box debug"><img src="<?php echo base_url('../An/assets/images/Brand/1280px-Calvin_klein_logo.svg.png')?>" style="vertical-align: middle; max-height: 100%; max-width: 100%; width: auto; top:50%; transform: translateY(-50%); position: relative;"  href=""></a>
+					<a class="col-md-2 box debug"><img src="<?php echo base_url('../An/assets/images/Brand/Cartier_logo.svg')?>"  style="vertical-align: middle; max-height: 100%; max-width: 100%; width: auto; top:50%; transform: translateY(-50%); position: relative;"  href=""></a>
+					<a class="col-md-2 box debug"><img src="<?php echo base_url('../An/assets/images/Brand/1280px-D&G_logo.svg.png')?>"  style="vertical-align: middle; max-height: 100%; max-width: 100%; width: auto; top:50%; transform: translateY(-50%); position: relative;"  href=""></a>
+					<a class="col-md-2 box debug"><img src="<?php echo base_url('../An/assets/images/Brand/Gap_Logo.png')?>"  style="vertical-align: middle; max-height: 100%; max-width: 100%; width: auto; top:50%; transform: translateY(-50%); position: relative;"  href=""></a>
+					<a class="col-md-2 box debug"><img src="<?php echo base_url('../An/assets/images/Brand/1200px-Hugo-Boss-Logo.svg.png')?>" style="vertical-align: middle; max-height: 100%; max-width: 100%; width: auto; top:50%; transform: translateY(-50%); position: relative;"  href=""></a>
+					<a class="col-md-2 box debug"><img src="<?php echo base_url('../An/assets/images/Brand/1280px-Louis_Vuitton_logo.svg.png')?>" style="vertical-align: middle; max-height: 100%; max-width: 100%; width: auto; top:50%; transform: translateY(-50%); position: relative;"  href=""></a>
+					<a class="col-md-2 box debug"><img src="<?php echo base_url('../An/assets/images/Brand/1280px-Old_Navy_Logo.svg.png')?>" style="vertical-align: middle; max-height: 100%; max-width: 100%; width: auto; top:50%; transform: translateY(-50%); position: relative;"  href=""></a>
+					<a class="col-md-2 box debug"><img src="<?php echo base_url('../An/assets/images/Brand/1280px-Prada-Logo.svg.png')?>"  style="vertical-align: middle; max-height: 100%; max-width: 100%; width: auto; top:50%; transform: translateY(-50%); position: relative;"  href=""></a>
+				</div>
+			</form>
+		</div>
     </div>
 <!--Trending-->
     <div id="trending">
@@ -117,82 +122,82 @@
                 <div class="homepage-header"><img src="<?php echo base_url('../An/assets/images/right-lines.png')?>"></div>
             </div>
         </div>
-        <div class="container-fluid">
-            <div class="row">
-                <div id="carousel" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                        <li data-target="#carousel" data-slide-to="0" class="active"></li>
-                        <li data-target="#carousel" data-slide-to="1"></li>
-                    </ol>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <div class="d-none d-lg-block">
-                                <div class="slide-box">
-                                    <img src="<?php echo base_url('../An/assets/images/Cus-category-men.jpg" alt="First slide')?>">
-                                    <img src="<?php echo base_url('../An/assets/images/Cus-category-women.jpg" alt="First slide')?>">
-                                    <img src="<?php echo base_url('../An/assets/images/Cus-category-children.jpg" alt="First slide')?>">
-                                    <img src="<?php echo base_url('../An/assets/images/Cus-category-women.jpg" alt="First slide')?>">
-                                </div>
-                            </div>
-                            <div class="d-none d-md-block d-lg-none">
-                                <div class="slide-box">
-                                    <img src="<?php echo base_url('../An/assets/images/Cus-category-men.jpg" alt="First slide')?>">
-                                    <img src="<?php echo base_url('../An/assets/images/Cus-category-women.jpg" alt="First slide')?>">
-                                    <img src="<?php echo base_url('../An/assets/images/Cus-category-children.jpg" alt="First slide')?>">
-                                </div>
-                            </div>
-                            <div class="d-none d-sm-block d-md-none">
-                                <div class="slide-box">
-                                    <img src="<?php echo base_url('../An/assets/images/Cus-category-men.jpg" alt="First slide')?>">
-                                    <img src="<?php echo base_url('../An/assets/images/Cus-category-women.jpg" alt="First slide')?>">
-                                </div>
-                            </div>
-                            <div class="d-block d-sm-none">
-                                <img class="d-block w-100" src="https://picsum.photos/600/400/?image=0&random" alt="First slide">
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="d-none d-lg-block">
-                                <div class="slide-box">
-                                    <img src="<?php echo base_url('../An/assets/images/Cus-category-children.jpg" alt="Second slide')?>">
-                                    <img src="<?php echo base_url('../An/assets/images/Cus-category-men.jpg" alt="Second slide')?>">
-                                    <img src="<?php echo base_url('../An/assets/images/Cus-category-women.jpg" alt="Second slide')?>">
-                                    <img src="<?php echo base_url('../An/assets/images/Cus-category-children.jpg" alt="Second slide')?>">
-                                </div>
-                            </div>
-                            <div class="d-none d-md-block d-lg-none">
-                                <div class="slide-box">
-                                    <img src="<?php echo base_url('../An/assets/images/Cus-category-children.jpg" alt="Second slide')?>">
-                                    <img src="<?php echo base_url('../An/assets/images/Cus-category-men.jpg" alt="Second slide')?>">
-                                    <img src="<?php echo base_url('../An/assets/images/Cus-category-women.jpg" alt="Second slide')?>">
-                                </div>
-                            </div>
-                            <div class="d-none d-sm-block d-md-none">
-                                <div class="slide-box">
-                                    <img src="<?php echo base_url('../An/assets/images/Cus-category-children.jpg" alt="Second slide')?>">
-                                    <img src="<?php echo base_url('../An/assets/images/Cus-category-men.jpg" alt="Second slide')?>">
-                                </div>
-                            </div>
-                            <div class="d-block d-sm-none">
-                                <img class="d-block w-100" src="<?php echo base_url('../An/assets/images/Cus-category-children.jpg" alt="Second slide')?>">
-                            </div>
-                        </div>
-                    </div>
-                    <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
-                        <div class="icon-bg">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        </div>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
-                        <div class="icon-bg">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        </div>
-                        <span class="sr-only">Next</span>
-                    </a>
-                </div>
-            </div>
-        </div>
+		<div class="container-fluid">
+			<div class="row">
+				<div id="carousel" class="carousel slide" data-ride="carousel">
+					<ol class="carousel-indicators">
+						<li data-target="#carousel" data-slide-to="0" class="active"></li>
+						<li data-target="#carousel" data-slide-to="1"></li>
+					</ol>
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<div class="d-none d-lg-block">
+								<div class="slide-box">
+									<img src="<?php echo base_url('../An/assets/images/Trending/trending1.png" alt="First slide')?>">
+									<img src="<?php echo base_url('../An/assets/images/Trending/trending2.png" alt="First slide')?>">
+									<img src="<?php echo base_url('../An/assets/images/Trending/trending3.png" alt="First slide')?>">
+									<img src="<?php echo base_url('../An/assets/images/Trending/trending4.png" alt="First slide')?>">
+								</div>
+							</div>
+							<div class="d-none d-md-block d-lg-none">
+								<div class="slide-box">
+									<img src="<?php echo base_url('../An/assets/images/Trending/trending1.png" alt="First slide')?>">
+									<img src="<?php echo base_url('../An/assets/images/Trending/trending2.png" alt="First slide')?>">
+									<img src="<?php echo base_url('../An/assets/images/Trending/trending3.png" alt="First slide')?>">
+								</div>
+							</div>
+							<div class="d-none d-sm-block d-md-none">
+								<div class="slide-box">
+									<img src="<?php echo base_url('../An/assets/images/Trending/trending1.png" alt="First slide')?>">
+									<img src="<?php echo base_url('../An/assets/images/Trending/trending2.png" alt="First slide')?>">
+								</div>
+							</div>
+							<div class="d-block d-sm-none">
+								<img class="d-block w-100" src="<?php echo base_url('../An/assets/images/Trending/trending1.png" alt="First slide')?>">
+							</div>
+						</div>
+						<div class="carousel-item">
+							<div class="d-none d-lg-block">
+								<div class="slide-box">
+									<img src="<?php echo base_url('../An/assets/images/Trending/trending5.png" alt="Second slide')?>">
+									<img src="<?php echo base_url('../An/assets/images/Trending/trending6.png" alt="Second slide')?>">
+									<img src="<?php echo base_url('../An/assets/images/Trending/trending8.png" alt="Second slide')?>">
+									<img src="<?php echo base_url('../An/assets/images/Trending/trending7.png" alt="Second slide')?>">
+								</div>
+							</div>
+							<div class="d-none d-md-block d-lg-none">
+								<div class="slide-box">
+									<img src="<?php echo base_url('../An/assets/images/Trending/trending5.png" alt="Second slide')?>">
+									<img src="<?php echo base_url('../An/assets/images/Trending/trending6.png" alt="Second slide')?>">
+									<img src="<?php echo base_url('../An/assets/images/Trending/trending8.png" alt="Second slide')?>">
+								</div>
+							</div>
+							<div class="d-none d-sm-block d-md-none">
+								<div class="slide-box">
+									<img src="<?php echo base_url('../An/assets/images/Trending/trending5.png" alt="Second slide')?>">
+									<img src="<?php echo base_url('../An/assets/images/Trending/trending6.png" alt="Second slide')?>">
+								</div>
+							</div>
+							<div class="d-block d-sm-none">
+								<img class="d-block w-100" src="<?php echo base_url('../An/assets/images/Trending/trending5.png" alt="Second slide')?>">
+							</div>
+						</div>
+					</div>
+					<a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+						<div class="icon-bg">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						</div>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+						<div class="icon-bg">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						</div>
+						<span class="sr-only">Next</span>
+					</a>
+				</div>
+			</div>
+		</div>
     </div>
 </div>
 </body>

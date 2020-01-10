@@ -19,11 +19,11 @@ class Form_update extends CI_Controller
 		$this->load->view('admin/edit', $data);
 	}
 	public function uploade_image(){
-		$upload_path = './An/assets/upload/';
+		$upload_path = base_url('../upload/');
 
 		$this->load->library("upload");
 
-		$config['upload_path'] = $upload_path;
+		$config['upload_path'] = './upload/';
 		$config['allowed_types'] = 'jpeg|gif|jpg|png';
 		$config['max_size'] = '5120';
 		$config['max_width']  = '2000';
@@ -42,8 +42,7 @@ class Form_update extends CI_Controller
 		else
 		{
 			$upload_data = $this->upload->data();
-			$dir = 'D:/Studies/Aptech/xampp/htdocs/CodeIgniter';
-			$imgData = base_url(str_replace($dir,'', $upload_data['full_path']));
+			$imgData = $upload_path.$upload_data['file_name'];
 		}
 		return $imgData;
 	}
@@ -63,8 +62,6 @@ class Form_update extends CI_Controller
 		);
 		$this->load->model('dashboard');
 		$result = $this->dashboard->update_product($update_data, $id);
-		/*	var_dump($update_data);
-		die();*/
 		if($result == TRUE) {
 			echo '<script type="text/javascript">alert("Update Success. All changes saved")</script>';
 			$this->load->model('product_all');

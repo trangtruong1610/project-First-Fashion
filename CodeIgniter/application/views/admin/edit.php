@@ -5,12 +5,6 @@ if(empty($_SESSION['user']) || !in_array($_SESSION['user']["role"], [1,2])) {
 	header('location: http://localhost:8080/CodeIgniter/index.php/login');
 }
 ?>
-<?php
-$upload=array(
-	"name" => "img",
-	"size" => "25",
-);
-?>
 <head>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
 		  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -71,7 +65,7 @@ $upload=array(
 					</td>
 				</tr>
 				<tr>
-					<th>Meterial</th>
+					<th>Material</th>
 					<td class="new_value">
 						<div class="form-group">
 							<label for="new material"></label>
