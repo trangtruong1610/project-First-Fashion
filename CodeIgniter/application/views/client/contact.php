@@ -1,6 +1,6 @@
 <?php
-$this->load->view('/common/trang/view/header');
-$this->load->view('/common/trang/view/contact');
-$this->load->view('/common/an/templates/footer');
+$this->load->view('/common/templates/header');
+$this->load->view('/common/views/contact');
+$this->load->view('/common/templates/footer');
 ?>
 

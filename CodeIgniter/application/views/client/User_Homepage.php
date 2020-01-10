@@ -1,4 +1,4 @@
-<?php $this->load->view('/common/trang/view/header'); ?>
+<?php $this->load->view('/common/templates/header'); ?>
 
 <html lang="en">
 <head>
@@ -7,8 +7,8 @@
     <meta charset="utf-8">
     <!-- Local Source -->
 
-    <script src="<?php echo base_url('../An/assets/scripts/scripts.js') ?>"></script>
-	<link rel="stylesheet" href="<?= base_url('../An/assets/css/stylesheet.css') ?>">
+    <script src="<?php echo base_url('../assets/scripts/scripts.js') ?>"></script>
+	<link rel="stylesheet" href="<?= base_url('../assets/css/stylesheet.css') ?>">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -37,15 +37,15 @@
     <!--Carousel content-->
         <div class="carousel-inner" role="listbox" style="height: 500px;">
             <div class="carousel-item active">
-                <img src="<?php echo base_url('../An/assets/images/Banner/banner1.jpg" alt="First slide'); ?>" style="max-height: 100%;
+                <img src="<?php echo base_url('../assets/images/Banner/banner1.jpg" alt="First slide'); ?>" style="max-height: 100%;
 	max-width: 100%; height: auto; position: relative; top: 50%; transform: translateY(-10%);">
             </div>
             <div class="carousel-item">
-                <img src="<?php echo base_url('../An/assets/images/Banner/banner2.jpg" alt="Second slide'); ?>" style="max-height: 100%;
+                <img src="<?php echo base_url('../assets/images/Banner/banner2.jpg" alt="Second slide'); ?>" style="max-height: 100%;
 	max-width: 100%; height: auto; position: relative; top: 50%;">
             </div>
             <div class="carousel-item">
-                <img src="<?php echo base_url('../An/assets/images/Banner/banner3.jpg" alt="Third slide'); ?>" style="max-height: 100%;
+                <img src="<?php echo base_url('../assets/images/Banner/banner3.jpg" alt="Third slide'); ?>" style="max-height: 100%;
 	max-width: 100%; height: auto; position: relative; top: 50%; transform: translateY(-10%);">
             </div>
         </div>
@@ -66,21 +66,21 @@
     <!--Customer Categories-->
     <div id="categories">
         <div class="debug row cus-target">
-            <div class="col-md-4 debug cus-target-bg" style="background-image: url('http://localhost:8080/CodeIgniter/An/assets/images/Category/Cus-category-men.jpg')">
+            <div class="col-md-4 debug cus-target-bg" style="background-image: url('http://localhost:8080/CodeIgniter/assets/images/Category/Cus-category-men.jpg')">
                 <div class="filter">
                     <a href="">
                         <span class="cus-target">FOR MEN</span>
                     </a>
                 </div>
             </div>
-            <div class="col-md-4 debug cus-target-bg" style="background-image: url('http://localhost:8080/CodeIgniter/An/assets/images/Category/Cus-category-women.jpg')">
+            <div class="col-md-4 debug cus-target-bg" style="background-image: url('http://localhost:8080/CodeIgniter/assets/images/Category/Cus-category-women.jpg')">
                 <div class="filter">
                     <a href="">
                         <span class="cus-target">FOR WOMEN</span>
                     </a>
                 </div>
             </div>
-            <div class="col-md-4 debug cus-target-bg" style="background-image: url('http://localhost:8080/CodeIgniter/An/assets/images/Category/Cus-category-children.jpg')">
+            <div class="col-md-4 debug cus-target-bg" style="background-image: url('http://localhost:8080/CodeIgniter/assets/images/Category/Cus-category-children.jpg')">
                 <div class="filter">
                     <a href="">
                         <span class="cus-target">FOR CHILDREN</span>
@@ -93,22 +93,22 @@
     <div id="brands">
         <div class="debug" style="margin-top: 20px">
             <div class="header debug">
-                <div class="homepage-header"><img src="<?php echo base_url('../An/assets/images/left-lines.png')?>"></div>
+                <div class="homepage-header"><img src="<?php echo base_url('../assets/images/left-lines.png')?>"></div>
                 <span>TOP BRANDS</span>
-                <div class="homepage-header"><img src="<?php echo base_url('../An/assets/images/right-lines.png')?>"></div>
+                <div class="homepage-header"><img src="<?php echo base_url('../assets/images/right-lines.png')?>"></div>
             </div>
 			<form method="post" action="<?=base_url().'Home/select_category'?>" enctype="multipart/form-data">
 				<div class="con-box debug row" style="text-align: center">
-					<a class="col-md-2 box debug"><img src="<?php echo base_url('../An/assets/images/Brand/adidas-originals-logo-400x400.png')?>" style="vertical-align: middle; max-height: 100%; max-width: 100%; width: auto; top:50%; transform: translateY(-50%); position: relative;"  href=""></a>
-					<a class="col-md-2 box debug"><img src="<?php echo base_url('../An/assets/images/Brand/1280px-Burberry_Logo.svg.png')?>" style="vertical-align: middle; max-height: 100%; max-width: 100%; width: auto; top:50%; transform: translateY(-50%); position: relative;" href=""></a>
-					<a class="col-md-2 box debug"><img src="<?php echo base_url('../An/assets/images/Brand/1280px-Calvin_klein_logo.svg.png')?>" style="vertical-align: middle; max-height: 100%; max-width: 100%; width: auto; top:50%; transform: translateY(-50%); position: relative;"  href=""></a>
-					<a class="col-md-2 box debug"><img src="<?php echo base_url('../An/assets/images/Brand/Cartier_logo.svg')?>"  style="vertical-align: middle; max-height: 100%; max-width: 100%; width: auto; top:50%; transform: translateY(-50%); position: relative;"  href=""></a>
-					<a class="col-md-2 box debug"><img src="<?php echo base_url('../An/assets/images/Brand/1280px-D&G_logo.svg.png')?>"  style="vertical-align: middle; max-height: 100%; max-width: 100%; width: auto; top:50%; transform: translateY(-50%); position: relative;"  href=""></a>
-					<a class="col-md-2 box debug"><img src="<?php echo base_url('../An/assets/images/Brand/Gap_Logo.png')?>"  style="vertical-align: middle; max-height: 100%; max-width: 100%; width: auto; top:50%; transform: translateY(-50%); position: relative;"  href=""></a>
-					<a class="col-md-2 box debug"><img src="<?php echo base_url('../An/assets/images/Brand/1200px-Hugo-Boss-Logo.svg.png')?>" style="vertical-align: middle; max-height: 100%; max-width: 100%; width: auto; top:50%; transform: translateY(-50%); position: relative;"  href=""></a>
-					<a class="col-md-2 box debug"><img src="<?php echo base_url('../An/assets/images/Brand/1280px-Louis_Vuitton_logo.svg.png')?>" style="vertical-align: middle; max-height: 100%; max-width: 100%; width: auto; top:50%; transform: translateY(-50%); position: relative;"  href=""></a>
-					<a class="col-md-2 box debug"><img src="<?php echo base_url('../An/assets/images/Brand/1280px-Old_Navy_Logo.svg.png')?>" style="vertical-align: middle; max-height: 100%; max-width: 100%; width: auto; top:50%; transform: translateY(-50%); position: relative;"  href=""></a>
-					<a class="col-md-2 box debug"><img src="<?php echo base_url('../An/assets/images/Brand/1280px-Prada-Logo.svg.png')?>"  style="vertical-align: middle; max-height: 100%; max-width: 100%; width: auto; top:50%; transform: translateY(-50%); position: relative;"  href=""></a>
+					<a class="col-md-2 box debug"><img src="<?php echo base_url('../assets/images/Brand/adidas-originals-logo-400x400.png')?>" style="vertical-align: middle; max-height: 100%; max-width: 100%; width: auto; top:50%; transform: translateY(-50%); position: relative;"  href=""></a>
+					<a class="col-md-2 box debug"><img src="<?php echo base_url('../assets/images/Brand/1280px-Burberry_Logo.svg.png')?>" style="vertical-align: middle; max-height: 100%; max-width: 100%; width: auto; top:50%; transform: translateY(-50%); position: relative;" href=""></a>
+					<a class="col-md-2 box debug"><img src="<?php echo base_url('../assets/images/Brand/1280px-Calvin_klein_logo.svg.png')?>" style="vertical-align: middle; max-height: 100%; max-width: 100%; width: auto; top:50%; transform: translateY(-50%); position: relative;"  href=""></a>
+					<a class="col-md-2 box debug"><img src="<?php echo base_url('../assets/images/Brand/Cartier_logo.svg')?>"  style="vertical-align: middle; max-height: 100%; max-width: 100%; width: auto; top:50%; transform: translateY(-50%); position: relative;"  href=""></a>
+					<a class="col-md-2 box debug"><img src="<?php echo base_url('../assets/images/Brand/1280px-D&G_logo.svg.png')?>"  style="vertical-align: middle; max-height: 100%; max-width: 100%; width: auto; top:50%; transform: translateY(-50%); position: relative;"  href=""></a>
+					<a class="col-md-2 box debug"><img src="<?php echo base_url('../assets/images/Brand/Gap_Logo.png')?>"  style="vertical-align: middle; max-height: 100%; max-width: 100%; width: auto; top:50%; transform: translateY(-50%); position: relative;"  href=""></a>
+					<a class="col-md-2 box debug"><img src="<?php echo base_url('../assets/images/Brand/1200px-Hugo-Boss-Logo.svg.png')?>" style="vertical-align: middle; max-height: 100%; max-width: 100%; width: auto; top:50%; transform: translateY(-50%); position: relative;"  href=""></a>
+					<a class="col-md-2 box debug"><img src="<?php echo base_url('../assets/images/Brand/1280px-Louis_Vuitton_logo.svg.png')?>" style="vertical-align: middle; max-height: 100%; max-width: 100%; width: auto; top:50%; transform: translateY(-50%); position: relative;"  href=""></a>
+					<a class="col-md-2 box debug"><img src="<?php echo base_url('../assets/images/Brand/1280px-Old_Navy_Logo.svg.png')?>" style="vertical-align: middle; max-height: 100%; max-width: 100%; width: auto; top:50%; transform: translateY(-50%); position: relative;"  href=""></a>
+					<a class="col-md-2 box debug"><img src="<?php echo base_url('../assets/images/Brand/1280px-Prada-Logo.svg.png')?>"  style="vertical-align: middle; max-height: 100%; max-width: 100%; width: auto; top:50%; transform: translateY(-50%); position: relative;"  href=""></a>
 				</div>
 			</form>
 		</div>
@@ -117,9 +117,9 @@
     <div id="trending">
         <div class="debug" style="margin-top: 20px">
             <div class="header debug">
-                <div class="homepage-header"><img src="<?php echo base_url('../An/assets/images/left-lines.png')?>"></div>
+                <div class="homepage-header"><img src="<?php echo base_url('../assets/images/left-lines.png')?>"></div>
                 <span>TRENDING</span>
-                <div class="homepage-header"><img src="<?php echo base_url('../An/assets/images/right-lines.png')?>"></div>
+                <div class="homepage-header"><img src="<?php echo base_url('../assets/images/right-lines.png')?>"></div>
             </div>
         </div>
 		<div class="container-fluid">
@@ -133,53 +133,53 @@
 						<div class="carousel-item active">
 							<div class="d-none d-lg-block">
 								<div class="slide-box">
-									<img src="<?php echo base_url('../An/assets/images/Trending/trending1.png" alt="First slide')?>">
-									<img src="<?php echo base_url('../An/assets/images/Trending/trending2.png" alt="First slide')?>">
-									<img src="<?php echo base_url('../An/assets/images/Trending/trending3.png" alt="First slide')?>">
-									<img src="<?php echo base_url('../An/assets/images/Trending/trending4.png" alt="First slide')?>">
+									<img src="<?php echo base_url('../assets/images/Trending/trending1.png" alt="First slide')?>">
+									<img src="<?php echo base_url('../assets/images/Trending/trending2.png" alt="First slide')?>">
+									<img src="<?php echo base_url('../assets/images/Trending/trending3.png" alt="First slide')?>">
+									<img src="<?php echo base_url('../assets/images/Trending/trending4.png" alt="First slide')?>">
 								</div>
 							</div>
 							<div class="d-none d-md-block d-lg-none">
 								<div class="slide-box">
-									<img src="<?php echo base_url('../An/assets/images/Trending/trending1.png" alt="First slide')?>">
-									<img src="<?php echo base_url('../An/assets/images/Trending/trending2.png" alt="First slide')?>">
-									<img src="<?php echo base_url('../An/assets/images/Trending/trending3.png" alt="First slide')?>">
+									<img src="<?php echo base_url('../assets/images/Trending/trending1.png" alt="First slide')?>">
+									<img src="<?php echo base_url('../assets/images/Trending/trending2.png" alt="First slide')?>">
+									<img src="<?php echo base_url('../assets/images/Trending/trending3.png" alt="First slide')?>">
 								</div>
 							</div>
 							<div class="d-none d-sm-block d-md-none">
 								<div class="slide-box">
-									<img src="<?php echo base_url('../An/assets/images/Trending/trending1.png" alt="First slide')?>">
-									<img src="<?php echo base_url('../An/assets/images/Trending/trending2.png" alt="First slide')?>">
+									<img src="<?php echo base_url('../assets/images/Trending/trending1.png" alt="First slide')?>">
+									<img src="<?php echo base_url('../assets/images/Trending/trending2.png" alt="First slide')?>">
 								</div>
 							</div>
 							<div class="d-block d-sm-none">
-								<img class="d-block w-100" src="<?php echo base_url('../An/assets/images/Trending/trending1.png" alt="First slide')?>">
+								<img class="d-block w-100" src="<?php echo base_url('../assets/images/Trending/trending1.png" alt="First slide')?>">
 							</div>
 						</div>
 						<div class="carousel-item">
 							<div class="d-none d-lg-block">
 								<div class="slide-box">
-									<img src="<?php echo base_url('../An/assets/images/Trending/trending5.png" alt="Second slide')?>">
-									<img src="<?php echo base_url('../An/assets/images/Trending/trending6.png" alt="Second slide')?>">
-									<img src="<?php echo base_url('../An/assets/images/Trending/trending8.png" alt="Second slide')?>">
-									<img src="<?php echo base_url('../An/assets/images/Trending/trending7.png" alt="Second slide')?>">
+									<img src="<?php echo base_url('../assets/images/Trending/trending5.png" alt="Second slide')?>">
+									<img src="<?php echo base_url('../assets/images/Trending/trending6.png" alt="Second slide')?>">
+									<img src="<?php echo base_url('../assets/images/Trending/trending8.png" alt="Second slide')?>">
+									<img src="<?php echo base_url('../assets/images/Trending/trending7.png" alt="Second slide')?>">
 								</div>
 							</div>
 							<div class="d-none d-md-block d-lg-none">
 								<div class="slide-box">
-									<img src="<?php echo base_url('../An/assets/images/Trending/trending5.png" alt="Second slide')?>">
-									<img src="<?php echo base_url('../An/assets/images/Trending/trending6.png" alt="Second slide')?>">
-									<img src="<?php echo base_url('../An/assets/images/Trending/trending8.png" alt="Second slide')?>">
+									<img src="<?php echo base_url('../assets/images/Trending/trending5.png" alt="Second slide')?>">
+									<img src="<?php echo base_url('../assets/images/Trending/trending6.png" alt="Second slide')?>">
+									<img src="<?php echo base_url('../assets/images/Trending/trending8.png" alt="Second slide')?>">
 								</div>
 							</div>
 							<div class="d-none d-sm-block d-md-none">
 								<div class="slide-box">
-									<img src="<?php echo base_url('../An/assets/images/Trending/trending5.png" alt="Second slide')?>">
-									<img src="<?php echo base_url('../An/assets/images/Trending/trending6.png" alt="Second slide')?>">
+									<img src="<?php echo base_url('../assets/images/Trending/trending5.png" alt="Second slide')?>">
+									<img src="<?php echo base_url('../assets/images/Trending/trending6.png" alt="Second slide')?>">
 								</div>
 							</div>
 							<div class="d-block d-sm-none">
-								<img class="d-block w-100" src="<?php echo base_url('../An/assets/images/Trending/trending5.png" alt="Second slide')?>">
+								<img class="d-block w-100" src="<?php echo base_url('../assets/images/Trending/trending5.png" alt="Second slide')?>">
 							</div>
 						</div>
 					</div>
@@ -203,4 +203,4 @@
 </body>
 </html>
 
-<?php $this->load->view('/common/an/templates/footer'); ?>
+<?php $this->load->view('/common/templates/footer'); ?>

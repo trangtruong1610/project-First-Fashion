@@ -8,7 +8,7 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="<?= base_url('../trang/assets/css/header.css') ?>">
+	<link rel="stylesheet" href="<?= base_url('../assets/css/header.css') ?>">
     <script src="https://kit.fontawesome.com/ba36fe9198.js" crossorigin="anonymous"></script>
     <link href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" rel="stylesheet">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -17,7 +17,7 @@
     <div id="header">
         <div class="logo" style="text-align: center; display: table-cell; vertical-align: middle; width: 100vw;">
 			<div style="width: 100px; height: 100px;; display: inline-block">
-				<img align="middle" src="<?=base_url('../An/assets/images/1st Fashion logo.png');?>" style="max-width: 100%; max-height: 100%; width: auto;  vertical-align: middle;display: table-cell">
+				<img align="middle" src="<?=base_url('../assets/images/1st Fashion logo.png');?>" style="max-width: 100%; max-height: 100%; width: auto;  vertical-align: middle;display: table-cell">
 			</div>
         </div>
         <nav class=" navbar navbar-expand-sm navbar-light bg-light">
@@ -33,7 +33,7 @@
                     <a class="nav-link" href="<?=base_url()?>">HOME<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-					<a class="nav-link" href="<?=base_url()?>">ABOUT US<span class="sr-only">(current)</span></a>
+					<a class="nav-link" href="#About-Us">ABOUT US<span class="sr-only">(current)</span></a>
 				</li>
                 <li class="nav-item ">
 					<a class="nav-link" href="<?=base_url().'product'?>">PRODUCT<span class="sr-only">(current)</span></a>

@@ -1,4 +1,4 @@
-<?php $this->load->view('/common/trang/view/header');?>
+<?php $this->load->view('/common/templates/header');?>
 <!doctype html>
 <lang="en">
 <head>
@@ -8,10 +8,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<!-- Local Sources -->
-	<link rel="stylesheet" href="<?= base_url('../An/assets/css/stylesheet.css')?>">
-	<link rel="stylesheet" href="<?= base_url('../An/assets/css/fonts.css')?>">
-	<link rel="stylesheet" href="<?= base_url('../An/assets/css/fontawesome.css') ?>">
-	<script src="<?=base_url('../An/assets/scripts/scripts.js') ?>"></script>
+	<link rel="stylesheet" href="<?= base_url('../assets/css/stylesheet.css')?>">
+	<link rel="stylesheet" href="<?= base_url('../assets/css/fonts.css')?>">
+	<link rel="stylesheet" href="<?= base_url('../assets/css/fontawesome.css') ?>">
+	<script src="<?=base_url('../assets/scripts/scripts.js') ?>"></script>
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
 		  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -82,9 +82,7 @@
 				</div>
 				<hr class="p_line">
 				<div class="product_info">
-					<div>brief</div>
 					<div id="" class="p_detail">
-						<div>Categories: </div>
 					</div>
 					<div class="social-icon">
 						<a href="">
@@ -159,4 +157,4 @@
 </div>
 </body>
 </html>
-<?php $this->load->view('/common/an/templates/footer');?>
+<?php $this->load->view('/common/templates/footer');?>

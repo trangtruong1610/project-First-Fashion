@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Local Sources -->
-	<link href="<?php echo base_url('../An/assets/css/stylesheet.css') ?>" rel="stylesheet">
-	<!--<link href="<?php /*echo base_url('../An/assets/css/debug.css') */?>" rel="stylesheet">-->
-	<link href="<?php echo base_url('../An/assets/css/fontawesome.css') ?>" rel="stylesheet">
-	<script src="<?php echo base_url('../An/assets/scripts/scripts.js') ?>"></script>
+	<link href="<?php echo base_url('../assets/css/stylesheet.css') ?>" rel="stylesheet">
+	<!--<link href="<?php /*echo base_url('../assets/css/debug.css') */?>" rel="stylesheet">-->
+	<link href="<?php echo base_url('../assets/css/fontawesome.css') ?>" rel="stylesheet">
+	<script src="<?php echo base_url('../assets/scripts/scripts.js') ?>"></script>
 	<!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -31,11 +31,11 @@
     <div class="debug row footer1">
         <div class="debug col-lg-3 footer-content" style="text-align: center;">
             <div style="width: 100%; height: 150px; display: inline-block;">
-				<img class="debug" src="<?=base_url('../An/assets/images/1st Fashion logo.png');?>" style="max-width: 100%; max-height: 100%; width: auto;">
+				<img class="debug" src="<?=base_url('../assets/images/1st Fashion logo.png');?>" style="max-width: 100%; max-height: 100%; width: auto;">
 			</div>
         </div>
         
-        <div class="debug col-lg-6 footer-content">
+        <div class="debug col-lg-6 footer-content" id="About-Us">
             <h5 class="header5">ABOUT THE SHOP</h5>
             <p>Sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio.</p>
         </div>

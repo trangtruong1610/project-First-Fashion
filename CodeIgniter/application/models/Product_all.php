@@ -37,12 +37,17 @@ class Product_all extends CI_Model {
 		return $query->result_array();
 	}
 	public function similar_product($binding) {
-		$sql = "SELECT * FROM product JOIN middle ON product.id = middle.product_id JOIN category ON category.id = middle.category_id WHERE CategoryName = '{$binding['CategoryName']}' AND product.id <> '{$binding['product_id']}' LIMIT 3";
+		$sql = "SELECT * FROM product JOIN middle ON product.id = middle.product_id JOIN category ON category.id = middle.category_id WHERE category.CategoryName = '{$binding['CategoryName']}' AND product.id <> '{$binding['product_id']}' LIMIT 3";
 		$query = $this->db->query($sql);
 		return $query->result_array();
 	}
 	public function binding_by_product ($id) {
 		$sql = "SELECT CategoryName, product_id FROM middle JOIN category ON middle.category_id = category.id WHERE middle.product_id = '{$id}'";
+		$query = $this->db->query($sql);
+		return $query->result_array();
+	}
+	public function category($id) {
+		$sql = "SELECT CategoryName FROM category JOIN middle ON middle.category_id = category.id WHERE middle.product_id = '{$id}'";
 		$query = $this->db->query($sql);
 		return $query->result_array();
 	}
@@ -56,5 +61,6 @@ class Product_all extends CI_Model {
 		$query = $this->db->query($sql);
 		return $query->result_array();
 	}
+
 }
 ?>

@@ -67,7 +67,9 @@ class Form_update extends CI_Controller
 			$this->load->model('product_all');
 			$data['preview'] = $this->product_all->get_by_id($id);
 			$data['files'] = $this->product_all->get_file_by_id($id);
-			$this->load->view('common/an/views/preview',$data);
+			$this->load->model('product_all');
+			$data['category'] = $this->product_all->category($id);
+			$this->load->view('common/views/preview',$data);
 		} else {
 			$this->load->view('admin/dashboard');
 		}

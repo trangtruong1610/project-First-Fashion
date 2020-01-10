@@ -1,4 +1,4 @@
-<?php $this->load->view('/common/trang/view/header'); ?>
+<?php $this->load->view('/common/templates/header'); ?>
 
 <?php
 if(empty($_SESSION['user']) || !in_array($_SESSION['user']["role"], [1,2])) {
@@ -144,4 +144,4 @@ if(empty($_SESSION['user']) || !in_array($_SESSION['user']["role"], [1,2])) {
 	<?php endforeach; ?>
 </div>
 </body>
-<?php $this->load->view('/common/an/templates/footer'); ?>
+<?php $this->load->view('/common/templates/footer'); ?>

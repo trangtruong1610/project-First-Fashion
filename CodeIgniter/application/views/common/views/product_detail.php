@@ -1,6 +1,6 @@
-<?php $this->load->view('/common/trang/view/header');?>
+<?php $this->load->view('/common/templates/header');?>
 <?php
-if (isset($_POST["add"])){
+/*if (isset($_POST["add"])){
 	$id = (int)($_POST['add']);
 	array_push($_SESSION['compare'], $id);
 }
@@ -9,7 +9,7 @@ var_dump($_SESSION['compare']);
 echo '<br>';
 var_dump($res);
 
-?>
+*/?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -19,10 +19,10 @@ var_dump($res);
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Local Sources -->
-	<link rel="stylesheet" href="<?= base_url('../An/assets/css/stylesheet.css')?>">
-	<link rel="stylesheet" href="<?= base_url('../An/assets/css/fonts.css')?>">
-	<link rel="stylesheet" href="<?= base_url('../An/assets/css/fontawesome.css') ?>">
-    <script src="<?=base_url('../An/assets/scripts/scripts.js') ?>"></script>
+	<link rel="stylesheet" href="<?= base_url('../assets/css/stylesheet.css')?>">
+	<link rel="stylesheet" href="<?= base_url('../assets/css/fonts.css')?>">
+	<link rel="stylesheet" href="<?= base_url('../assets/css/fontawesome.css') ?>">
+    <script src="<?=base_url('../assets/scripts/scripts.js') ?>"></script>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -65,7 +65,7 @@ var_dump($res);
 					<h4><?=$d['Price']?></h4>
 				</div>
 				<hr class="p_line">
-				<div class="debug" style="text-align: center; width: 100%; margin: 20px 0">
+				<div class="debug" style="width: 100%; margin: 20px 0">
 					Quantity: <?=$d['Status'] = 1 ? 'In Stock': 'Sold Out'?>
 				</div>
 				<div class="p_action-group">
@@ -85,9 +85,9 @@ var_dump($res);
 				</div>
 				<hr class="p_line">
 				<div class="product_info">
-					<div>brief</div>
+
 					<div id="" class="p_detail">
-						<div>Categories: </div>
+						<div>Categories: <?php foreach ($category as $category): echo "{$category['CategoryName']} "; endforeach;?>	</div>
 					</div>
 					<div class="social-icon">
 						<a href="">
@@ -162,9 +162,9 @@ var_dump($res);
 	<!--product suggestion-->
 	<div class="container-fluid debug" style="margin-top: 50px">
 		<div class="header debug">
-			<div class="homepage-header"><img src="/CodeIgniter/An/assets/images/left-lines.png"></div>
+			<div class="homepage-header"><img src="<?=base_url('../assets/images/left-lines.png')?>"></div>
 			<span>YOU MAY ALSO LIKE</span>
-			<div class="homepage-header"><img src="/CodeIgniter/An/assets/images/right-lines.png"></div>
+			<div class="homepage-header"><img src="<?=base_url('../assets/images/right-lines.png')?>"></div>
 		</div>
 		<div class="card-deck">
 			<?php foreach ($similar as $row): ?>
@@ -196,4 +196,4 @@ var_dump($res);
 	}
 </script>
 </html>
-<?php $this->load->view('/common/an/templates/footer');?>
+<?php $this->load->view('/common/templates/footer');?>

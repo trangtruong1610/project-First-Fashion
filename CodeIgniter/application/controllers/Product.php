@@ -33,9 +33,13 @@ class Product extends CI_Controller
 		$all_data = $this->product_all->get_by_id($id);
 		$data['data'] = $all_data;
 
+		//display similar products of the current product in view
 		$data['similar'] = $this->similar_product($id);
 
-		$this->load->view('common/an/views/product_detail.php', $data);
+		//display the categories of the current products
+		$data['category'] = $this->product_all->category($id);
+
+		$this->load->view('common/views/product_detail.php', $data);
 	}
 	public function similar_product($id) {
 		//display product with same category
@@ -45,11 +49,7 @@ class Product extends CI_Controller
 		return $similar;
 	}
 	public function select_by_category() {
-		$binding = $this->input->post('category');
-		$result = $this->product_all->select_category($binding);
 
-		return $result;
-		var_dump($result);die();
 	}
 }
 ?>
