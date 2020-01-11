@@ -16,8 +16,8 @@
 <body>
     <div id="header">
         <div class="logo" style="text-align: center; display: table-cell; vertical-align: middle; width: 100vw;">
-			<div style="width: 100px; height: 100px;; display: inline-block">
-				<img align="middle" src="<?=base_url('../assets/images/1st Fashion logo.png');?>" style="max-width: 100%; max-height: 100%; width: auto;  vertical-align: middle;display: table-cell">
+			<div style="width: 100px; height: 100px; display: inline-block;">
+				<img align="middle" src="<?=base_url('../assets/images/1st Fashion logo.png');?>" style="max-width: 100%; max-height: 100%; width: auto; vertical-align: middle;display: table-cell;">
 			</div>
         </div>
         <nav class=" navbar navbar-expand-sm navbar-light bg-light">

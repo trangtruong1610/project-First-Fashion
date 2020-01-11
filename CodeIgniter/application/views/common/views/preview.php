@@ -31,26 +31,26 @@
 </head>
 <body>
 <div class="debug container-fluid wrap">
-	<?php foreach ($preview as $d) :?>
-		<div id="preview_control">
-		<div style="font-family: Vesta-SemiBold; font-style: italic; font-size: 2em;">
+	<?php foreach ($preview as $preview) :?>
+		<div id="preview_control" style="margin: 20px 0;">
+			<div style="font-family: Vesta-SemiBold; font-style: italic; font-size: 2em;">
 			Product Preview
+			</div>
+			<span>
+				<a name="" id="" class="btn btn-light" href="<?=base_url().'dashboard/edit/'.$preview['id']; ?>" role="button">Back to edit</a>
+				<a name="" id="" class="btn btn-light" href="<?=base_url().'dashboard'; ?>" role="button">Back to dashboard</a>
+			</span>
 		</div>
-		<span>
-			<a name="" id="" class="btn btn-light" href="<?=base_url().'dashboard/edit/'.$d['id']?>" role="button">Back to edit</a>
-			<a name="" id="" class="btn btn-light" href="<?=base_url().'dashboard'?>" role="button">Back to dashboard</a>
-		</span>
-	</div>
 		<div class="row" style="margin-bottom: 50px;">
 		<!--product images-->
 		<div class="col-md-6 col-sm-4 row debug">
 			<div class="img-ava col-md-9">
-				<img data-target="" src="<?=$d['File']?>" class="img-fluid rounded-top" alt="">
+				<img src="<?php echo $preview['File']; ?>"  class="img-fluid rounded-top" alt="" style="max-height: 100%; max-width: 100%; width: auto;">
 			</div>
 			<div class="img-sub col-md-3 debug">
 				<?php foreach ($files as $file) :?>
 					<div class="card">
-						<img class="card-img-top" src="<?=$file['link']?>" alt="">
+						<img class="card-img-top" src="<?=$file['link']; ?>" alt="">
 					</div>
 				<?php endforeach;?>
 			</div>
@@ -59,22 +59,22 @@
 		<div class="col-md-6 col-sm-8 debug">
 			<div class="product_detail">
 				<div>
-					<h3><?=$d['Name']?></h3>
-					<h4><?=$d['Price']?></h4>
+					<h3><?=$preview['Name']; ?></h3>
+					<h4><?=$preview['Price']; ?></h4>
 				</div>
 				<hr class="p_line">
-				<div class="debug" style="text-align: center; width: 100%; margin: 20px 0">
-					Quantity: <?=$d['Status'] = 1 ? 'In Stock': 'Sold Out'?>
+				<div class="debug" style="width: 100%; margin: 20px 0">
+					Quantity: <?=$preview['Status'] == 1 ? 'In Stock': 'Sold Out'; ?>
 				</div>
 				<div class="p_action-group">
 					<a name="download" id="r" class="btn btn-light" href="#" role="button" download="">
 						<span>
-							Download <?=$d['Name']?> detail
+							Download <?=$preview['Name']; ?> detail
 						</span>
 						<i class="fa fa-download" aria-hidden="true"></i>
 					</a>
 					<form action="" method="post">
-						<button class="btn btn-light btn-block" onclick="myFunction()" name="add" type="submit" formmethod="post" value="<?=$d['id']?>" >
+						<button class="btn btn-light btn-block" onclick="myFunction()" name="add" type="submit" formmethod="post" value="<?=$preview['id']; ?>" >
 							Add to compare
 							<i class="fa fa-refresh" aria-hidden="true"></i>
 						</button>
@@ -84,76 +84,59 @@
 				<div class="product_info">
 					<div id="" class="p_detail">
 					</div>
-					<div class="social-icon">
-						<a href="">
-							<i class="fab fa-facebook debug" aria-hidden="true"></i>
-						</a>
-						<a href="">
-							<i class="fab fa-twitter debug" aria-hidden="true"></i>
-						</a>
-						<a href="">
-							<i class="fab fa-google debug" aria-hidden="true"></i>
-						</a>
-						<a href="">
-							<i class="fab fa-youtube debug" aria-hidden="true"></i>
-						</a>
-						<a href="">
-							<i class="fab fa-skype debug" aria-hidden="true"></i>
-						</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!--product description-->
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col-md-12">
-				<ul id="tabs" class="nav nav-tabs">
-					<li class="nav-item">
-						<a href="" data-target="#description" data-toggle="tab" class="nav-link small text-uppercase">Description</a>
+					<!--product description-->
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-md-12">
+								<ul id="tabs" class="nav nav-tabs">
+									<li class="nav-item">
+										<a href="" data-target="#description" data-toggle="tab" class="nav-link small text-uppercase active">Description</a>
 
-					</li>
-					<li class="nav-item">
-						<a href="" data-target="#additional-info" data-toggle="tab" class="nav-link small text-uppercase active">Additional Information</a>
-					</li>
-				</ul>
-				<div id="tabsContent" class="tab-content">
-					<div id="description" class="tab-pane fade">
-						<div class="row pb-2">
-							<div class="col-sm-12">
-								<?=$d['Description']?>
-								</p>
+									</li>
+									<li class="nav-item">
+										<a href="" data-target="#additional-info" data-toggle="tab" class="nav-link small text-uppercase">Additional Information</a>
+									</li>
+								</ul>
+								<div id="tabsContent" class="tab-content">
+									<div id="description" class="tab-pane fade">
+										<div class="row pb-2">
+											<div class="col-sm-12">
+												<?=$preview['Description']; ?>
+												</p>
+											</div>
+										</div>
+									</div>
+									<div id="additional-info" class="tab-pane fade active show">
+										<div class="row pb-2">
+											<div class="col-sm-12">
+												<table class="table table-striped table-inverse table-responsive">
+													<tbody>
+													<tr>
+														<td>Material : </td>
+														<td scope="row" class="tb-header"><?=$preview['Material']; ?></td>
+													</tr>
+													<tr>
+														<td>Size :</td>
+														<td scope="row" class="tb-header"><?=$preview['Size']; ?></td>
+													</tr>
+													<tr>
+														<td>Color :</td>
+														<td scope="row " class="tb-header"><?=$preview['Color']; ?></td>
+													</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
-					<div id="additional-info" class="tab-pane fade active show">
-						<div class="row pb-2">
-							<div class="col-sm-12">
-								<table class="table table-striped table-inverse table-responsive">
-									<tbody>
-									<tr>
-										<td>Material : </td>
-										<td scope="row" class="tb-header"><?=$d['Material']?></td>
-									</tr>
-									<tr>
-										<td>Size :</td>
-										<td scope="row" class="tb-header"><?=$d['Size']?></td>
-									</tr>
-									<tr>
-										<td>Color :</td>
-										<td scope="row " class="tb-header"><?=$d['Color']?></td>
-									</tr>
-									</tbody>
-								</table>
-							</div>
-						</div>
-					</div>
+					<?php endforeach;?>
 				</div>
 			</div>
 		</div>
 	</div>
-	<?php endforeach;?>
 </div>
 </body>
 </html>

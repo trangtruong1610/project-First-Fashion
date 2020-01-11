@@ -33,49 +33,51 @@ if(empty($_SESSION['user']) || !in_array($_SESSION['user']["role"], [1,2])) {
 			crossorigin="anonymous"></script>
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
 </head>
-<body>
+<body style="font-family: Lora;">
 <div class="container-fluid ">
 	<div class="dashboard header text-uppercase">
 		Admin Dashboard
 	</div>
 </div>
 <div class="container">
-<table class="table"  style="text-align: center">
-	<thead>
-	<tr>
-		<th>ID</th>
-		<th>Name</th>
-		<th>Size</th>
-		<th>Color</th>
-		<th>Meterial</th>
-		<th>Price</th>
-		<th>Origin</th>
-		<th>Status</th>
-		<th>Actions</th>
-	</tr>
-	</thead>
-	<tbody>
-	<?php foreach ($data as $key => $value) : ?>
-	<tr>
-		<th scope="row"><?=$value['id']?></th>
-			<td style="text-align: left"><?=$value['Name']?></td>
-			<td><?=$value['Size']?></td>
-			<td><?=$value['Color']?></td>
-			<td><?=$value['Material']?></td>
-			<td><?=$value['Price']?></td>
-			<td><?=$value['Origin']?></td>
-			<td><?=$value['Status'] == 1 ? "In Stock" : "Sold Out" ?></td>
-			<td>
-			<a href="<?=base_url()."product/{$value['id']}"?>">View</a> |
-			<a href="<?=base_url()."dashboard/edit/{$value['id']}"?>">Edit</a>|
-			<a onclick="myFunction()" href="<?=base_url()."dashboard/delete/{$value['id']}"?>">Delete</a>
-		</td>
-	</tr>
-	<?php endforeach ?>
-	</tbody>
-</table>
-	<div class="text-center">
-	<a class="btn btn-primary btn-lg" href="<?=base_url().'/dashboard/add'?>">Add Product</a>
+	<div>
+		<table class="table" style="text-align: center">
+			<thead>
+			<tr>
+				<th>ID</th>
+				<th style="width: 5%;">Name</th>
+				<th style="width: 5%;">Size</th>
+				<th style="width: 20%;">Color</th>
+				<th style="width: 15%;">Material</th>
+				<th style="width: 5%;">Price</th>
+				<th style="width: 15%;">Origin</th>
+				<th style="width: 15%;">Status</th>
+				<th style="width: 20%;">Actions</th>
+			</tr>
+			</thead>
+			<tbody>
+			<?php foreach ($data as $key => $value) : ?>
+				<tr>
+					<th scope="row"><?=$value['id']?></th>
+					<td style="text-align: left"><?=$value['Name']?></td>
+					<td><?=$value['Size']?></td>
+					<td><?=$value['Color']?></td>
+					<td><?=$value['Material']?></td>
+					<td><?=$value['Price']?></td>
+					<td><?=$value['Origin']?></td>
+					<td><?=$value['Status'] == 1 ? "In Stock" : "Sold Out" ?></td>
+					<td>
+						<a href="<?=base_url()."product/{$value['id']}"?>">View</a> |
+						<a href="<?=base_url()."dashboard/edit/{$value['id']}"?>">Edit</a>|
+						<a onclick="myFunction()" href="<?=base_url()."dashboard/delete/{$value['id']}"?>">Delete</a>
+					</td>
+				</tr>
+			<?php endforeach ?>
+			</tbody>
+		</table>
+		<div class="text-center">
+			<a class="btn btn-primary btn-lg" href="<?=base_url().'/dashboard/add'?>">Add Product</a>
+		</div>
 	</div>
 </div>
 </body>

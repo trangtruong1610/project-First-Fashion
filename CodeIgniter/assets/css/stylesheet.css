@@ -227,7 +227,7 @@ li > .tab {
 	text-decoration: none;
 }
 .cus-target-bg {
-	height: 350px;
+	height: 25vw;
 	background-position: center;
 	background-size: contain;
 	background-repeat: no-repeat;
@@ -237,13 +237,13 @@ li > .tab {
 	text-decoration: none;
 }
 .cus-target-bg:hover {
-	background-size: 380px;
+	background-size: 27vw;
 	text-shadow: rgba(30,30,30,.7) 3px 2px 1px;
 	text-decoration: none;
 
 }
 .filter {
-	height: 350px;
+	height: 25vw;
 	backdrop-filter: grayscale(.8);
 }
 .icon-bg {
@@ -395,7 +395,7 @@ li > .tab {
 }
 /*#endregion*/
 /*#region Detailed Product Page*/
-[class*='col-'] > .img-sub div:not(:last-child) {
+.img-sub div:not(:last-child) {
 	margin-bottom: 10px;
 }
 .product_detail {
@@ -461,9 +461,8 @@ li.nav-item > a {
 		margin-right: 10px;
 	}
 }
-
 /*#endregion*/
-/*#region Amin Dashboard*/
+/*#region Admin Dashboard*/
 .new_value {
 	margin: 10px 0;
 	font-size: 1em;

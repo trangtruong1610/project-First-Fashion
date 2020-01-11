@@ -24,6 +24,17 @@
             integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
             crossorigin="anonymous"></script>
 </head>
+<style>
+	#scrollable-trending::-webkit-scrollbar{
+		width: 10px;
+		height: 10px;
+		background-color: rgba(200,200,200,.2);
+	}
+	#scrollable-trending::-webkit-scrollbar-thumb:horizontal{
+		background: rgba(30,30,30,.4);
+		border-radius: 10px;
+	}
+</style>
 <body>
 <div class="container-fluid" style="min-height: max-content">
 <!--Banner-->
@@ -35,18 +46,15 @@
             <li data-target="#carouselId" data-slide-to="2"></li>
         </ol>
     <!--Carousel content-->
-        <div class="carousel-inner" role="listbox" style="height: 500px;">
-            <div class="carousel-item active">
-                <img src="<?php echo base_url('../assets/images/Banner/banner1.jpg" alt="First slide'); ?>" style="max-height: 100%;
-	max-width: 100%; height: auto; position: relative; top: 50%; transform: translateY(-10%);">
+        <div id="carousel-banner" class="carousel-inner" role="listbox" style="height: 30vw; width: 100%; text-align: center;">
+            <div class="carousel-item active" style="width: 100%;">
+                <img src="<?php echo base_url('../assets/images/Banner/banner1.jpg" alt="First slide'); ?>" style="width: 100%; height: 100%; object-fit: cover; object-position: 100% 10%;">
             </div>
             <div class="carousel-item">
-                <img src="<?php echo base_url('../assets/images/Banner/banner2.jpg" alt="Second slide'); ?>" style="max-height: 100%;
-	max-width: 100%; height: auto; position: relative; top: 50%;">
+                <img src="<?php echo base_url('../assets/images/Banner/banner2.jpg" alt="Second slide'); ?>" style="width: 100%; height: 100%; object-fit: cover; object-position: 100% 10%;">
             </div>
             <div class="carousel-item">
-                <img src="<?php echo base_url('../assets/images/Banner/banner3.jpg" alt="Third slide'); ?>" style="max-height: 100%;
-	max-width: 100%; height: auto; position: relative; top: 50%; transform: translateY(-10%);">
+                <img src="<?php echo base_url('../assets/images/Banner/banner3.jpg" alt="Third slide'); ?>" style="width: 100%; height: 100%; object-fit: cover; object-position: 100% 10%;">
             </div>
         </div>
     <!--Carousel control-->
@@ -122,81 +130,22 @@
                 <div class="homepage-header"><img src="<?php echo base_url('../assets/images/right-lines.png')?>"></div>
             </div>
         </div>
-		<div class="container-fluid">
-			<div class="row">
-				<div id="carousel" class="carousel slide" data-ride="carousel">
-					<ol class="carousel-indicators">
-						<li data-target="#carousel" data-slide-to="0" class="active"></li>
-						<li data-target="#carousel" data-slide-to="1"></li>
-					</ol>
-					<div class="carousel-inner">
-						<div class="carousel-item active">
-							<div class="d-none d-lg-block">
-								<div class="slide-box">
-									<img src="<?php echo base_url('../assets/images/Trending/trending1.png" alt="First slide')?>">
-									<img src="<?php echo base_url('../assets/images/Trending/trending2.png" alt="First slide')?>">
-									<img src="<?php echo base_url('../assets/images/Trending/trending3.png" alt="First slide')?>">
-									<img src="<?php echo base_url('../assets/images/Trending/trending4.png" alt="First slide')?>">
+		<div id="scrollable-trending" class="container-fluid" style="text-align: center; width: 100%;overflow-x: -moz-scrollbars-horizontal; overflow:  auto;text-align: center; white-space: nowrap; ">
+				<?php foreach($trending as $key=>$value) : ?>
+					<?php foreach ($value as $value) : ?>
+						<a href="<?=base_url().'product/get_by_id/'.$value['id']; ?>"><lable>
+							<div class="card" style="text-align: center; width: 15vw; margin: 20px; display: inline-block;">
+								<div class="card-header" style="width: 15vw; height: 18vw;">
+									<img class="card-img-top" src="<?php echo $value['File']; ?>" alt="" style="max-height:100%; max-width: 100%; width: auto; position: relative; top: 50%; transform: translateY(-50%)">
+								</div>
+								<div class="card-body" style="font-family: Lora; font-size: 15px; text-align: center; margin: auto; padding: 7px 0;">
+									<h4 class="card-title"><?php echo $value['Name']; ?></h4>
+									<p class="card-text"><?php echo $value['Price']; ?></p>
 								</div>
 							</div>
-							<div class="d-none d-md-block d-lg-none">
-								<div class="slide-box">
-									<img src="<?php echo base_url('../assets/images/Trending/trending1.png" alt="First slide')?>">
-									<img src="<?php echo base_url('../assets/images/Trending/trending2.png" alt="First slide')?>">
-									<img src="<?php echo base_url('../assets/images/Trending/trending3.png" alt="First slide')?>">
-								</div>
-							</div>
-							<div class="d-none d-sm-block d-md-none">
-								<div class="slide-box">
-									<img src="<?php echo base_url('../assets/images/Trending/trending1.png" alt="First slide')?>">
-									<img src="<?php echo base_url('../assets/images/Trending/trending2.png" alt="First slide')?>">
-								</div>
-							</div>
-							<div class="d-block d-sm-none">
-								<img class="d-block w-100" src="<?php echo base_url('../assets/images/Trending/trending1.png" alt="First slide')?>">
-							</div>
-						</div>
-						<div class="carousel-item">
-							<div class="d-none d-lg-block">
-								<div class="slide-box">
-									<img src="<?php echo base_url('../assets/images/Trending/trending5.png" alt="Second slide')?>">
-									<img src="<?php echo base_url('../assets/images/Trending/trending6.png" alt="Second slide')?>">
-									<img src="<?php echo base_url('../assets/images/Trending/trending8.png" alt="Second slide')?>">
-									<img src="<?php echo base_url('../assets/images/Trending/trending7.png" alt="Second slide')?>">
-								</div>
-							</div>
-							<div class="d-none d-md-block d-lg-none">
-								<div class="slide-box">
-									<img src="<?php echo base_url('../assets/images/Trending/trending5.png" alt="Second slide')?>">
-									<img src="<?php echo base_url('../assets/images/Trending/trending6.png" alt="Second slide')?>">
-									<img src="<?php echo base_url('../assets/images/Trending/trending8.png" alt="Second slide')?>">
-								</div>
-							</div>
-							<div class="d-none d-sm-block d-md-none">
-								<div class="slide-box">
-									<img src="<?php echo base_url('../assets/images/Trending/trending5.png" alt="Second slide')?>">
-									<img src="<?php echo base_url('../assets/images/Trending/trending6.png" alt="Second slide')?>">
-								</div>
-							</div>
-							<div class="d-block d-sm-none">
-								<img class="d-block w-100" src="<?php echo base_url('../assets/images/Trending/trending5.png" alt="Second slide')?>">
-							</div>
-						</div>
-					</div>
-					<a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
-						<div class="icon-bg">
-							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-						</div>
-						<span class="sr-only">Previous</span>
-					</a>
-					<a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
-						<div class="icon-bg">
-							<span class="carousel-control-next-icon" aria-hidden="true"></span>
-						</div>
-						<span class="sr-only">Next</span>
-					</a>
-				</div>
-			</div>
+						</lable></a>
+					<?php endforeach;?>
+				<?php endforeach; ?>
 		</div>
     </div>
 </div>
