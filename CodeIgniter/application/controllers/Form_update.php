@@ -67,7 +67,6 @@ class Form_update extends CI_Controller
 			'File' 			=> !empty($file_link) ? $file_link : $post['File'],
 			'Status'		=> $post['Status'],
 		);
-		$this->load->model('dashboard');
 		$result = $this->dashboard->update_product($update_data, $id);
 		if($result == TRUE) {
 			echo '<script type="text/javascript">alert("Update Success. All changes saved")</script>';

@@ -33,13 +33,13 @@ if(empty($_SESSION['user']) || !in_array($_SESSION['user']["role"], [1,2])) {
 		<form method="post" action="<?=base_url().'Trending_Controller/trending_add'; ?>" enctype="multipart/form-data">
 			<div class="text-capitalize header">Trending Content</div>
 			<p style="font-style: italic; color: firebrick;"><?php if(!empty($error)) echo $error; ?></p>
-			<div id="scrollable" style="overflow: scroll; height: 70vh;">
+			<div id="scrollable" style="overflow: scroll; height: 100%;">
 				<?php foreach($label as $label): ?>
 				<div class="form-check form-check-inline" style="width: 20%;">
 					<label class="form-check-label">
-						<div class="card" style="width: 15vw; display: inline-block; margin:10px; text-align: center;">
+						<div class="card" style="width: 15vw; display: inline-block; margin:10px; text-align: center;<?= $label['Trending'] == 1 ? 'border: 2px solid rgba(80,150,250,.8)' : ''?> ">
 							<div class="card-header">
-								<input class="form-check-input" type="checkbox" name="trending[]" id="<?=$label['id'];?>"
+								<input class="form-check-input" type="checkbox" name="trending[]" id="trending-box"
 									   value="<?=$label['id'];?>"><?=$label['Name'];?>
 							</div>
 							<div class="card-body" style="width: 200px; height: 200px; display: inline-block">

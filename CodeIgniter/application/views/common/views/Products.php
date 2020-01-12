@@ -96,7 +96,7 @@
 					<?php foreach($brand as $row) :?>
 					<div class="form-check">
                         <label class="form-check-label">
-                            <input type="checkbox" class="form-check-input" name="<?=$row['CategoryName']?>" id="<?=$row['CategoryName']?>" value="<?=$row['CategoryName']?>">
+                            <input type="radio" class="form-check-input" name="brand[]" id="<?=$row['CategoryName']?>" value="<?=$row['CategoryName']?>">
 							<?=$row['CategoryName']?>
                         </label>
                     </div>

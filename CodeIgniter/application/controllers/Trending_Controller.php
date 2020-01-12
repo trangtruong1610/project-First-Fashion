@@ -9,24 +9,37 @@ class Trending_Controller extends CI_Controller
 		$this->load->library('session');
 		$this->load->helper('form');
 		$this->load->model('trending');
+		$this->load->model('product_all');
 	}
-	public function trending_add() {
+	public function index() {
 		$data['label'] = $this->trending->get_option();
+		$this->load->view('/admin/trending', $data);
 
+	}
+	public function trending_add()
+	{
 		$post = $this->input->post();
 
-		$_SESSION['trending_pool']= array();
-
-		if(!empty($post['trending'])) {
-			if (count($_SESSION['trending_pool']) < 8) {
-				foreach ($post['trending'] as $checked) {
-					$tmp = array_push($_SESSION['trending_pool'], $checked);
+		if (!empty($post['trending'])) {
+			$id_list = $post['trending'];
+			if ((count($id_list) < 9) && (count($id_list) > 3)) {
+				for ($i = 0; $i < count($id_list); $i++) {
+					$deselect = $this->trending->deselect_all($id_list[$i]);
 				}
-			} else {
-				$data['error'] = "Please select only 8 products for trending.";
-				$_SESSION['trending_pool'] = array();
+				if($deselect == TRUE) {
+					for ($i = 0; $i < count($id_list); $i++) {
+						$update_data = $this->trending->update_trend($id_list[$i]);
+				}
+				}
+				if ($update_data == TRUE) {
+					redirect(base_url() . 'trending_controller/index');
+				}
 			}
+			else {
+				$data['msg'] = "Please choose at least 4 products and maximum 8 products for trending section.";
+				$post['trending'] = array();
+			}
+			var_dump($update_data);
 		}
-		$this->load->view('/admin/trending', $data);
 	}
 }

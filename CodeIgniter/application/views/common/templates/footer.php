@@ -37,7 +37,7 @@
         
         <div class="debug col-lg-6 footer-content" id="About-Us">
             <h5 class="header5">ABOUT THE SHOP</h5>
-            <p>Sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio.</p>
+            <p> Always be impressive! First Fashion exists for the love of fashion.<br> We believe in empowering individuality and make one more confident and love oneself. <br>We provide various of fashion items that will do the magic and make you become confident, gorgeous and stunning and ready for any meeting. </p>
         </div>
         
         <div class="debug col-lg-3 footer-content">

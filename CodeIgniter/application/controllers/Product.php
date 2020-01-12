@@ -19,9 +19,6 @@ class Product extends CI_Controller
 		//Display brand name
 		$data['brand'] = $this->product_all->get_brand();
 
-		//Display by category
-		$data['category'] = $this->select_by_category();
-
 		$this->load->view('/client/Product', $data);
 	}
 	public function get_by_id($id)
@@ -73,9 +70,6 @@ class Product extends CI_Controller
 		foreach ($binding as $binding);
 		$similar = $this->product_all->similar_product($binding);
 		return $similar;
-	}
-	public function select_by_category() {
-
 	}
 }
 ?>

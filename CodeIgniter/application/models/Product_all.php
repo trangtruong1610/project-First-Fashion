@@ -57,10 +57,10 @@ class Product_all extends CI_Model {
 		$query = $this->db->query($sql);
 		return $query->result_array();
 	}
-	public function select_category($binding) {
-		$sql = "SELECT * FROM product JOIN middle ON product.id = middle.product_id";
-		$query = $this->db->query($sql);
-		return $query->result_array();
+	public function category_all($binding) {
+		$sql = "SELECT * FROM product JOIN middle ON product.id = middle.product_id JOIN category ON middle.category_id = category.id WHERE category.CategoryName = '{$binding}'";
+		$result = $this->db->query($sql);
+		return $result->result_array();
 	}
 
 }

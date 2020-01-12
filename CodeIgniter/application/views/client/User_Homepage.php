@@ -1,5 +1,4 @@
 <?php $this->load->view('/common/templates/header'); ?>
-
 <html lang="en">
 <head>
     <title>Homepage</title>
@@ -131,20 +130,18 @@
             </div>
         </div>
 		<div id="scrollable-trending" class="container-fluid" style="text-align: center; width: 100%;overflow-x: -moz-scrollbars-horizontal; overflow:  auto;text-align: center; white-space: nowrap; ">
-				<?php foreach($trending as $key=>$value) : ?>
-					<?php foreach ($value as $value) : ?>
-						<a href="<?=base_url().'product/get_by_id/'.$value['id']; ?>"><lable>
+				<?php foreach($trending as $row) : ?>
+						<a href="<?=base_url().'product/get_by_id/'.$row['id']; ?>"><lable>
 							<div class="card" style="text-align: center; width: 15vw; margin: 20px; display: inline-block;">
 								<div class="card-header" style="width: 15vw; height: 18vw;">
-									<img class="card-img-top" src="<?php echo $value['File']; ?>" alt="" style="max-height:100%; max-width: 100%; width: auto; position: relative; top: 50%; transform: translateY(-50%)">
+									<img class="card-img-top" src="<?php echo $row['File']; ?>" alt="" style="max-height:100%; max-width: 100%; width: auto; position: relative; top: 50%; transform: translateY(-50%)">
 								</div>
 								<div class="card-body" style="font-family: Lora; font-size: 15px; text-align: center; margin: auto; padding: 7px 0;">
-									<h4 class="card-title"><?php echo $value['Name']; ?></h4>
-									<p class="card-text"><?php echo $value['Price']; ?></p>
+									<h4 class="card-title"><?php echo $row['Name']; ?></h4>
+									<p class="card-text"><?php echo $row['Price']; ?></p>
 								</div>
 							</div>
 						</lable></a>
-					<?php endforeach;?>
 				<?php endforeach; ?>
 		</div>
     </div>

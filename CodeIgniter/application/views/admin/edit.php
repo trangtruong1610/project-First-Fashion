@@ -10,6 +10,11 @@ if(empty($_SESSION['user']) || !in_array($_SESSION['user']["role"], [1,2])) {
 		  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <title>Edit Product</title>
+<style>
+	input[type=text] {
+		resize: both;
+	}
+</style>
 <body>
 <div class="container">
 	<div>

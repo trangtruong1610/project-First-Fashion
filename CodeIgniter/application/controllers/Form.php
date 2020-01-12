@@ -60,11 +60,9 @@ class Form extends CI_Controller {
 	}
 	public function delete($id)
 	{
-
 		$this->load->model('dashboard');
 		$this->dashboard->delete($id);
 		redirect(base_url().'/dashboard');
-
 	}
 
 }
