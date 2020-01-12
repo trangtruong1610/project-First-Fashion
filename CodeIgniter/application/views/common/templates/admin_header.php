@@ -39,7 +39,7 @@ if(empty($_SESSION['user']) || !in_array($_SESSION['user']["role"], [1,2])) {
 					<a class="nav-link text-uppercase" href="<?=base_url().'dashboard'?>">dashboard<span class="sr-only">(current)</span></a>
 				</li>
 				<li class="nav-item active">
-					<a class="nav-link text-uppercase" href="<?=base_url().'contact'?>">account information<span class="sr-only">(current)</span></a>
+					<a class="nav-link text-uppercase" href="<?=base_url().'dashboard/my_account'?>">account information<span class="sr-only">(current)</span></a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link text-uppercase" href="#product-management">page management<span class="sr-only">(current)</span></a>
@@ -48,9 +48,8 @@ if(empty($_SESSION['user']) || !in_array($_SESSION['user']["role"], [1,2])) {
 				<li class="nav-item ">
 					<a class="nav-link text-uppercase" href="<?=base_url().'dashboard/trending'?>">page management<span class="sr-only">(current)</span></a>
 				</li>
-
 				<li class="nav-item active"  <?= ($_SESSION['user']['role'] == 2) ? '' : 'hidden'; ?>>
-					<a class="nav-link text-uppercase" href="<?=base_url().'login'?>">account creation<span class="sr-only">(current)</span></a>
+					<a class="nav-link text-uppercase" href="<?=base_url().'dashboard/staff_management'?>">employees management<span class="sr-only">(current)</span></a>
 				</li>
 			</ul>
 		</div>

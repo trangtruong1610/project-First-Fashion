@@ -41,6 +41,11 @@ if(empty($_SESSION['user']) || !in_array($_SESSION['user']["role"], [1,2])) {
 	</div>
 </div>
 <div class="container" id="product-management">
+	<div style="margin: 30px; text-align: right">
+		<div>
+			<a class="btn btn-dark btn-lg" href="<?=base_url().'/dashboard/add'?>">Add Product</a>
+		</div>
+	</div>
 	<div>
 		<table class="table" style="text-align: center">
 			<thead>
@@ -76,9 +81,6 @@ if(empty($_SESSION['user']) || !in_array($_SESSION['user']["role"], [1,2])) {
 			<?php endforeach ?>
 			</tbody>
 		</table>
-		<div class="text-center">
-			<a class="btn btn-primary btn-lg" href="<?=base_url().'/dashboard/add'?>">Add Product</a>
-		</div>
 	</div>
 </div>
 </body>

@@ -1,4 +1,4 @@
-<?php $this->load->view('/common/templates/header'); ?>
+<?php $this->load->view('/common/templates/admin_header'); ?>
 
 <?php
 if(empty($_SESSION['user']) || !in_array($_SESSION['user']["role"], [1,2])) {

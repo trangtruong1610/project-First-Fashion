@@ -19,13 +19,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 	if (empty($usernameErr) && empty($passErr)){
 		$sql = "SELECT * FROM account join accounttype on account.AccTypeID = accounttype.AccTypeID WHERE Username = '{$username}'";
 		$query = $this->db->query($sql);
-		$result = $query->result_array();
-		foreach ($result as $data)
-		if ($data != 0) {
-			if ($data["Password"] == $pass) {
-				$session_user = [
-					'role' => $data['id'],
-				];
+		$result = $query->row_array();
+		/*foreach ($result as $data)*/
+		if ($result != 0) {
+			if ($result["Password"] == $pass) {
+				$session_user = array(
+					'user' 			=> $result["Username"],
+					'role' 			=> $result["id"],
+					'Password' 		=> $result["Password"],
+					'EmployeeName' 	=> $result["EmployeeName"],
+					'Email' 		=> $result["Email"],
+					'Phone' 		=> $result["Phone"],
+					'Status' 		=> $result["Status"],
+				);
 				// save user to session and go to dashboard
 				$_SESSION['user'] = $session_user;
 				header("location: http://localhost:8080/CodeIgniter/index.php/dashboard");

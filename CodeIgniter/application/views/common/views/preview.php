@@ -1,4 +1,4 @@
-<?php $this->load->view('/common/templates/header');?>
+<?php $this->load->view('/common/templates/admin_header');?>
 <!doctype html>
 <lang="en">
 <head>

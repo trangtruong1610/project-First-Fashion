@@ -63,6 +63,8 @@ $route['dashboard/preview/(:num)'] = 'form_update/edit_by_id/$1';
 $route['dashboard/delete/(:num)'] = 'form/delete/$1';
 $route['dashboard/file/(:num)'] = 'product/export_file/$1';
 $route['dashboard/trending'] = 'trending_controller/index';
+$route['dashboard/staff_management'] = 'account/index';
+$route['dashboard/my_account'] = 'account/my_account';
 
 
 
