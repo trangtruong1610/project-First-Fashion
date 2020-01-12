@@ -18,11 +18,19 @@ class Dashboard extends CI_Model
 	{
 		$sql = "SELECT max(id) FROM product";
 		$query = $this->db->query($sql);
-		return $query->result_array();
+		return $query->row_array();
 	}
-//	public function add($file)
-//	{
-//		$this->db->insert('file', $file);
-//	}
+	public function update_product($update_data, $id) {
+		if($update_data['File'] == '') {
+			$sql = "UPDATE product SET name = '{$update_data["Name"]}', color = '{$update_data["Color"]}', size = '{$update_data["Size"]}', material = '{$update_data["Material"]}', description = '{$update_data["Description"]}', price = '{$update_data["Price"]}', origin = '{$update_data["Origin"]}', Status = {$update_data["Status"]}, file = '{$update_data["File"]}' WHERE id = '{$id}'";
+		}
+		ELSE {
+			$sql = "UPDATE product SET name = '{$update_data["Name"]}', color = '{$update_data["Color"]}', size = '{$update_data["Size"]}', material = '{$update_data["Material"]}', description = '{$update_data["Description"]}', price = '{$update_data["Price"]}', origin = '{$update_data["Origin"]}', Status = '`{$update_data["Status"]}`' WHERE id = '{$id}'";
+		}
+
+		$query = $this->db->query($sql);
+
+		return $query; // return true || false
+	}
 }
 ?>

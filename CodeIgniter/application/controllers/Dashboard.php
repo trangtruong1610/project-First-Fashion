@@ -16,11 +16,15 @@ class Dashboard extends CI_Controller
 		$this->load->model('product_all');
 		$result = $this->product_all->get_all();
 		$data['data'] = $result;
-		$this->load->view('/common/an/templates/dashboard', $data);
+		$this->load->view('/admin/dashboard.php', $data);
 	}
 	public function add()
 	{
 		$this->load->view('/admin/add');
+	}
+	public function update()
+	{
+		$this->load->view('/admin/update');
 	}
 }
 

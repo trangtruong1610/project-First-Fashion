@@ -1,4 +1,4 @@
-<?php $this->load->view('/common/trang/view/header'); ?>
+<?php $this->load->view('/common/templates/header'); ?>
 
 <?php
 if(empty($_SESSION['user']) || !in_array($_SESSION['user']["role"], [1,2])) {
@@ -17,7 +17,7 @@ if(empty($_SESSION['user']) || !in_array($_SESSION['user']["role"], [1,2])) {
 <title>Add Product</title>
 
 <div class="container">
-	<form action="<?php echo base_url()?>form/form_validation" method="post">
+	<form action="<?php echo base_url()?>form/form_validation" method="post" enctype="multipart/form-data">
 		<?php if ($this->uri->segment(2) == 'inserted')
 		{
 			echo '<p class="text-success">Add successful</p>';
@@ -75,15 +75,17 @@ if(empty($_SESSION['user']) || !in_array($_SESSION['user']["role"], [1,2])) {
 	<div class="form-group row">
 		<label class="col-sm-2 col-form-label">Avatar</label>
 		<div class="col-sm-10">
-			<input type="text" class="form-control" name="avatar">
-			<span><?php echo form_error('avatar'); ?></span>
+			<input type="file" name="file">
+			<span><?php echo form_error('file'); ?></span>
 		</div>
 	</div>
 
 	<br>
-	<input class="btn btn-info" type="submit" name="submit" value="Submit" />
-	<a class="btn btn-info" href="<?=base_url().'/dashboard'?>">Back</a>
+		<div class="text-center">
+			<input class="btn btn-info" type="submit" name="submit" value="Submit" />
+			<a class="btn btn-info" href="<?=base_url().'dashboard'?>">Back</a>
+		</div>
 </form>
 </div>
 
-<?php $this->load->view('/common/an/templates/footer'); ?>
+<?php $this->load->view('/common/templates/footer'); ?>

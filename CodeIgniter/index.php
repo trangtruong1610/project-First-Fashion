@@ -89,6 +89,7 @@ switch (ENVIRONMENT)
 		exit(1); // EXIT_ERROR
 }
 error_reporting(0);
+
 /*
  *---------------------------------------------------------------
  * SYSTEM DIRECTORY NAME
