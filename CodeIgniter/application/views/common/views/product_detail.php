@@ -75,7 +75,7 @@ var_dump($res);
 						</span>
 						<i class="fa fa-download" aria-hidden="true"></i>
 					</a>
-					<form action="" method="post">
+					<form action="<?=base_url().'product/add_compare'?>" method="post">
 						<button class="btn btn-light btn-block" onclick="myFunction()" name="add" type="submit" formmethod="post" value="<?=$d['id']?>" >
 						Add to compare
 						<i class="fa fa-refresh" aria-hidden="true"></i>
@@ -180,7 +180,9 @@ var_dump($res);
 						</div>
 						<div class="card-footer text-muted" style="text-align: center;">
 							<a name="details" id="" class="btn btn-dark" href="<?=base_url()."product/{$row['product_id']}"?>" role="button">Details <i class="fas fa-search" style="font-size: 12px;" aria-hidden="true"></i></a>
-							<a name="compare" id="add_compare" class="btn btn-dark" href="#" role="button">Compare <i class="fas fa-refresh" style="font-size: 12px;" aria-hidden="true"></i></a>
+							<form style="display: inline" action="<?=base_url().'product/add_compare'?>" method="post">
+								<button class="btn btn-dark" onclick="myFunction()" name="add" type="submit" formmethod="post" value="<?=$row['product_id']?>">Compare <i class="fas fa-search" style="font-size: 12px;" aria-hidden="true"></i></button>
+							</form>
 						</div>
 					</div>
 				</div>

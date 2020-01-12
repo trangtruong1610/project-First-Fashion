@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title><?php ?></title>
+    <title>PRODUCT</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -30,91 +30,78 @@
 </head>
 <body>
 <div class="container-fluid debug">
-    <!--Page Title Bar-->
-<!--    <div id="page-title-bar" class="page-title-bar">-->
-<!--        <div class="container-fluid debug">-->
-<!--            <nav class="crumb-bread">-->
-<!--                <ol>-->
-<!--                    <li class="crumb-bread"><a href="">Fashion</a> </li>-->
-<!--                    <li class="crumb-bread"><a href="">Products</a> </li>-->
-<!--                    <li class="crumb-bread">For women</li>-->
-<!--                </ol>-->
-<!--            </nav>-->
-<!--        </div>-->
     </div>
-    <div class="debug row">
+    <div class="row">
     <!--Left side menu-->
-        <div class="col-sm-3 debug side-menu">
+        <div class="col-3 side-menu ">
             <!--Categories-->
-            <div id="MenuCategory" class="debug">
+            <div id="MenuCategory">
                 <div class="side-menu-item side-menu-header debug">
                     <span>
                         <i class="fa fa-star" aria-hidden="true"></i>
                     </span>
                     <span>PRODUCT CATEGORIES</span>
                 </div>
-				<form method="post" action="<?php base_url().'product/select_by_category' ?>">
 					<div class="side-menu-item list-item">
 						<ol>
 							<li class="list-item">
 								<label>
-									<input type="button" name="category" value="accessories" hidden>
-									ACCESSORIES
+									<a href="<?=base_url().'product/fashion'?>"><input type="button" name="fashion" hidden>FASHION</a>
 								</label>
 							</li>
 							<li class="list-item">
 								<label>
-									<input type="button" name="category" value="kid fashion" hidden>
-									FOR CHILDREN
+									<a href="<?=base_url().'product/accessories'?>"><input type="button" name="access" hidden>ACCESSORIES</a>
 								</label>
 							</li>
 							<li class="list-item">
 								<label>
-									<input type="button" name="category" value="men" hidden>
-										FOR MEN
-								</label>
-							</li>
-							<li class="list-item">
-								<label>
-									<input  type="button" name="category" value="women" hidden>
-										FOR WOMEN
+									<a href="<?=base_url().'product/children'?>"><input type="button" name="children" hidden>FOR CHILDREN</a>
 								</label>
 							</li>
 						</ol>
 					</div>
-				</form>
-            </div>
-            <!--Brands-->
-            <div id="MenuBrand" class="debug">
-                <div class="side-menu-item side-menu-header debug">
-                    <span>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                    </span>
-                    <span>PRODUCT BRANDS</span>
-                </div>
-                <div id="list-brands" class="side-menu-item list-item">
-					<?php foreach($brand as $row) :?>
-					<div class="form-check">
-                        <label class="form-check-label">
-                            <input type="checkbox" class="form-check-input" name="<?=$row['CategoryName']?>" id="<?=$row['CategoryName']?>" value="<?=$row['CategoryName']?>">
-							<?=$row['CategoryName']?>
-                        </label>
-                    </div>
-					<?php endforeach;?>
-					<form action="" method="post" enctype="multipart/form-data">
-						<a href="" name="" id="" class="btn btn-dark" type="button" value="" style="margin-top: 20px; color: #f5f5f5; font-family: MuseoSansW01-Rounded300">Select</a>
-					</form>
-				</div>
             </div>
         </div>
         <!--Product page-->
-        <div class="col-sm-9 debug">
+        <div class="col-9">
             <div id="filter"></div>
             <div id="product-page-all" class="side-menu-item">
-				<?php include "list_product.php";?>
-            </div>
+				<div class="container-fluid debug">
+					<?php foreach(array_chunk($data, 3) as $row_data_break) :?>
+						<div class="card-deck" style="margin-bottom: 50px">
+							<?php foreach($row_data_break as $row) :?>
+								<div class="col-md-4 col-sm-6">
+									<div class="card h-100">
+										<div style="height: 300px; text-align: center; padding: 10px">
+											<img align="middle" class="card-img-top" src="<?=$row['File']?>" alt="<?=$row['Name']?>" style="max-height:100%; max-width: 100%; width: auto; position: relative; top: 50%; transform: translateY(-50%);">
+										</div>
+										<div class="card-body">
+											<a id="name" href="<?=base_url()."product/{$row['id']}"?>"><h4 class="card-title"><?=$row['Name']?></h4></a>
+											<p style="font-size: 20px" class="card-text"><?=$row['Price']?></p>
+										</div>
+										<div class="card-footer text-muted" style="text-align: center;">
+											<a name="details" id="" class="btn btn-dark" href="<?=base_url()."product/{$row['id']}"?>" role="button">Details <i class="fas fa-search" style="font-size: 12px;" aria-hidden="true"></i></a>
+											<form style="display: inline" action="<?=base_url().'product/add_compare'?>" method="post">
+												<button class="btn btn-dark" onclick="myFunction()" name="add" type="submit" formmethod="post" value="<?=$row['id']?>">Compare <i class="fas fa-search" style="font-size: 12px;" aria-hidden="true"></i></button>
+											</form>
+										</div>
+									</div>
+								</div>
+							<?php endforeach;?>
+						</div>
+					<?php endforeach;?>
+				</div>
+
+			</div>
         </div>
     </div>
 </div>
+<script>
+	// When the user clicks on <div>, open the popup
+	function myFunction() {
+		alert("Add to compare success");
+	}
+</script>
 </body>
 </html>

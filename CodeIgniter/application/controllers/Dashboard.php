@@ -16,7 +16,7 @@ class Dashboard extends CI_Controller
 		$this->load->model('product_all');
 		$result = $this->product_all->get_all();
 		$data['data'] = $result;
-		$this->load->view('/common/templates/dashboard', $data);
+		$this->load->view('/admin/dashboard.php', $data);
 	}
 	public function add()
 	{

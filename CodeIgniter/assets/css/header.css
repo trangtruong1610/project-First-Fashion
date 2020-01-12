@@ -1,15 +1,6 @@
 @font-face {
   font-family: "Century Gothic";
-  src: url("/CodeIgniter/An/assets/fonts/Century Gothic/GOTHIC.TTF"); }
-@font-face {
-  font-family: "Century Gothic Bold";
-  src: url("/CodeIgniter/An/assets/fonts/Century Gothic/GOTHICB.TTF"); }
-@font-face {
-  font-family: "Century Gothic Bold Italic";
-  src: url("/CodeIgniter/An/assets/fonts/Century Gothic/GOTHICBI.TTF"); }
-@font-face {
-  font-family: "Century Gothic Italic";
-  src: url("/CodeIgniter/An/assets/fonts/Century Gothic/GOTHICBI.TTF"); }
+  src: url("/CodeIgniter/assets/fonts/Century Gothic/GOTHIC.TTF"); }
 #header {
   font-family: "Century Gothic", sans-serif; }
   #header #search-bar #login-form a:hover {

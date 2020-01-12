@@ -54,10 +54,24 @@ $route['default_controller'] = 'home';
 $route['contact'] = 'contact/index';
 $route['login'] = 'login_page/index';
 $route['login/(:any)'] = 'login_page/login/$str';
+
 $route['product'] = 'product/get_all';
 $route['product/(:num)'] = 'product/get_by_id/$1';
+
+$route['product/fashion'] = 'product/fashion';
+$route['product/children'] = 'product/children';
+$route['product/accessories'] = 'product/accessories';
+
+
+$route['product/add_compare'] = 'product/add_compare';
+$route['product/compare'] = 'product/compare';
+$route['product/delete'] = 'product/delete_compare';
+
 $route['dashboard'] = 'dashboard/index';
-$route['dashboard/add'] = 'form/view';
+$route['dashboard/add'] = 'form/add';
+$route['dashboard/member'] = 'form/member';
+$route['dashboard/category'] = 'form/category';
+
 $route['dashboard/edit/(:num)'] = 'form_update/get_by_id/$1';
 $route['dashboard/preview/(:num)'] = 'form_update/edit_by_id/$1';
 $route['dashboard/delete/(:num)'] = 'form/delete/$1';

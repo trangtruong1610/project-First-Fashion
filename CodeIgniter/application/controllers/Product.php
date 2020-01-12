@@ -77,5 +77,72 @@ class Product extends CI_Controller
 	public function select_by_category() {
 
 	}
+
+	public function add_compare()
+	{
+		$id = $this->input->post('add');
+		if (isset($_POST["add"])){
+			$id = (int)($_POST['add']);
+			if (in_array($id, $_SESSION['compare']))
+			{
+				echo 122;
+			}
+			else{
+				$_SESSION['compare'][] = $id;
+				echo 'Add succeed';
+			}
+		}
+		$referer = $_SERVER['HTTP_REFERER'];
+		header("Location: $referer");
+	}
+	public function compare()
+	{
+		$id_compare = array_slice($_SESSION['compare'], -3, 3);
+		$_SESSION['compare'] = $id_compare;
+		$this->load->model('compare');
+		$result = $this->compare->compare($id_compare);
+		$data['data'] = $result;
+
+		$this->load->view('/client/compare.php', $data);
+	}
+	public function delete_compare()
+	{
+		$id = (int)($this->input->post('delete'));
+		if(isset($_POST['delete'])){
+			if (in_array($id, $_SESSION['compare']))
+			{
+				$data = $_SESSION['compare'];
+				$key = array_search($id , $data);
+				unset($data[$key]);
+				$_SESSION['compare'] = $data;
+
+			}
+		}
+		$referer = $_SERVER['HTTP_REFERER'];
+		header("Location: $referer");
+	}
+	public function fashion()
+	{
+			$this->load->model('category');
+			$result = $this->category->fashion();
+			$data['data'] = $result;
+			$this->load->view('/client/product_category.php', $data);
+	}
+	public function children()
+	{
+		$this->load->model('category');
+		$result = $this->category->children();
+		$data['data'] = $result;
+		$this->load->view('/client/product_category.php', $data);
+	}
+	public function accessories()
+	{
+		$this->load->model('category');
+		$result = $this->category->accessories();
+		$data['data'] = $result;
+		$this->load->view('/client/product_category.php', $data);
+	}
+
+
 }
 ?>

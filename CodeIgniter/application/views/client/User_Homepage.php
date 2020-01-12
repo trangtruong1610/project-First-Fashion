@@ -66,24 +66,24 @@
     <!--Customer Categories-->
     <div id="categories">
         <div class="debug row cus-target">
-            <div class="col-md-4 debug cus-target-bg" style="background-image: url('http://localhost:8080/CodeIgniter/assets/images/Category/Cus-category-men.jpg')">
+            <div class="col-md-4 debug cus-target-bg" style="background-image: url('http://localhost:8080/CodeIgniter/assets/images/Category/fashion.jpg')">
                 <div class="filter">
-                    <a href="">
-                        <span class="cus-target">FOR MEN</span>
+                    <a href="<?=base_url().'product/fashion'?>">
+                        <span class="cus-target">FASHION</span>
                     </a>
                 </div>
             </div>
-            <div class="col-md-4 debug cus-target-bg" style="background-image: url('http://localhost:8080/CodeIgniter/assets/images/Category/Cus-category-women.jpg')">
+            <div class="col-md-4 debug cus-target-bg" style="background-image: url('http://localhost:8080/CodeIgniter/assets/images/Category/accessories.jpg')">
                 <div class="filter">
-                    <a href="">
-                        <span class="cus-target">FOR WOMEN</span>
+                    <a href="<?=base_url().'product/accessories'?>">
+                        <span class="cus-target">ACCESSORIES</span>
                     </a>
                 </div>
             </div>
-            <div class="col-md-4 debug cus-target-bg" style="background-image: url('http://localhost:8080/CodeIgniter/assets/images/Category/Cus-category-children.jpg')">
+            <div class="col-md-4 debug cus-target-bg" style="background-image: url('http://localhost:8080/CodeIgniter/assets/images/Category/children.jpg')">
                 <div class="filter">
-                    <a href="">
-                        <span class="cus-target">FOR CHILDREN</span>
+                    <a href="<?=base_url().'product/children'?>">
+                        <span class="cus-target">CHILDREN</span>
                     </a>
                 </div>
             </div>

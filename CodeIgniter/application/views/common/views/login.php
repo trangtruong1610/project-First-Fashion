@@ -1,43 +1,4 @@
-<?php
-$usernameErr = $passErr = "";
-$username = $pass = "";
-$mgs = "";
-$mgs1 = "";
-if ($_SERVER["REQUEST_METHOD"] == "POST"){
-	if(!empty($_POST["username"])) {
-		$username = $_POST['username'];
-	} else {
-		$usernameErr = "Username is required";
-	}
 
-	//check pass not empty
-	if(!empty($_POST["pass"])) {
-		$pass = $_POST['pass'];
-	} else {
-		$passErr = "Password is required";
-	}
-	if (empty($usernameErr) && empty($passErr)){
-		$sql = "SELECT * FROM account join accounttype on account.AccTypeID = accounttype.AccTypeID WHERE Username = '{$username}'";
-		$query = $this->db->query($sql);
-		$result = $query->result_array();
-		foreach ($result as $data)
-		if ($data != 0) {
-			if ($data["Password"] == $pass) {
-				$session_user = [
-					'role' => $data['id'],
-				];
-				// save user to session and go to dashboard
-				$_SESSION['user'] = $session_user;
-				header("location: http://localhost:8080/CodeIgniter/index.php/dashboard");
-			}
-			else{
-				$mgs = "Wrong Username or Password";
-			}
-		}else {$mgs1 = "Wrong Username or Password";}
-
-	}
-}
-?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -55,20 +16,23 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 	<link rel="stylesheet" href="<?= base_url('../assets/css/login.css') ?>">
 </head>
 <body>
-    <form class="container" method="post">
+    <form action="<?=base_url()?>form/login" class="container" method="post">
     <div class="form-group">
         <label for="exampleInputEmail1">Username</label>
-        <input name="username" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-		<span><?=$usernameErr?></span>
-    </div>
+        <input name="username" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Username">
+		<span><?php echo form_error('username'); ?></span>
+	</div>
     <div class="form-group">
         <label for="exampleInputPassword1">Password</label>
-        <input name="pass" type="password" class="form-control" id="exampleInputPassword1">
-		<span><?=$passErr?></span>
-    </div>
-		<span><?=$mgs?></span>
-		<span><?=$mgs1?></span>
+        <input name="password" type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+		<span><?php echo form_error('password'); ?></span>
+	</div>
+		<?php
+		if (isset($_SESSION['err_msg'])){
+			echo $_SESSION['err_msg'];
+			unset($_SESSION['err_msg']);
+		}
+		?>
 		<div><button type="submit" class="btn btn-primary">Submit</button></div>
     </form>
 </body>
