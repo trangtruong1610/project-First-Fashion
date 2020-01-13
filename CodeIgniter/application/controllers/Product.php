@@ -123,13 +123,18 @@ class Product extends CI_Controller
 	}
 	public function fashion()
 	{
-			$this->load->model('category');
-			$result = $this->category->fashion();
-			$data['data'] = $result;
-			$this->load->view('/client/product_category.php', $data);
+
+		$data['brand'] = $this->product_all->get_brand();
+
+		$this->load->model('category');
+		$result = $this->category->fashion();
+
+		$data['data'] = $result;
+		$this->load->view('/client/product_category.php', $data);
 	}
 	public function children()
 	{
+		$data['brand'] = $this->product_all->get_brand();
 		$this->load->model('category');
 		$result = $this->category->children();
 		$data['data'] = $result;
@@ -137,12 +142,27 @@ class Product extends CI_Controller
 	}
 	public function accessories()
 	{
+		$data['brand'] = $this->product_all->get_brand();
 		$this->load->model('category');
 		$result = $this->category->accessories();
 		$data['data'] = $result;
 		$this->load->view('/client/product_category.php', $data);
 	}
 
+	public function brand()
+	{
+		if (($_POST['brand']) != ''){
+			$data['brand'] = $this->product_all->get_brand();
+			$brand = $this->input->post('brand');
+			$this->load->model('homepage');
+			$result = $this->homepage->brand($brand);
+			$data['data'] = $result;
+			$this->load->view('client/product_category', $data);
+		}
+		else{
+			redirect(base_url().'product');
+		}
+	}
 
 }
 ?>

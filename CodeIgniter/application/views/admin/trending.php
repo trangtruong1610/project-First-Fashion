@@ -4,6 +4,10 @@
 if(empty($_SESSION['user']) || !in_array($_SESSION['user']["role"], [1,2])) {
 	header('location: http://localhost:8080/CodeIgniter/index.php/login');
 }
+if (isset($_SESSION['err_msg'])){
+	echo $_SESSION['err_msg'];
+	unset($_SESSION['err_msg']);
+}
 ?>
 <head>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -30,7 +34,7 @@ if(empty($_SESSION['user']) || !in_array($_SESSION['user']["role"], [1,2])) {
 <body style="font-family: Lora; font-size: 15px;">
 <div class="container ">
 	<div style="text-align: center;">
-		<form method="post" action="<?=base_url().'Trending_Controller/trending_add'; ?>" enctype="multipart/form-data">
+		<form method="post" action="<?=base_url(); ?>Trending_Controller/trending_add" enctype="multipart/form-data">
 			<div class="text-capitalize header">Trending Content</div>
 			<p style="font-style: italic; color: firebrick;">Please add at least 4 producs and maximum 8 products to trending.</p>
 			<div id="scrollable" style="overflow: scroll; height: 100%;">

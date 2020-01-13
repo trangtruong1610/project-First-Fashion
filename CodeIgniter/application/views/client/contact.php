@@ -1,4 +1,14 @@
 <?php $this->load->view('/common/templates/header');?>
+<?php
+if (isset($_SESSION['msg'])){
+	echo $_SESSION['msg'];
+	unset($_SESSION['msg']);
+}
+if (isset($_SESSION['err_msg'])){
+	echo $_SESSION['err_msg'];
+	unset($_SESSION['err_msg']);
+}
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -35,29 +45,35 @@
 			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.282982943546!2d106.69300631452862!3d10.789624892312572!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528cb4ba30aa5%3A0x3a0ddc230888b922!2zMjQgUGhhbiBMacOqbSwgxJBhIEthbywgUXXhuq1uIDEsIEjhu5MgQ2jDrSBNaW5oLCBWaWV0bmFt!5e0!3m2!1sen!2s!4v1576994402735!5m2!1sen!2s" width="1110" height="500" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
 		</div>
 		<div class="contact-form">
-			<p>GET IN TOUCH</p>
+			<h4 style="text-align: center ; margin-top: 30px">GET IN TOUCH</h4>
 			<hr>
-			<form action="">
+			<form action="<?=base_url()?>contact/index" method="post">
 				<div class="container">
+					<div style="display: inline-block!important; font-size: 12px!important; text-align: center;width: 100%">
+						<span><?php echo form_error('name'); ?></span>
+						<span><?php echo form_error('email'); ?></span>
+						<span><?php echo form_error('subject'); ?></span>
+						<span><?php echo form_error('mess'); ?></span>
+					</div>
 					<div class="row justify-content-center">
 						<div class="col-3">
 							YOUR NAME
-							<div><input type="text"></div>
+							<div><input name="name" type="text"></div>
 						</div>
 						<div class="col-3">
 							EMAIL
-							<div><input type="email"></div>
+							<div><input name="email" type="email"></div>
 						</div>
 						<div class="col-3">
 							SUBJECT
-							<div><input type="text"></div>
+							<div><input name="subject" type="text"></div>
 						</div>
 					</div>
 					<div class="row justify-content-center">
 						<div class="col-9">
 							MESSAGE
-							<div class="input-mess"><textarea class="userInput"></textarea>
-								<div><button type="button" class="btn btn-secondary">Send</button></div>
+							<div  class="input-mess"><textarea name="mess" class="userInput"></textarea>
+								<input style="margin-top: 20px" class="btn btn-secondary" type="submit" value="Send">
 							</div>
 						</div>
 					</div>

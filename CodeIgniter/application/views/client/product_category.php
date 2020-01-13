@@ -63,6 +63,29 @@
 				</ol>
 			</div>
 		</div>
+		<div id="MenuBrand" class="debug">
+			<div class="side-menu-item side-menu-header debug">
+                    <span>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                    </span>
+				<span>PRODUCT BRANDS</span>
+			</div>
+			<div id="list-brands" class="side-menu-item list-item">
+				<?php foreach($brand as $row) :?>
+				<form class="form-check" action="<?=base_url()?>product/brand" method="post">
+					<div>
+						<label class="form-check-label">
+							<input type="radio" class="form-check-input" name="brand" id="<?=$row['CategoryName']?>" value="<?=$row['CategoryName']?>">
+							<?=$row['CategoryName']?>
+						</label>
+					</div>
+					<?php endforeach;?>
+					<input name="submit" type="Submit" class="btn btn-dark" value="Submit" style="margin-top: 20px; color: #f5f5f5; font-family: MuseoSansW01-Rounded300">
+				</form>
+
+			</div>
+		</div>
+
 	</div>
 	<!--Product page-->
 	<div class="col-9">

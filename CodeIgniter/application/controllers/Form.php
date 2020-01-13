@@ -137,7 +137,7 @@ class Form extends CI_Controller {
 			$this->load->model('dashboard');
 			$this->dashboard->insert_category($data);
 			$_SESSION['msg'] = "<script type='text/javascript'>alert('Add successful');</script>";
-			$this->load->view('admin/dashboard');
+			redirect(base_url().'dashboard');
 		}
 		else{
 			$_SESSION['err_msg'] = "<script type='text/javascript'>alert('Add Fail');</script>";

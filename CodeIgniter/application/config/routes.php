@@ -56,6 +56,7 @@ $route['login'] = 'login_page/index';
 $route['login/(:any)'] = 'login_page/login/$str';
 
 $route['product'] = 'product/get_all';
+$route['product/brand'] = 'product/brand';
 $route['product/(:num)'] = 'product/get_by_id/$1';
 
 $route['product/fashion'] = 'product/fashion';
@@ -71,15 +72,12 @@ $route['dashboard'] = 'dashboard/index';
 $route['dashboard/add'] = 'form/add';
 $route['dashboard/member'] = 'form/member';
 $route['dashboard/category'] = 'form/category';
-$route['dashboard/trending'] = 'trending_controller/trending';
+$route['dashboard/trending'] = 'trending_controller/trending_add';
 
 $route['dashboard/edit/(:num)'] = 'form_update/get_by_id/$1';
 $route['dashboard/preview/(:num)'] = 'form_update/edit_by_id/$1';
 $route['dashboard/delete/(:num)'] = 'form/delete/$1';
 $route['dashboard/file/(:num)'] = 'product/export_file/$1';
-
-
-
 
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;

@@ -25,9 +25,9 @@ class Form_update extends CI_Controller
 
 		$config['upload_path'] = './upload/';
 		$config['allowed_types'] = 'jpeg|gif|jpg|png';
-		$config['max_size'] = '5120';
-		$config['max_width']  = '2000';
-		$config['max_height']  = '2000';
+		$config['max_size'] = '900000';
+		$config['max_width']  = '1000000';
+		$config['max_height']  = '1000000';
 		$config['overwrite']  = TRUE;
 		$config['remove_spaces']  = TRUE;
 		$this->upload->initialize($config);

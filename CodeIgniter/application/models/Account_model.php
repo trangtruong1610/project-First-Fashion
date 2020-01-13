@@ -11,4 +11,9 @@ class Account_model extends CI_Model
 		$result = $this->db->query($sql);
 		return $result->result_array();
 	}
+
+	public function contact($data)
+	{
+		$this->db->insert('contact', $data);
+	}
 }
