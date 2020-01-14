@@ -24,7 +24,7 @@ if (isset($_SESSION['err_msg'])){
 		<div class="form-group">
 			<label for="exampleInputEmail1">Category Name</label>
 			<input type="text" name="category_name" class="form-control" placeholder="Enter Category Name">
-			<span><?php echo form_error('category_name'); ?></span>
+			<span class="text-danger" ><?php echo form_error('category_name'); ?></span>
 
 		</div>
 		<div class="form-group">

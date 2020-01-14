@@ -20,12 +20,12 @@
     <div class="form-group">
         <label for="exampleInputEmail1">Username</label>
         <input name="username" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Username">
-		<span><?php echo form_error('username'); ?></span>
+		<span class="text-danger" ><?php echo form_error('username'); ?></span>
 	</div>
     <div class="form-group">
         <label for="exampleInputPassword1">Password</label>
         <input name="password" type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-		<span><?php echo form_error('password'); ?></span>
+		<span class="text-danger" ><?php echo form_error('password'); ?></span>
 	</div>
 		<?php
 		if (isset($_SESSION['err_msg'])){

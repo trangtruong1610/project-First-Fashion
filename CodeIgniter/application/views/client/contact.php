@@ -49,30 +49,35 @@ if (isset($_SESSION['err_msg'])){
 			<hr>
 			<form action="<?=base_url()?>contact/index" method="post">
 				<div class="container">
-					<div style="display: inline-block!important; font-size: 12px!important; text-align: center;width: 100%">
-						<span><?php echo form_error('name'); ?></span>
-						<span><?php echo form_error('email'); ?></span>
-						<span><?php echo form_error('subject'); ?></span>
-						<span><?php echo form_error('mess'); ?></span>
-					</div>
 					<div class="row justify-content-center">
 						<div class="col-3">
 							YOUR NAME
-							<div><input name="name" type="text"></div>
+							<div>
+								<input name="name" type="text">
+								<span class="text-danger" ><?php echo form_error('name'); ?></span>
+							</div>
 						</div>
 						<div class="col-3">
 							EMAIL
-							<div><input name="email" type="email"></div>
+							<div>
+								<input name="email" type="email">
+								<span class="text-danger" ><?php echo form_error('email'); ?></span>
+							</div>
 						</div>
 						<div class="col-3">
 							SUBJECT
-							<div><input name="subject" type="text"></div>
+							<div>
+								<input name="subject" type="text">
+								<span class="text-danger" ><?php echo form_error('subject'); ?></span>
+							</div>
 						</div>
 					</div>
 					<div class="row justify-content-center">
 						<div class="col-9">
 							MESSAGE
-							<div  class="input-mess"><textarea name="mess" class="userInput"></textarea>
+							<div  class="input-mess">
+								<textarea name="mess" class="userInput"></textarea>
+								<span class="text-danger" ><?php echo form_error('mess'); ?></span>
 								<input style="margin-top: 20px" class="btn btn-secondary" type="submit" value="Send">
 							</div>
 						</div>

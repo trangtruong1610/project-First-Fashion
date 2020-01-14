@@ -15,7 +15,7 @@ class Form extends CI_Controller {
 		$this->load->view('admin/add');
 	}
 
-	public function form_validation()
+	public function form_add()
 	{
 		$this->load->helper(array('form', 'url'));
 
@@ -27,7 +27,7 @@ class Form extends CI_Controller {
 		$this->form_validation->set_rules('description', 'Description', 'required');
 		$this->form_validation->set_rules('price', 'Price', 'required');
 		$this->form_validation->set_rules('origin', 'Origin', 'required');
-		if (empty($_FILES['file']['name']))
+		if (empty($_FILES['File']['name']))
 		{
 			$this->form_validation->set_rules('file', 'Document', 'required');
 		}
@@ -35,18 +35,32 @@ class Form extends CI_Controller {
 
 		if ($this->form_validation->run())
 		{
+			$imgData = '';
 			$upload_path = base_url('../upload/');
+
 			$this->load->library("upload");
+
 			$config['upload_path'] = './upload/';
 			$config['allowed_types'] = 'jpeg|gif|jpg|png';
-			$config['max_size'] = '5120';
-			$config['max_width']  = '2000';
-			$config['max_height']  = '2000';
+			$config['max_size'] = '900000';
+			$config['max_width']  = '1000000';
+			$config['max_height']  = '1000000';
+			$config['overwrite']  = TRUE;
 			$config['remove_spaces']  = TRUE;
+			$this->upload->initialize($config);
 			$this->load->library('upload',$config);
 			$this->load->model('dashboard');
-			$data_img_upload = $this->upload->data();
-			$path_image = $upload_path . $data_img_upload["file_name"];
+			$File = 'File';
+			if(!$this->upload->do_upload($File))
+			{
+				// Print the upload error
+				var_dump($this->upload->display_errors());
+			}else{
+				$return = $this->upload->data();
+				$image_name = $return['file_name'];
+				$imgData = $upload_path.$image_name;
+
+			}
 
 			$n = $this->dashboard->get_maxid();
 			$new_id = (int)$n["max(id)"] + 1;
@@ -61,7 +75,7 @@ class Form extends CI_Controller {
 				'Description' => $this->input->post('description'),
 				'Price' => $this->input->post('price').'$',
 				'Origin' => $this->input->post('origin'),
-				'File' => $path_image,
+				'File' => $imgData,
 				'status' => 1,
 			);
 			$this->dashboard->insert($data);

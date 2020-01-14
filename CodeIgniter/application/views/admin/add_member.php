@@ -39,12 +39,12 @@ if (isset($_SESSION['err_msg'])){
 			<div class="form-group">
 				<label for="exampleInputEmail1">Email address</label>
 				<input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
-				<span><?php echo form_error('email'); ?></span>
+				<span class="text-danger" ><?php echo form_error('email'); ?></span>
 			</div>
 			<div class="form-group">
 				<label for="exampleInputEmail1">Phone</label>
 				<input type="number" name="phone" class="form-control" placeholder="Your Phone Number">
-				<span><?php echo form_error('phone'); ?></span>
+				<span class="text-danger" ><?php echo form_error('phone'); ?></span>
 			</div>
 			<div class="text-center">
 				<button type="submit" class="btn btn-info">Submit</button>
